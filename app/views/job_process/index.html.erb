@@ -1,0 +1,64 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本就职流程指南</h1>
+  
+  <!-- 导航按钮 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="btn-group w-100" role="group">
+        <%= link_to 'ES (エントリーシート)', job_process_es_path, class: 'btn btn-outline-primary btn-lg' %>
+        <%= link_to '网测 (WEBテスト)', job_process_network_test_path, class: 'btn btn-outline-primary btn-lg' %>
+        <%= link_to 'GD (グループディスカッション)', job_process_gd_path, class: 'btn btn-outline-primary btn-lg' %>
+        <%= link_to '个人面试 (面接)', job_process_interview_path, class: 'btn btn-outline-primary btn-lg' %>
+        <%= link_to '内定 (内定)', job_process_offer_path, class: 'btn btn-outline-primary btn-lg' %>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 就职流程综述 -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">日本就职流程综述</h2>
+          
+          <p>日本的就职活动（就活）是一个有着独特流程和文化的过程。通常包含以下几个主要阶段：</p>
+          
+          <div class="process-timeline mt-4">
+            <div class="process-step">
+              <h4><i class="fas fa-file-alt"></i> 1. ES提交</h4>
+              <p>ES（Entry Sheet）是日本企业筛选应聘者的第一步。类似于简历和自我介绍的结合，需要回答有关个人经历、能力和求职动机的问题。</p>
+            </div>
+            
+            <div class="process-step">
+              <h4><i class="fas fa-laptop-code"></i> 2. 网络测试</h4>
+              <p>通过ES筛选后，很多企业会要求应聘者参加网络测试，测试内容通常包括语言能力、逻辑思维和性格测试等。</p>
+            </div>
+            
+            <div class="process-step">
+              <h4><i class="fas fa-users"></i> 3. 小组讨论（GD）</h4>
+              <p>小组讨论是评估应聘者团队协作、沟通和领导能力的重要环节。通常会给出一个话题或问题，让多名应聘者一起讨论并提出解决方案。</p>
+            </div>
+            
+            <div class="process-step">
+              <h4><i class="fas fa-user-tie"></i> 4. 个人面试</h4>
+              <p>面试可能包括多轮，从初次面试到最终面试，面试官可能是HR、部门主管或高层管理人员。面试内容涵盖个人经历、专业知识、职业规划等。</p>
+            </div>
+            
+            <div class="process-step">
+              <h4><i class="fas fa-certificate"></i> 5. 内定</h4>
+              <p>成功通过所有选拔环节后，企业会发出内定通知。获得内定后，还需要参加内定者活动、签署相关文件等。</p>
+            </div>
+          </div>
+          
+          <div class="alert alert-info mt-4">
+            <p>每个企业的招聘流程可能有所不同，以上是一般流程参考。请点击上方按钮，查看每个环节的详细指南和技巧。</p>
+          </div>
+          
+          <div class="text-center mt-4">
+            <%= link_to '返回首页', root_path, class: 'btn btn-secondary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

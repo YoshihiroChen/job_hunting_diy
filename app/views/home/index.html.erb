@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <div class="row">
+    <!-- 左侧按钮区域 -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">就职导航</h3>
+          <div class="d-grid gap-3">
+            <%= link_to '就职流程', job_process_path, class: 'btn btn-primary btn-lg' %>
+            <%= link_to '情报收集', info_collection_path, class: 'btn btn-success btn-lg' %>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 右侧介绍区域 -->
+    <div class="col-md-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">关于本站</h2>
+          <div class="card-text">
+            <p>欢迎来到日本就职DIY网站！本站旨在为有意向在日本就职的朋友提供全面的指导和资源。</p>
+            
+            <p>在日本就职市场竞争激烈，过程繁琐，我们希望通过这个平台，帮助您了解日本就职的完整流程，掌握必要的技巧，顺利获得理想的工作机会。</p>
+            
+            <p>本网站提供两大核心模块：</p>
+            <ul>
+              <li><strong>就职流程</strong>：详细介绍ES编写、网络测试、GD（小组讨论）、面试技巧及内定后注意事项</li>
+              <li><strong>情报收集</strong>：汇总各大招聘平台及社交媒体资源，帮助您高效获取就职相关情报</li>
+            </ul>
+            
+            <p>无论您是留学生、社会人士还是希望转职的在日工作者，这里都能找到适合您的就职指南。</p>
+            
+            <p class="mt-4 font-italic">开始您的日本就职之旅吧！请点击左侧按钮进入相应模块。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

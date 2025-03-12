@@ -1,0 +1,2 @@
+module InfoCollectionHelper
+end
