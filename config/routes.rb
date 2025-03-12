@@ -19,4 +19,11 @@ Rails.application.routes.draw do
   get 'info_collection/mynavi', to: 'info_collection#mynavi'
   get 'info_collection/social_media', to: 'info_collection#social_media'
   get 'info_collection/npo', to: 'info_collection#npo'
+
+
+  get 'job_field', to: 'job_field#index'
+  get 'job_field/info_tech', to: 'job_field#info_tech'
+  get 'job_field/Consul', to: 'job_field#Consul'
+
+  get 'job_company', to: 'job_company#index'
 end

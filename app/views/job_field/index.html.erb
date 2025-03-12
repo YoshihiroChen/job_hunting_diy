@@ -1,0 +1,56 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本就职情报收集指南</h1>
+  
+  <!-- 导航按钮 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="btn-group w-100 flex-wrap" role="group">
+        <%= link_to '文系IT', job_field_info_tech_path, class: 'btn btn-outline-success btn-lg m-1' %>
+        <%= link_to '理系IT', job_field_Consul_path, class: 'btn btn-outline-success btn-lg m-1' %>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 情报收集综述 -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">情报收集综述</h2>
+          
+          <p>在日本就职过程中，高效的情报收集能大幅提高求职成功率。以下是日本求职中常用的信息渠道：</p>
+          
+          <div class="info-section mt-4">
+            <div class="info-category">
+              <h4><i class="fas fa-building"></i> 就职平台</h4>
+              <p>日本有多种专业的就职平台，如リクナビ（Rikunavi）和マイナビ（Mynavi）等，这些平台提供大量企业招聘信息、説明会日程等资源。外资企业招聘信息可通过"外資就活"等专门渠道获取。</p>
+            </div>
+            
+            <div class="info-category">
+              <h4><i class="fas fa-comments"></i> 口碑和评价平台</h4>
+              <p>オープンワーク（OpenWork）等平台提供员工对企业的真实评价，包括工作环境、薪资、加班情况等，ワンキャリア（OneCareer）则提供面试经验和ES范例。</p>
+            </div>
+            
+            <div class="info-category">
+              <h4><i class="fas fa-hashtag"></i> 社交媒体</h4>
+              <p>Twitter、LinkedIn等社交媒体平台上，可以关注企业官方账号、行业专家和招聘信息。许多企业也会在社交媒体上发布招聘信息和企业文化展示。</p>
+            </div>
+            
+            <div class="info-category">
+              <h4><i class="fas fa-hands-helping"></i> NPO组织</h4>
+              <p>一些非营利组织专门为留学生和外国人提供就职支持，包括简历修改、模拟面试和就职辅导等服务。</p>
+            </div>
+          </div>
+          
+          <div class="alert alert-success mt-4">
+            <p>高效的情报收集是成功就职的关键一步。请点击上方按钮，查看各个平台的详细使用指南和注意事项。</p>
+          </div>
+          
+          <div class="text-center mt-4">
+            <%= link_to '返回首页', root_path, class: 'btn btn-secondary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
