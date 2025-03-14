@@ -2,9 +2,9 @@ class JobFieldController < ApplicationController
   def index
   end
 
-  def info_tech
+  def arts_science
   end
 
-  def Consul
+  def web_sier
   end
 end
