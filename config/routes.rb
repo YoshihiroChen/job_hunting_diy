@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get 'job_field', to: 'job_field#index'
   get 'job_field/arts_science', to: 'job_field#arts_science'
   get 'job_field/web_sier', to: 'job_field#web_sier'
+  get 'job_field/certificate', to: 'job_field#certificate'
 
   get 'job_company', to: 'job_company#index'
 end
