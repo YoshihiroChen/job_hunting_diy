@@ -22,4 +22,7 @@ class InfoCollectionController < ApplicationController
 
   def npo
   end
+
+  def official
+  end
 end
