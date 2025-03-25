@@ -25,7 +25,16 @@ Rails.application.routes.draw do
   get 'job_field', to: 'job_field#index'
   get 'job_field/arts_science', to: 'job_field#arts_science'
   get 'job_field/web_sier', to: 'job_field#web_sier'
+  get 'job_field/salary_compare', to: 'job_field#salary_compare'
   get 'job_field/certificate', to: 'job_field#certificate'
+
+  get 'questions/index', to: 'questions#index'
+  get 'questions/mathematics', to: 'questions#mathematics'
+  get 'questions/salaries', to: 'questions#salaries'
+  get 'questions/graduation', to: 'questions#graduation'
+  get 'questions/venture_bigname', to: 'questions#venture_bigname'
+  get 'questions/gakureki', to: 'questions#gakureki'
+  get 'questions/start_time', to: 'questions#start_time'
 
   get 'job_company', to: 'job_company#index'
 end

@@ -1,0 +1,46 @@
+<div class="container mt-5">
+  <div class="row">
+    <!-- 左侧按钮区域 -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">疑问导航</h3>
+          <div class="d-grid gap-3">
+            <%= link_to '哪个业界薪资最高？', questions_salaries_path, class: 'btn btn-primary btn-lg' %>
+            <%= link_to '转码需要很强的数学基础吗？', questions_mathematics_path, class: 'btn btn-success btn-lg' %>
+            <%= link_to '十月入学算多少卒？', questions_graduation_path, class: 'btn btn-info btn-lg' %>
+            <%= link_to '大手企业和中小企业？', questions_venture_bigname_path, class: 'btn btn-warning btn-lg' %>
+            <%= link_to '学历有没有用？', questions_gakureki_path, class: 'btn btn-dark btn-lg' %>
+            <%= link_to '修士二年级才开始就职会晚吗？？', questions_start_time_path, class: 'btn btn-danger btn-lg' %>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 右侧介绍区域 -->
+    <div class="col-md-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">哪个业界薪资最高？</h2>
+          <div class="card-text">
+            
+            
+            <p><strong>在文系选考中，外资投行，外资咨询（包括IT咨询）以及综合商社的薪资普遍要高于其他业界。</strong></p>
+            <p>在我短暂的一年就职中，外资咨询的工资有最高的新卒年薪，但相应的加班也会很多。根据openwork的统计，mbb（麦肯锡，波士顿，贝恩）的加班时间达到了每月60个小时。</p>
+            <p>而在日企中，个别ベンチャー的新卒薪资也有600万，例如广为人诟病为黑企的IT咨询simplex以及另一家企业Baycurrent。</p>
+            <p>在理系选考中，理系IT业界有最高的新卒薪资</p>
+            <p>我一位东大的同学就曾拿到过三菱银行年薪1000万日的offer，但听闻每天都要工作到凌晨，强度也是相当大。</p>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+              <%= link_to '返回首页', root_path, class: 'btn btn-secondary' %>
+          </div>
+  </div>
+</div>

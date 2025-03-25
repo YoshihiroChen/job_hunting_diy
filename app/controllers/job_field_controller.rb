@@ -8,6 +8,9 @@ class JobFieldController < ApplicationController
   def web_sier
   end
 
+  def salary_compare
+  end
+
   def certificate
   end
 end

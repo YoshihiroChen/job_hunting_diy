@@ -1,0 +1,113 @@
+<div class="container mt-4">
+
+  <!-- 理系IT与文系IT调查起点 -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">关于我对理系IT以及文系IT技术职的调查</h2>
+
+          <p>最一开始，我在小红书上询问了有关<strong>文系IT</strong>的SE岗位和<strong>理系IT</strong>的SDE或MLE等岗位之间的职业发展以及上限，  
+          得到的回复却参差不齐。</p>
+
+          <p>有说这两者上限差不多，具体还是看人的。  
+          但与这种想法相对应的是，在我做的问卷调查下，<strong>接近百分之八十的人觉得理系IT更好</strong>。</p>
+
+          <p>并且在我到现在为止所了解到的案例下，  
+          无论是新卒还是既卒，<strong>我还没有见过做SE年薪达到上千万日元的案例</strong>。</p>
+
+          <p>当然，部分不能代表整体。  
+          看到了理系IT的几个例子，而没看到文系IT的例子，这并不能说明什么。  
+          于是我用了以下两个方法尝试找到答案。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- openwork数据分析 -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">OpenWork数据分析</h2>
+
+          <p>我在OpenWork上找到了两个业界的列表：一个是 <strong>SIer业界</strong>，另一个是 <strong>IT-Tech业界</strong>  
+          （主要就是Web系互联网企业），这两个业界基本上可以对标<strong>文系IT</strong>和<strong>理系IT</strong>。</p>
+
+          <p>我分别抓取了这两个业界中<strong>排名前五十的企业</strong>的年收入统计，并筛选出<strong>技术岗</strong>，得到的结果如下：</p>
+
+          <ul>
+            <li><strong>SIer业界：</strong> 共1961个数据，平均年收为<strong>797.96万日元</strong></li>
+            <li><strong>IT-TECH业界：</strong> 共398个数据，平均年收为<strong>866.07万日元</strong></li>
+          </ul>
+
+          <p>以下前两张图分别是筛选出来的SIer业界和IT-TECH业界的原数据，第三张图是对这两组数据进行可视化的结果。</p>
+
+          <p>从数据上来看，<strong>理系IT平均年收入略高于文系IT</strong>，上限虽更高，但岗位更少。</p>
+
+          <p>还有一个显著的特征就是：  
+          <strong>IT-TECH中外资企业居多，SIer企业中日资企业居多。</strong></p>
+
+          <p>以下是SIer业界的统计数据：</p>
+
+          <!-- 插入图片 -->
+          <div class="text-center mb-3">
+            <%= image_tag("sier1.jpg", alt: "SIer统计数据", class: "img-fluid rounded shadow") %>
+          </div>
+
+          <p>以下是IT-TECH业界的统计数据：</p>
+
+          <!-- 插入图片 -->
+          <div class="text-center mb-3">
+            <%= image_tag("IT-TECH1.jpg", alt: "IT-TECH统计数据", class: "img-fluid rounded shadow") %>
+          </div>
+
+          <p>以下是两个业界年薪可视化对比图：</p>
+
+          <!-- 插入图片 -->
+          <div class="text-center mb-3">
+            <%= image_tag("Compare.jpg", alt: "年薪可视化对比图", class: "img-fluid rounded shadow") %>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deepseek回复 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">Deepseek的回复</h2>
+
+          <p>在算出这个结果以后，在不告知任何信息的情况下，  
+          我又询问了一下当下比较火爆的 <strong>Deepseek</strong> 关于<strong>理系IT中的SDE岗位</strong>以及<strong>文系IT的SE岗位</strong>，  
+          得到的回复如下图所示。</p>
+
+          <p>可以发现，<strong>Deepseek的回复符合我所做出的数据统计特征</strong>：</p>
+
+          <ul>
+            <li><strong>理系IT薪资更高，上限也更高</strong></li>
+            <li><strong>文系IT需求更大</strong></li>
+            <li><strong>IT-TECH中外资居多，SIer中日资居多</strong></li>
+          </ul>
+
+          <p>这些特点与我基于OpenWork所做出的统计结果 <strong>不谋而合</strong>。</p>
+        </div>
+      </div>
+
+      <div class="alert alert-success mt-4">
+          <p>以上为我对理系IT以及文系IT的技术职的调查，调查时间为2025年前后（数据短期内不会有太大变动，但还请大家谨慎参考）</p>
+          <p>这份调查的奇迹主要还是我对于是否要all in理系IT业界存在的犹豫。</p>
+          <p>结合了我个人情况的考虑之后，我慎重地决定未来要转向理系IT业界，终止文系IT业界的选考。</p>
+          </div>
+      
+      <div class="text-center mt-4">
+        <%= link_to '返回IT业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+      </div>
+
+    </div>
+  </div>
+
+</div>
