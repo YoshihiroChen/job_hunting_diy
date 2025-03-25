@@ -19,4 +19,7 @@ class QuestionsController < ApplicationController
 
   def start_time
   end
+
+  def japanese
+  end
 end
