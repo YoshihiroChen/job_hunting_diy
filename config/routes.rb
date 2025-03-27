@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   get 'questions/gakureki', to: 'questions#gakureki'
   get 'questions/start_time', to: 'questions#start_time'
   get 'questions/japanese', to: 'questions#japanese'
+  get 'questions/intern', to: 'questions#intern'
 
   get 'job_company', to: 'job_company#index'
 end

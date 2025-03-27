@@ -22,4 +22,7 @@ class QuestionsController < ApplicationController
 
   def japanese
   end
+
+  def intern
+  end
 end
