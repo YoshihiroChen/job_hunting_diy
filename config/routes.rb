@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'consult_field/index'
+  get 'it_field/index'
   # 首页路由
   root 'home#index'
   
@@ -27,6 +29,18 @@ Rails.application.routes.draw do
   get 'job_field/web_sier', to: 'job_field#web_sier'
   get 'job_field/salary_compare', to: 'job_field#salary_compare'
   get 'job_field/certificate', to: 'job_field#certificate'
+
+  get 'it_field', to: 'it_field#index'
+  get 'it_field/arts_science', to: 'it_field#arts_science'
+  get 'it_field/web_sier', to: 'it_field#web_sier'
+  get 'it_field/salary_compare', to: 'it_field#salary_compare'
+  get 'it_field/certificate', to: 'it_field#certificate'
+
+  get 'consult_field', to: 'consult_field#index'
+  get 'consult_field/strategy_consult', to: 'consult_field#strategy_consult'
+  get 'consult_field/it_consult', to: 'consult_field#it_consult'
+  get 'consult_field/personnel_consult', to: 'consult_field#personnel_consult'
+  get 'consult_field/finance_consult', to: 'consult_field#finance_consult'
 
   get 'questions/index', to: 'questions#index'
   get 'questions/mathematics', to: 'questions#mathematics'

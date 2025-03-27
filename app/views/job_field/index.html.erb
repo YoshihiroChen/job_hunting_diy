@@ -1,15 +1,14 @@
 <div class="container mt-4">
-  <h1 class="text-center mb-4">日本IT业界分析</h1>
+  <h1 class="text-center mb-4">日本业界分析</h1>
   
   <!-- 新的布局结构，左右分栏 -->
   <div class="row">
     <!-- 左侧导航按钮 -->
     <div class="col-md-3 mb-4">
       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
-        <%= link_to '文系IT & 理系IT', job_field_arts_science_path, class: 'btn btn-outline-success btn-lg mb-2' %>
-        <%= link_to 'Web系IT企业 & SIer企业 & ITCon企业', job_field_web_sier_path, class: 'btn btn-outline-success btn-lg mb-2' %>
-        <%= link_to '文系IT企业&理系IT企业的薪资对比', job_field_salary_compare_path, class: 'btn btn-outline-success btn-lg mb-2' %>
-        <%= link_to 'IT证书是否有用', job_field_certificate_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to 'IT业界', it_field_index_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '咨询业界', consult_field_index_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+
       </div>
     </div>
     
@@ -17,20 +16,22 @@
     <div class="col-md-9">
       <div class="card shadow">
         <div class="card-body">
-          <h2 class="card-title mb-4">我对日本it业界的分析</h2>
+          <h2 class="card-title mb-4">我对日本各业界的分析</h2>
           
-          <p>在入学后的一年，我断断续续地做了日本文系IT以及理系IT的业界调查（这也是因为一开始我专注于文系IT的选考，再后来我转型开始了理系IT的选考）。</p>
-          <p>你可能很疑惑为什么日本IT还分文系和理系，在之前的笔记里你可能也也一直在听我说这两个词。</p>
-          <p>更有可能的是，你肯定也听说过日本文科生也能干IT。</p>
-          <p>在你的大脑一片混乱（当时我的大脑也是一片混乱）时，你可以点击左边的按钮来查看我对日本IT业界的调查，你一定会找到自己的答案。</p>
+          <p>在这个专栏，我对日本的IT业界，咨询业界，金融业界，商社业界进行了分析。</p>
+          <p>分析的重点围绕几个关键词：“业务逻辑”，“工作内容”以及“岗位职种”。</p>
+          <p>在这个专栏里，你可以了解日本的各个业界是以什么样的逻辑运行的（市场上存在什么样的需求以及什么样的供给？），根据其对应的工作内容，你还能了解到现存的各个职种。</p>
+          <p>结合以上的信息，你可以判断自己的就职方向是否和这个业界契合。</p>
           
           
-          <div class="text-center mt-4">
-            <%= link_to '返回首页', root_path, class: 'btn btn-secondary' %>
-          </div>
+        
         </div>
       </div>
     </div>
+
+    <div class="text-center mt-4">
+            <%= link_to '返回首页', root_path, class: 'btn btn-secondary' %>
+          </div>
     
   </div> <!-- End row -->
 </div>
