@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'consult_field/index'
-  get 'it_field/index'
+  get '/admin/login', to: 'admin_sessions#new'
+  post '/admin/login', to: 'admin_sessions#create'
+  delete '/admin/logout', to: 'admin_sessions#destroy'
+
   # 首页路由
   root 'home#index'
   
@@ -30,13 +32,13 @@ Rails.application.routes.draw do
   get 'job_field/salary_compare', to: 'job_field#salary_compare'
   get 'job_field/certificate', to: 'job_field#certificate'
 
-  get 'it_field', to: 'it_field#index'
+  get 'it_field/index', to: 'it_field#index'
   get 'it_field/arts_science', to: 'it_field#arts_science'
   get 'it_field/web_sier', to: 'it_field#web_sier'
   get 'it_field/salary_compare', to: 'it_field#salary_compare'
   get 'it_field/certificate', to: 'it_field#certificate'
 
-  get 'consult_field', to: 'consult_field#index'
+  get 'consult_field/index', to: 'consult_field#index'
   get 'consult_field/strategy_consult', to: 'consult_field#strategy_consult'
   get 'consult_field/it_consult', to: 'consult_field#it_consult'
   get 'consult_field/personnel_consult', to: 'consult_field#personnel_consult'
@@ -53,4 +55,7 @@ Rails.application.routes.draw do
   get 'questions/intern', to: 'questions#intern'
 
   get 'job_company', to: 'job_company#index'
+
+  resources :comments, only: [:index, :create, :destroy]
+
 end

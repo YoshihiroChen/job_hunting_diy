@@ -6,6 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    
+
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -18,16 +21,17 @@
   </head>
 
   <body>
-    <!-- 导航栏 -->
+  <!-- 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <%= link_to '日本就职DIY指南', root_path, class: 'navbar-brand mx-auto' %>
+        <%= link_to '日本就职DIY指南', root_path, class: 'navbar-brand' %>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
     
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav d-flex flex-row justify-content-center">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- 中间导航项：用 mx-auto 保持居中 -->
+          <ul class="navbar-nav mx-auto d-flex flex-row">
             <li class="nav-item px-3">
               <%= link_to '首页', root_path, class: 'nav-link' %>
             </li>
@@ -43,14 +47,19 @@
             <li class="nav-item px-3">
               <%= link_to '企业分析', job_company_path, class: 'nav-link' %>
             </li>
-
             <li class="nav-item px-3">
               <%= link_to '常见疑问', questions_index_path, class: 'nav-link' %>
             </li>
           </ul>
+    
+          <!-- 评论区按钮靠右 -->
+          <div class="d-flex ms-auto">
+            <%= link_to '💬 评论区', comments_path, class: 'btn btn-light' %>
+          </div>
         </div>
       </div>
     </nav>
+  
   
 
     <!-- 主要内容 -->

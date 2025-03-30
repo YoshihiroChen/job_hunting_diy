@@ -1,0 +1,56 @@
+<div class="container mt-5" style="max-width: 700px;">
+  <!-- 页面标题 + 登录/退出按钮 -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">💬 网站留言板</h2>
+
+    <% if session[:admin] %>
+      <%= link_to "退出登录", "/admin/logout", method: :delete, class: "btn btn-sm btn-outline-danger" %>
+    <% else %>
+      <%= link_to "管理员登录", "/admin/login", class: "btn btn-sm btn-outline-primary" %>
+    <% end %>
+  </div>
+
+  <!-- flash 提示信息 -->
+  <% if flash[:notice] %>
+    <div class="alert alert-success"><%= flash[:notice] %></div>
+  <% elsif flash[:alert] %>
+    <div class="alert alert-danger"><%= flash[:alert] %></div>
+  <% end %>
+
+  <!-- 留言表单 -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <%= form_with(model: @comment, local: true) do |form| %>
+        <div class="mb-3">
+          <%= form.text_area :content, class: "form-control", placeholder: "请输入你的留言...", rows: 3 %>
+        </div>
+        <div class="text-end">
+          <%= form.submit "提交留言", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <!-- 留言列表 -->
+  <% if @comments.any? %>
+    <div class="list-group">
+      <% @comments.each do |comment| %>
+        <div class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <p class="mb-1"><%= comment.content %></p>
+
+            <% if session[:admin] == true %>
+              <%= link_to '删除', comment_path(comment), method: :delete,
+                    data: { confirm: '确定要删除这条留言吗？' },
+                    class: 'btn btn-sm btn-outline-danger' %>
+            <% end %>
+          </div>
+          <small class="text-muted">🕒 发表于 <%= l(comment.created_at, format: :long) %>（东京时间）</small>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <p class="text-muted text-center">还没有人留言，快来留下第一条吧！</p>
+  <% end %>
+</div>
+
