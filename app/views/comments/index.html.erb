@@ -17,9 +17,24 @@
     <div class="alert alert-danger"><%= flash[:alert] %></div>
   <% end %>
 
+
+
+
   <!-- 留言表单 -->
   <div class="card mb-4 shadow-sm">
     <div class="card-body">
+
+      <% if @comment.errors.any? %>
+        <div class="alert alert-danger">
+          <h5>⚠️ 发现以下问题：</h5>
+          <ul>
+            <% @comment.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
       <%= form_with(model: @comment, local: true) do |form| %>
         <div class="mb-3">
           <%= form.text_area :content, class: "form-control", placeholder: "请输入你的留言...", rows: 3 %>
@@ -49,6 +64,13 @@
         </div>
       <% end %>
     </div>
+
+    <!-- ✅ 分页按钮插入在这里！ -->
+    <div class="mt-4 text-center">
+      <%= paginate @comments %>
+
+    </div>
+
   <% else %>
     <p class="text-muted text-center">还没有人留言，快来留下第一条吧！</p>
   <% end %>

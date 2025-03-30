@@ -1,16 +1,17 @@
 class CommentsController < ApplicationController
   def index
-    @comments = Comment.order(created_at: :desc)
     @comment = Comment.new
+    @comments = Comment.order(created_at: :desc).page(params[:page]).per(25)  # 每页5条
   end
 
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to comments_path, notice: "コメントが投稿されました。"
+      redirect_to comments_path, notice: "评论成功！"
     else
-      @comments = Comment.order(created_at: :desc)
-      render :index, alert: "コメントを投稿できませんでした。"
+      @comments = Comment.order(created_at: :desc).page(params[:page]).per(25)
+      flash.now[:alert] = "评论失败。"
+      render :index
     end
   end
 
