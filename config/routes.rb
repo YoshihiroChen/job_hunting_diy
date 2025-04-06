@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+ 
   get '/admin/login', to: 'admin_sessions#new'
   post '/admin/login', to: 'admin_sessions#create'
   delete '/admin/logout', to: 'admin_sessions#destroy'
@@ -43,6 +44,15 @@ Rails.application.routes.draw do
   get 'consult_field/it_consult', to: 'consult_field#it_consult'
   get 'consult_field/personnel_consult', to: 'consult_field#personnel_consult'
   get 'consult_field/finance_consult', to: 'consult_field#finance_consult'
+  get 'consult_field/risk_consult', to: 'consult_field#risk_consult'
+
+  get 'insurance_field/index', to: 'insurance_field#index'
+  get 'insurance_field/damage_insurance', to: 'insurance_field#damage_insurance'
+  get 'insurance_field/life_insurance', to: 'insurance_field#life_insurance'
+
+  get 'syosya_field/index', to: 'syosya_field#index'
+  get 'syosya_field/sougou_syosya', to: 'syosya_field#sougou_syosya'
+  get 'syosya_field/senmon_syosya', to: 'syosya_field#senmon_syosya'
 
   get 'questions/index', to: 'questions#index'
   get 'questions/mathematics', to: 'questions#mathematics'

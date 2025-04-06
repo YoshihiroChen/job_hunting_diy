@@ -1,0 +1,2 @@
+module SyosyaFieldHelper
+end

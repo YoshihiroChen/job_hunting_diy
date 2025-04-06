@@ -1,0 +1,2 @@
+module InsuranceFieldHelper
+end

@@ -1,0 +1,119 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本保险业界分析</h1>
+  
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+        <%= link_to '损害保险', insurance_field_damage_insurance_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '生命保险', insurance_field_life_insurance_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+    
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+
+          <h3 class="mb-4">行业概况</h3>
+          <p>日本的保险行业可分为<strong>生命保险（生命保険）</strong>和<strong>非生命保险（損害保険）</strong>两个大类：</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="table-light">
+                <tr>
+                  <th>类型</th>
+                  <th>内容</th>
+                  <th>主要公司</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>生命保险</td>
+                  <td>主要提供人寿、医疗、年金等保障</td>
+                  <td>日本生命（Nippon Life）、第一生命（Dai-ichi Life）、明治安田生命、住友生命</td>
+                </tr>
+                <tr>
+                  <td>非生命保险</td>
+                  <td>提供车险、火灾险、地震险、旅游险等</td>
+                  <td>东京海上日动、SOMPO、三井住友海上（MS&AD）</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="mt-5 mb-4">生命保険 vs 損害保険 的深入比较</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="table-light">
+                <tr>
+                  <th>项目</th>
+                  <th>生命保険（人寿保险）</th>
+                  <th>損害保険（财产/非寿险）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>保障对象</td><td><strong>人的生命或身体</strong></td><td><strong>财产、责任或偶发事件</strong></td></tr>
+                <tr><td>目的</td><td>长期保障，为将来的不确定事件提供经济支持（死亡、疾病、老后）</td><td>短期保障，补偿突发事故造成的经济损失（火灾、车祸、灾害等）</td></tr>
+                <tr><td>给付方式</td><td>被保人死亡或特定条件满足后一次性/分期给付保险金</td><td>事故发生后根据损失程度实际赔偿</td></tr>
+                <tr><td>契约期间</td><td>多为<strong>中长期</strong>（10年～终身）</td><td>多为<strong>短期</strong>（1年更新型居多）</td></tr>
+                <tr><td>保费计算</td><td>依据被保人的<strong>性别、年龄、健康状态、职业等</strong></td><td>依据<strong>保险标的的价值、使用频度、所在地风险等</strong></td></tr>
+                <tr><td>代表商品</td><td>定期保険、終身保険、医療保険、がん保険、個人年金保険</td><td>自動車保険、火災保険、旅行保険、地震保険、賠償責任保険</td></tr>
+                <tr><td>赔付原则</td><td><strong>契约型赔偿</strong>（保额写明，无关实际损失）</td><td><strong>实际损失赔偿原则</strong>（按损失金额上限赔付）</td></tr>
+                <tr><td>精算师角色</td><td>需要大量使用<strong>生命表、死亡率、疾病率</strong></td><td>注重<strong>事故率、自然灾害统计、赔偿模型</strong></td></tr>
+                <tr><td>代表公司</td><td>日本生命、第一生命、住友生命、明治安田生命</td><td>东京海上、三井住友海上、SOMPO</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-4">举例说明：</h4>
+          <ul>
+            <li><strong>生命保険的例子：</strong>你购买一份终身保险，保额为1000万円。如果你不幸在契约期间内去世，你的家属会拿到这1000万円的保险金，不管你的实际医疗支出是多少。</li>
+            <li><strong>損害保険的例子：</strong>你买了房屋火灾险。如果房屋被火灾烧毁了，根据评估你损失了700万円，那保险公司赔偿的就是这700万円，而不是事前写死的保额。</li>
+          </ul>
+
+          <h4 class="mt-4">市场动态比较：</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="table-light">
+                <tr>
+                  <th>项目</th>
+                  <th>生命保険</th>
+                  <th>損害保険</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>市场稳定性</td><td>因为契约长期，稳定性高</td><td>更受自然灾害、经济波动影响</td></tr>
+                <tr><td>技术创新</td><td>数字化销售、在线医疗问诊结合等</td><td>与自动驾驶、气候风险建模结合较多</td></tr>
+                <tr><td>国际扩展</td><td>向亚洲国家提供养老保障产品</td><td>出口保险、海运险等在国际贸易中活跃</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-4">对求职者的启示：</h4>
+          <ul>
+            <li><strong>生命保险公司：</strong>
+              <ul>
+                <li>注重与人沟通、建立长期信赖（BtoC强）</li>
+                <li>精算/企划职位多，需要数据处理与逻辑思维</li>
+                <li>对“社会保障的补充角色”有高度认同感</li>
+              </ul>
+            </li>
+            <li><strong>损害保险公司：</strong>
+              <ul>
+                <li>更偏“风险管理+金融工具”型，有“保险×科技”发展空间</li>
+                <li>工程/数据背景、分析能力强者有优势（尤其是灾害模型）</li>
+                <li>面向法人（BtoB）业务比重较高，例如企业综合保険</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+    
+  </div> <!-- End row -->
+</div>

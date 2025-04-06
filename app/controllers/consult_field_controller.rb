@@ -13,4 +13,7 @@ class ConsultFieldController < ApplicationController
 
   def finance_consult
   end
+
+  def risk_consult
+  end
 end
