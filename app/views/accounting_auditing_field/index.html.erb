@@ -1,0 +1,172 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本会计&审计业界分析</h1>
+  
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+        <%= link_to '会计', accounting_auditing_field_accounting_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '审计', accounting_auditing_field_auditing_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+    
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+
+          <!-- 卡片1：会计和审计的区别 -->
+          <div class="card border rounded-4 shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="card-title mb-4">会计和审计有什么区别？</h2>
+
+              <h4>基本定义</h4>
+              <ul>
+                <li><strong>会计：</strong> 记录、分类和报告企业的财务信息，用于内部管理和对外披露。</li>
+                <li><strong>审计：</strong> 独立第三方对企业财务报表进行检查与评价，判断其是否真实、合法、可信。</li>
+              </ul>
+
+              <h4 class="mt-4">工作目的与内容对比</h4>
+              <table class="table table-bordered">
+                <thead class="table-light">
+                  <tr>
+                    <th>项目</th>
+                    <th>会计</th>
+                    <th>审计</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>主要目的</td>
+                    <td>提供财务信息</td>
+                    <td>验证信息的真实性与合规性</td>
+                  </tr>
+                  <tr>
+                    <td>工作内容</td>
+                    <td>记账、出报表</td>
+                    <td>检查凭证、出审计报告</td>
+                  </tr>
+                  <tr>
+                    <td>工作身份</td>
+                    <td>公司内部</td>
+                    <td>通常为独立的第三方</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <!-- 卡片3：監査法人 vs 会計事務所 -->
+          <div class="card border rounded-4 shadow-sm mb-4">
+            <div class="card-body">
+              <h2 class="card-title mb-4">監査法人和会計事務所有什么区别？</h2>
+
+              <table class="table table-bordered">
+                <thead class="table-light">
+                  <tr>
+                    <th>项目</th>
+                    <th>會計事務所</th>
+                    <th>監査法人</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>主要服务对象</td>
+                    <td>中小企业、个体户</td>
+                    <td>上市公司、大企业</td>
+                  </tr>
+                  <tr>
+                    <td>业务范围</td>
+                    <td>记账、报税、创立咨询</td>
+                    <td>法定审计、IPO支援</td>
+                  </tr>
+                  <tr>
+                    <td>组织规模</td>
+                    <td>几人到几十人</td>
+                    <td>上百人到上千人</td>
+                  </tr>
+                  <tr>
+                    <td>是否具备法定审计资格</td>
+                    <td>通常没有</td>
+                    <td>有（必须由CPA设立）</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>简而言之：<strong>監査法人专注于法定审计</strong>，<strong>会計事務所更关注日常账务与税务支援</strong>。</p>
+            </div>
+          </div>
+
+          <!-- 卡片4：法定审计和其他审计的区别 -->
+          <div class="card border rounded-4 shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title mb-4">什么是法定审计？还有其他审计吗？</h2>
+
+              <h4>法定审计的定义</h4>
+              <p>法定审计是由法律规定<strong>必须接受</strong>的审计，一般适用于上市公司、大企业和金融机构。</p>
+
+              <h4 class="mt-4">法定审计适用对象</h4>
+              <ul>
+                <li>所有上市公司</li>
+                <li>大会社（资本金5亿日元或负债200亿以上）</li>
+                <li>银行、保险等金融机构</li>
+              </ul>
+
+              <h4 class="mt-4">非法定（任意）审计的种类</h4>
+              <ul>
+                <li><strong>任意审计：</strong> 中小企业自愿请审计师核查财务</li>
+                <li><strong>内部审计：</strong> 公司内部检查制度和操作合规性</li>
+                <li><strong>税务审查：</strong> 针对税务申报的复核</li>
+                <li><strong>特殊目的审计：</strong> 如并购前尽调、企业重整时资产审计</li>
+              </ul>
+
+              <h4 class="mt-4">总结对比</h4>
+              <table class="table table-bordered">
+                <thead class="table-light">
+                  <tr>
+                    <th>项目</th>
+                    <th>法定审计</th>
+                    <th>其他审计</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>是否强制</td>
+                    <td>是</td>
+                    <td>否</td>
+                  </tr>
+                  <tr>
+                    <td>法律依据</td>
+                    <td>有</td>
+                    <td>无</td>
+                  </tr>
+                  <tr>
+                    <td>执行机构</td>
+                    <td>監査法人、CPA</td>
+                    <td>CPA、税理士、咨询公司</td>
+                  </tr>
+                  <tr>
+                    <td>常见用途</td>
+                    <td>对外公开、监管要求</td>
+                    <td>内部改善、融资用途</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    
+  </div> <!-- End row -->
+
+  <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+</div>

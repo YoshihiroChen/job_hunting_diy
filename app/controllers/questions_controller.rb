@@ -25,4 +25,7 @@ class QuestionsController < ApplicationController
 
   def intern
   end
+
+  def arts_science_difference
+  end
 end

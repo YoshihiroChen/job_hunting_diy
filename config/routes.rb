@@ -54,6 +54,10 @@ Rails.application.routes.draw do
   get 'syosya_field/sougou_syosya', to: 'syosya_field#sougou_syosya'
   get 'syosya_field/senmon_syosya', to: 'syosya_field#senmon_syosya'
 
+  get 'accounting_auditing_field/index', to: 'accounting_auditing_field#index'
+  get 'accounting_auditing_field/accounting', to: 'accounting_auditing_field#accounting'
+  get 'accounting_auditing_field/auditing', to: 'accounting_auditing_field#auditing'
+
   get 'questions/index', to: 'questions#index'
   get 'questions/mathematics', to: 'questions#mathematics'
   get 'questions/salaries', to: 'questions#salaries'
@@ -63,6 +67,7 @@ Rails.application.routes.draw do
   get 'questions/start_time', to: 'questions#start_time'
   get 'questions/japanese', to: 'questions#japanese'
   get 'questions/intern', to: 'questions#intern'
+  get 'questions/arts_science_difference', to: 'questions#arts_science_difference'
 
   get 'job_company', to: 'job_company#index'
 
