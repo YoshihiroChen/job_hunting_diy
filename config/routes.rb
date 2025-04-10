@@ -64,7 +64,6 @@ Rails.application.routes.draw do
   get 'bank_field/investment_bank', to: 'bank_field#investment_bank'
   get 'bank_field/trust_bank', to: 'bank_field#trust_bank'
   get 'bank_field/retail_bank', to: 'bank_field#retail_bank'
-  get 'bank_field/internet_bank', to: 'bank_field#internet_bank'
   get 'bank_field/other_bank', to: 'bank_field#other_bank'
 
   get 'questions/index', to: 'questions#index'

@@ -14,9 +14,6 @@ class BankFieldController < ApplicationController
   def retail_bank
   end
 
-  def internet_bank
-  end
-
   def other_bank
   end
 end

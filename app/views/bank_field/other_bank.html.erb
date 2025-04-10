@@ -1,2 +1,184 @@
-<h1>BankField#other_bank</h1>
-<p>Find me in app/views/bank_field/other_bank.html.erb</p>
+<div class="container mt-4">
+
+  <h1 class="text-center mb-4">便利店银行</h1>
+
+  <!-- 卡片：便利店系银行的定义 -->
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h4 class="card-title mb-3">便利店系银行的定义</h4>
+      <p>这些银行是由便利店集团主导出资设立或合作运营的，以 ATM 服务为核心的银行或银行型服务机构。虽然它们在法律上是银行法人，但业务重点与传统银行完全不同。</p>
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>银行名称</th>
+            <th>类型</th>
+            <th>是否拥有银行牌照</th>
+            <th>母公司</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>セブン銀行</td>
+            <td>独立银行法人</td>
+            <td>是</td>
+            <td>Seven & i Holdings</td>
+          </tr>
+          <tr>
+            <td>ローソン銀行</td>
+            <td>独立银行法人</td>
+            <td>是</td>
+            <td>Lawson株式会社</td>
+          </tr>
+          <tr>
+            <td>ファミリーマート（ATM服务）</td>
+            <td>合作型服务</td>
+            <td>否</td>
+            <td>与ゆうちょ银行等合作</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 卡片：便利店银行的业务逻辑 -->
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h4 class="card-title mb-3">便利店银行的业务逻辑</h4>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th>核心业务</th>
+            <td>ATM使用、转账、代收缴费、后台清算服务</td>
+          </tr>
+          <tr>
+            <th>服务对象</th>
+            <td>他行客户为主</td>
+          </tr>
+          <tr>
+            <th>盈利来源</th>
+            <td>手续费收入（ATM使用、转账、代收费用）</td>
+          </tr>
+          <tr>
+            <th>运营方式</th>
+            <td>ATM铺设于便利店店内，系统集中管理</td>
+          </tr>
+          <tr>
+            <th>贷款服务</th>
+            <td>原则上无贷款，仅极少量测试型服务</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 卡片：是否为商业银行 -->
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h4 class="card-title mb-3">便利店银行是否属于商业银行？</h4>
+      <p>虽然它们在法律上是银行，但与传统商业银行存在本质差异：</p>
+      <ul>
+        <li>不以贷款、理财、融资为主</li>
+        <li>不设支店、不建立客户理财关系</li>
+        <li>主要功能是提供金融基础设施服务</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 卡片：法人结构与独立性 -->
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h4 class="card-title mb-3">是否有独立公司与员工？</h4>
+      <p>是的，セブン銀行与ローソン銀行都是独立法人，拥有完整的组织架构与职能部门，包括：</p>
+      <ul>
+        <li>总部</li>
+        <li>ATM网络部</li>
+        <li>系统开发部</li>
+        <li>法务部与监查部</li>
+        <li>营业企划与经营管理部</li>
+      </ul>
+      <p>它们不是便利店内部的部门，而是独立运营的“银行公司”。</p>
+    </div>
+  </div>
+
+  <!-- 卡片：所属分类与定位 -->
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h4 class="card-title mb-3">它们属于哪一类银行？</h4>
+      <p>在日本银行体系分类中，这些便利店银行最适合归入：</p>
+      <p><strong>专门银行（Specialized Banks） → 结算・ATM特化型银行</strong></p>
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>分类</th>
+            <th>主要业务内容</th>
+            <th>代表机构</th>
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>结算・ATM特化型银行</td>
+            <td>跨行ATM服务、转账代行、缴费、清算</td>
+            <td>セブン銀行、ローソン銀行</td>
+            <td>不提供传统存贷服务</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 卡片：与其他银行类型的比较 -->
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h4 class="card-title mb-3">与网络银行和商业银行的比较</h4>
+      <table class="table table-bordered align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>比较项目</th>
+            <th>网络银行</th>
+            <th>便利店银行</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>是否提供贷款</td>
+            <td>是</td>
+            <td>否</td>
+          </tr>
+          <tr>
+            <td>服务对象</td>
+            <td>自家用户</td>
+            <td>他行用户</td>
+          </tr>
+          <tr>
+            <td>盈利结构</td>
+            <td>利息、佣金、账户手续费</td>
+            <td>ATM手续费、结算服务收入</td>
+          </tr>
+          <tr>
+            <td>是否有支店</td>
+            <td>无</td>
+            <td>无</td>
+          </tr>
+          <tr>
+            <td>业务定位</td>
+            <td>平台型银行</td>
+            <td>金融基础设施提供方</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 卡片：总结 -->
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h4 class="card-title mb-3">总结</h4>
+      <p>セブン銀行与ローソン銀行等便利店系银行，在法律上是持牌银行，但其核心功能是“ATM网点服务与金融基础设施接入”。不提供存款利差型业务，不设支店，不售卖理财产品，属于高度功能特化型银行，与传统银行、网络银行有本质差别。</p>
+    </div>
+  </div>
+
+
+
+
+</div>
