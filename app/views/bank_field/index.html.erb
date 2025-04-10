@@ -1,0 +1,95 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本咨询业界分析</h1>
+  
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+        <%= link_to '商业银行', bank_field_commercial_bank_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '投资银行', bank_field_investment_bank_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '信托银行', bank_field_trust_bank_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '零售银行', bank_field_retail_bank_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '网络银行', bank_field_internet_bank_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '其它银行', bank_field_other_bank_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+    
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="mb-4">日本银行的业务种类划分</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="table-light">
+                <tr>
+                  <th>分类</th>
+                  <th>主要业务内容</th>
+                  <th>代表机构</th>
+                  <th>备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. 商业银行（Commercial Banks）</strong></td>
+                  <td>存款、贷款、支付、外汇、企业融资等传统银行业务</td>
+                  <td>三菱UFJ银行、三井住友银行、みずほ银行</td>
+                  <td>面向个人与企业</td>
+                </tr>
+                <tr>
+                  <td><strong>2. 投资银行（Investment Banking）</strong></td>
+                  <td>IPO承销、债券发行、M&A顾问、结构化金融商品、市场交易等</td>
+                  <td>野村证券、SMBC日兴证券、大和证券、高盛证券</td>
+                  <td>在日本以“证券公司”形式存在</td>
+                </tr>
+                <tr>
+                  <td><strong>3. 信托银行（Trust Banks）</strong></td>
+                  <td>信托资产管理、遗产信托、企业年金管理、不动产管理等</td>
+                  <td>三菱UFJ信託銀行、三井住友信託銀行、みずほ信託銀行</td>
+                  <td>特化于“资产托管”</td>
+                </tr>
+                <tr>
+                  <td><strong>4. 零售银行（Retail Banks）</strong></td>
+                  <td>面向个人客户的储蓄、贷款、信用卡、住宅贷款服务等</td>
+                  <td>新生银行、イオン銀行、楽天銀行</td>
+                  <td>有时也叫“个金业务”银行</td>
+                </tr>
+                <tr>
+                  <td><strong>5. 网络银行（Internet Banks）</strong></td>
+                  <td>无实体店，仅通过网络提供银行服务</td>
+                  <td>住信SBIネット銀行、楽天銀行、PayPay銀行</td>
+                  <td>通常与IT企业合作</td>
+                </tr>
+                <tr>
+                  <td><strong>6. 外资银行（Foreign Banks）</strong></td>
+                  <td>外国资本设立的银行，在日提供国际金融服务</td>
+                  <td>HSBC、花旗银行、渣打银行、德意志银行</td>
+                  <td>多聚焦于企业客户和富裕层</td>
+                </tr>
+                <tr>
+                  <td><strong>7. 政策性银行（Policy-based Banks）</strong></td>
+                  <td>政府支持的融资与开发银行，服务中小企业、基础设施、农业等</td>
+                  <td>日本政策投资银行（DBJ）、日本政策金融公庫</td>
+                  <td>不以盈利为目的</td>
+                </tr>
+                <tr>
+                  <td><strong>8. 专门银行（Specialized Banks）</strong></td>
+                  <td>聚焦特定金融领域如住房融资、汽车贷款、教育贷款等</td>
+                  <td>住宅金融支援機構、ORIX银行</td>
+                  <td>多为特定业务型银行或子公司</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 返回按钮 -->
+    <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+  </div> <!-- End row -->
+</div>
+

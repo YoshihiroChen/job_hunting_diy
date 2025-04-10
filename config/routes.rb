@@ -58,6 +58,15 @@ Rails.application.routes.draw do
   get 'accounting_auditing_field/accounting', to: 'accounting_auditing_field#accounting'
   get 'accounting_auditing_field/auditing', to: 'accounting_auditing_field#auditing'
 
+
+  get 'bank_field/index', to: 'bank_field#index'
+  get 'bank_field/commercial_bank', to: 'bank_field#commercial_bank'
+  get 'bank_field/investment_bank', to: 'bank_field#investment_bank'
+  get 'bank_field/trust_bank', to: 'bank_field#trust_bank'
+  get 'bank_field/retail_bank', to: 'bank_field#retail_bank'
+  get 'bank_field/internet_bank', to: 'bank_field#internet_bank'
+  get 'bank_field/other_bank', to: 'bank_field#other_bank'
+
   get 'questions/index', to: 'questions#index'
   get 'questions/mathematics', to: 'questions#mathematics'
   get 'questions/salaries', to: 'questions#salaries'

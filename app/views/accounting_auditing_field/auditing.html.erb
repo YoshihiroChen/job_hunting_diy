@@ -8,7 +8,7 @@
   <!-- 卡片：日本审计行业的业务逻辑 -->
   <div class="card border rounded-4 shadow-sm mb-4">
     <div class="card-body">
-      <h2 class="card-title mb-4">日本审计行业的业务逻辑</h2>
+      <h2 class="card-title mb-4">日本审计行业的业务逻辑及职种</h2>
 
       <p>审计工作的目的在于判断企业的财务报表是否真实、公正地反映了其财务状况，并增强资本市场的信赖度。</p>
 
@@ -49,77 +49,174 @@
           </tr>
         </tbody>
       </table>
-    </div>
-  </div>
 
-  <!-- 卡片：日本审计行业的主要职种（按功能分类） -->
-  <div class="card border rounded-4 shadow-sm mb-4">
-    <div class="card-body">
-      <h2 class="card-title mb-4">日本审计行业的主要职种（按功能分类）</h2>
-
-      <p>以下是审计项目中不同的“工作功能”划分，不按职级区分，而是按实际工作内容分类。</p>
-
+      <h4 class="mt-5">现实中的审计职种（仅限从事审计业务）</h4>
       <table class="table table-bordered">
         <thead class="table-light">
           <tr>
-            <th>职种功能</th>
+            <th>职种名称</th>
             <th>日文名称</th>
+            <th>所属组织</th>
             <th>主要任务</th>
+            <th>是否为CPA路线</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>审计执行者</td>
-            <td>監査実施者</td>
-            <td>现场查账、抽样核对、底稿制作</td>
+            <td>审计人员</td>
+            <td>監査職（アシュアランス部門）</td>
+            <td>監査法人</td>
+            <td>法定审计、内部控制审计的执行与判断</td>
+            <td>是</td>
           </tr>
           <tr>
-            <td>内部控制分析专员</td>
-            <td>内部統制アナリスト</td>
-            <td>绘制业务流程图、评估制度漏洞</td>
+            <td>IT审计人员</td>
+            <td>IT監査職</td>
+            <td>監査法人（IT部門）</td>
+            <td>信息系统相关控制的审查与测试</td>
+            <td>否</td>
           </tr>
           <tr>
-            <td>会计处理判断</td>
-            <td>会計論点担当</td>
-            <td>判断复杂项目的会计处理方式（如IFRS）</td>
+            <td>审计品质管理人员</td>
+            <td>品質管理職</td>
+            <td>監査法人（品質管理部門）</td>
+            <td>对底稿和报告进行复核与质量控制</td>
+            <td>是</td>
           </tr>
           <tr>
-            <td>分析程序设计</td>
-            <td>分析的手続担当</td>
-            <td>编制利润率、KPI、趋势分析模型</td>
+            <td>会计制度支援人员</td>
+            <td>会計基準支援職</td>
+            <td>監査法人（専門部門）</td>
+            <td>为审计项目提供制度判断支持</td>
+            <td>是</td>
           </tr>
           <tr>
-            <td>文书整理与报告撰写</td>
-            <td>監査調書・意見草案</td>
-            <td>总结审计发现、拟定审计报告</td>
+            <td>海外集团审计协调</td>
+            <td>海外監査連携担当</td>
+            <td>監査法人</td>
+            <td>与海外CPA沟通、协调集团审计</td>
+            <td>是</td>
           </tr>
           <tr>
-            <td>品质管理与复核</td>
-            <td>品質レビュー担当</td>
-            <td>二重检查他人审计结果、控制审计质量</td>
+            <td>审计助理</td>
+            <td>監査アシスタント</td>
+            <td>監査法人</td>
+            <td>辅助底稿准备、证据收集、数据录入等事务性工作</td>
+            <td>否</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 class="mt-5">审计流程 × 职种参与表</h4>
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>审计流程阶段</th>
+            <th>日文阶段名</th>
+            <th>参与职种</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>① 事前规划</td>
+            <td>監査計画</td>
+            <td>監査職、IT監査職、品質管理職、会計基準支援職</td>
+            <td>制定审计计划、识别重点项目、评估会计议题和IT风险</td>
           </tr>
           <tr>
-            <td>制度研究与会计技术支援</td>
-            <td>会計基準チーム</td>
-            <td>研究制度变更、提供会计意见备忘录</td>
+            <td>② 内部控制理解</td>
+            <td>内部統制の把握</td>
+            <td>監査職、IT監査職、品質管理職</td>
+            <td>了解业务流程、识别控制点、分析控制设计有效性</td>
           </tr>
           <tr>
-            <td>IT系统控制审计</td>
-            <td>システム監査担当</td>
-            <td>审查系统权限设置、日志记录等</td>
+            <td>③ 实地审查</td>
+            <td>実査・証憑突合</td>
+            <td>監査職、監査アシスタント、IT監査職</td>
+            <td>实地查账、验证证据、辅助资料处理</td>
           </tr>
           <tr>
-            <td>跨国审计协调</td>
-            <td>海外監査対応</td>
-            <td>沟通海外CPA、集团审计指示管理</td>
+            <td>④ 分析程序</td>
+            <td>分析的手続</td>
+            <td>監査職、IT監査職</td>
+            <td>财务比率、趋势波动等分析测试</td>
+          </tr>
+          <tr>
+            <td>⑤ 出具报告</td>
+            <td>監査報告書作成</td>
+            <td>監査職、品質管理職、会計基準支援職</td>
+            <td>撰写报告、汇总审计结论、复核并完成签发流程</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  
-          
+
+  <!-- 卡片：文系学生在审计职种中的选考可能性 -->
+  <div class="card border rounded-4 shadow-sm mb-4">
+    <div class="card-body">
+      <h2 class="card-title mb-4">文系学生在审计职种中的选考可能性</h2>
+
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>职种名称</th>
+            <th>选考可能性（文系）</th>
+            <th>进入建议</th>
+            <th>原因分析</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>① 审计人员（監査職）</strong></td>
+            <td>★★★★★（非常高）</td>
+            <td>强烈推荐</td>
+            <td>这是<strong>文系学生进入审计行业的主力通道</strong>。日本四大每年新卒大量录取经济、商学、法学等文系学生，只要<strong>有志考CPA</strong>，就有机会录取。实际新卒监查人员中，文系占比非常高。</td>
+          </tr>
+          <tr>
+            <td><strong>② IT审计人员（IT監査職）</strong></td>
+            <td>★★☆☆☆（较低）</td>
+            <td>需要说明动机或补强背景</td>
+            <td>该职位倾向于<strong>情报系、理工科出身</strong>，但如果你有IT相关实习、系统知识或明确表达转型IT方向的动机，也可以尝试申请。英语或数据分析能力是加分项。</td>
+          </tr>
+          <tr>
+            <td><strong>③ 审计品质管理人员（品質管理職）</strong></td>
+            <td>★☆☆☆☆（几乎无）</td>
+            <td>不建议作为初期目标</td>
+            <td>多数为<strong>资深CPA人员转任</strong>，属于“内控最后防线”。文系新卒<strong>几乎不从这里开始入社</strong>，但你未来在监查工作积累经验后有机会转入。</td>
+          </tr>
+          <tr>
+            <td><strong>④ 会计制度支援人员（会計基準支援職）</strong></td>
+            <td>★☆☆☆☆（极低）</td>
+            <td>仅限资深人员转岗</td>
+            <td>此职种一般要求对IFRS、GAAP有深厚理解，多为<strong>高年次会计士</strong>。不适合新卒，文系学生需要<strong>几年经验后</strong>才有资格考虑。</td>
+          </tr>
+          <tr>
+            <td><strong>⑤ 海外集团审计支援人员（海外監査連携）</strong></td>
+            <td>★★★★☆（较高）</td>
+            <td>建议重点准备英语</td>
+            <td>适合<strong>语言能力出众的文系学生</strong>，尤其是英文好、有交换留学或国际交流背景的人。虽然也偏CPA路线，但语言沟通能力是关键，<strong>非理工背景不是障碍</strong>。</td>
+          </tr>
+          <tr>
+            <td><strong>⑥ 审计辅助人员（監査アシスタント）</strong></td>
+            <td>★★★★☆（较高）</td>
+            <td>可作为切入点</td>
+            <td>适合不考CPA但想从事审计事务支援工作的文系学生。属于“非专业路线”，压力较小，事务性强，可稳定就职。但晋升天花板相对低一些。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alert alert-success mt-4">
+        <p><strong>关于IT監査職。</strong></p>
+        <p>以安永的新卒招聘要求为例，专业要求写的是全学部全学科，但欢迎条件中写的是“会计系或情报系”，“日商簿记2级合格者”，“公认会计士合格者”，“基本情报处理技术者合格者”。</p>
+        <p>可以看出，虽然原则上招收全学部全学科的学生，但这个职种偏向学会计和计算机的同学。</p>
+      </div>
+    </div>
+  </div>
+
+
   <!-- 卡片2：乙方独立性与普华永道案例 -->
   <div class="card border rounded-4 shadow-sm mb-4">
     <div class="card-body">
@@ -136,47 +233,6 @@
 
       <h4 class="mt-4">普华永道造假事件</h4>
       <p>近年在中国和其他地区，普华永道卷入审计舞弊事件，暴露了“审计独立性”的脆弱性，也导致整个行业加强了制度审查。</p>
-    </div>
-  </div>
-
-  <!-- 卡片：公認会計士的工作环节 -->
-  <div class="card border rounded-4 shadow-sm mb-4">
-    <div class="card-body">
-      <h2 class="card-title mb-4">公認会計士的工作环节</h2>
-
-      <p>持有公認会計士资格的人，通常在审计流程的多个阶段中发挥关键作用，特别是在判断、风险控制和最终签署阶段。</p>
-
-      <table class="table table-bordered">
-        <thead class="table-light">
-          <tr>
-            <th>参与环节</th>
-            <th>代表任务</th>
-            <th>是否需要注册CPA</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>① 现场查账</td>
-            <td>检查凭证、库存观察、询问流程</td>
-            <td>❌ 否（CPA实习中也可参与）</td>
-          </tr>
-          <tr>
-            <td>② 会计准则判断</td>
-            <td>收入确认、租赁、资产减值等处理判断</td>
-            <td>✅ 是（通常需CPA知识体系）</td>
-          </tr>
-          <tr>
-            <td>③ 审计计划与风险评估</td>
-            <td>确定抽样策略、识别重大性项目</td>
-            <td>✅ 是（中高级审计人员负责）</td>
-          </tr>
-          <tr>
-            <td>④ 出具审计报告</td>
-            <td>最终意见审阅与签名</td>
-            <td>✅ 是（需注册CPA或合伙人）</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </div>
 
@@ -217,8 +273,53 @@
     </div>
   </div>
 
+  <!-- 卡片：日本代表性監査法人一览 -->
+  <div class="card border rounded-4 shadow-sm mb-4">
+    <div class="card-body">
+      <h2 class="card-title mb-4">日本代表性监查法人一览</h2>
+
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>法人名称</th>
+            <th>隶属集团</th>
+            <th>主要特点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>EY新日本</strong><br>（EY新日本有限責任監査法人）</td>
+            <td>EY Japan</td>
+            <td>培训制度完善、项目流程严谨、国际派遣机会丰富</td>
+          </tr>
+          <tr>
+            <td><strong>あずさ監査法人</strong><br>（KPMG Japan）</td>
+            <td>KPMG Japan</td>
+            <td>组织稳定、擅长金融审计、保守稳健的风格</td>
+          </tr>
+          <tr>
+            <td><strong>PwCあらた</strong><br>（PwCあらた有限責任監査法人）</td>
+            <td>PwC Japan</td>
+            <td>节奏快、国际化强、与咨询业务联系紧密</td>
+          </tr>
+          <tr>
+            <td><strong>トーマツ</strong><br>（有限責任監査法人トーマツ）</td>
+            <td>Deloitte Japan</td>
+            <td>教育资源丰富、培训系统强、内部流动性高</td>
+          </tr>
+          <tr>
+            <td><strong>仰星監査法人</strong></td>
+            <td>日本独立法人</td>
+            <td>氛围亲切、任务弹性大、重视工作生活平衡</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
   <div class="text-center mt-4">
-    <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    <%= link_to '返回会计&审计分析首页', accounting_auditing_field_index_path, class: 'btn btn-secondary' %>
   </div>
 
 </div>
