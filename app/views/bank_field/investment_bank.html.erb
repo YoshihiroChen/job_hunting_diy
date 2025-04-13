@@ -361,7 +361,7 @@
       <h4 class="card-title">1. 投资银行的定义</h4>
       <p>投资银行（Investment Bank）是指专注于资本市场相关业务的金融机构，主要从事以下业务：</p>
       <ul>
-        <li>IPO（首次公开募股）承销</li>
+        <li><%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（首次公开募股）承销</li>
         <li>债券发行</li>
         <li>并购（M&A）顾问</li>
         <li>金融商品（如衍生品、结构化金融产品）设计与销售</li>
