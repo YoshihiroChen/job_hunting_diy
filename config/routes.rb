@@ -66,6 +66,13 @@ Rails.application.routes.draw do
   get 'bank_field/retail_bank', to: 'bank_field#retail_bank'
   get 'bank_field/other_bank', to: 'bank_field#other_bank'
 
+  get 'house_field/index', to: 'house_field#index'
+  get 'house_field/developer', to: 'house_field#developer'
+  get 'house_field/agent', to: 'house_field#agent'
+  get 'house_field/management', to: 'house_field#management'
+  get 'house_field/advisor', to: 'house_field#advisor'
+  get 'house_field/rent', to: 'house_field#rent'
+
   get 'questions/index', to: 'questions#index'
   get 'questions/mathematics', to: 'questions#mathematics'
   get 'questions/salaries', to: 'questions#salaries'

@@ -1,0 +1,2 @@
+module HouseFieldHelper
+end

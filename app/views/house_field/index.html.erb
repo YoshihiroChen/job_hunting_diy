@@ -1,0 +1,67 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本不动产业界分析</h1>
+
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+        <%= link_to '开发商', house_field_developer_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '中介', house_field_agent_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '物业', house_field_management_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '资产管理', house_field_advisor_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '租赁', house_field_rent_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="mb-4">五大领域分类与代表性企业</h2>
+
+          <p><strong>日本的不动产业界主要可以分为五类公司：开发商，中介，物业管理，资产管理和租赁运营。</strong></p>
+
+          <table class="table table-bordered mb-4">
+            <thead class="table-light">
+              <tr><th>领域</th><th>代表性企业</th><th>特征</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>开发商（デベロッパー）</td>
+                <td>三井不動産、三菱地所、住友不動産、野村不動産、東京建物</td>
+                <td>大型综合型开发商，负责从土地取得到建设销售全过程</td>
+              </tr>
+              <tr>
+                <td>中介（不動産仲介）</td>
+                <td>東急リバブル、住友不動産販売、三井不動産リアルティ、野村の仲介＋、ミニミニ</td>
+                <td>连接买卖双方，处理住宅与租赁交易，服务网络广</td>
+              </tr>
+              <tr>
+                <td>物业管理（プロパティマネジメント）</td>
+                <td>大和ライフネクスト、東急コミュニティー、野村不動産パートナーズ、日本管財</td>
+                <td>维护住宅或办公楼设施与服务，确保租户满意度</td>
+              </tr>
+              <tr>
+                <td>资产管理（アセットマネジメント）</td>
+                <td>三井不動産投資顧問、野村不動産投資顧問、日本ビルファンド、KJRマネジメント</td>
+                <td>运营REIT基金及私募资产，对接机构投资者</td>
+              </tr>
+              <tr>
+                <td>租赁运营（オフィス/商業施設）</td>
+                <td>三井不動産、PARCO、イオンモール、三菱地所プロパティマネジメント</td>
+                <td>长期保有写字楼或商场，重视稳定收益和城市更新</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 返回按钮 -->
+    <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+  </div> <!-- End row -->
+</div>
