@@ -1,0 +1,96 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">BCP（业务持续计划）基础知识指南</h1>
+
+  <!-- 什么是BCP -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是BCP？</h2>
+
+          <p>BCP 是 “Business Continuity Plan” 的缩写，中文称为“业务持续计划”或“企业经营持续对策”。</p>
+
+          <p>它是指企业为了应对突发事件（如地震、火灾、瘟疫、系统瘫痪、网络攻击等）而提前制定的策略与行动计划，确保在危机发生时仍能维持核心业务的最低运行。</p>
+
+          <p>BCP 是现代企业风险管理与治理的一部分，尤其在日本这种自然灾害频发的国家中被广泛重视。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BCP的基本内容与结构 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">BCP通常包含哪些内容？</h2>
+
+          <ul>
+            <li><strong>风险识别与评估：</strong> 分析企业面临的可能灾害或危机种类及影响范围</li>
+            <li><strong>核心业务识别：</strong> 明确哪些业务是“不能中断”的优先维持对象</li>
+            <li><strong>资源备份与替代方案：</strong> 包括远程办公系统、备援服务器、人力替代计划等</li>
+            <li><strong>紧急联络体制：</strong> 建立灾害时的员工联络、客户通报、上级汇报机制</li>
+            <li><strong>恢复目标时间（RTO）：</strong> 设定各业务恢复的时间目标与优先级</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BCP的实施流程与周期 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">BCP的建立与维护流程</h2>
+
+          <ol>
+            <li>制定方针与目标</li>
+            <li>分析风险与业务影响（BIA）</li>
+            <li>编写BCP文件，设定责任人与联络体制</li>
+            <li>定期进行演练（模拟灾害情境）</li>
+            <li>根据实际情况定期修正计划内容</li>
+          </ol>
+
+          <p class="mt-3">BCP不是“一次性计划”，而是需要随环境变化不断更新的“经营策略之一”。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BCP与信息系统的关系 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">BCP与IT系统的关联</h2>
+
+          <ul>
+            <li>是否有灾备系统（例如云端自动备份、镜像服务器）</li>
+            <li>是否支持远程办公与VPN接入</li>
+            <li>是否具备通信中断后的替代方案（卫星电话、外部邮件服务等）</li>
+            <li>关键系统是否有恢复目标时间（RTO）与恢复点目标（RPO）</li>
+          </ul>
+
+          <p>现代BCP往往需要IT部门与业务部门协同推进。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+     <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

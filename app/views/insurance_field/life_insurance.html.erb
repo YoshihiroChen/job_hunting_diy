@@ -22,12 +22,12 @@
       <div class="card h-100">
         <div class="card-body">
           <h5 class="card-title">二、收入模型：长期契约与复利运用</h5>
-          <p class="card-text">生命保险通常为长期契约（10年〜终身），收入结构主要依赖于持续收取的保费与稳定的资产运用收益。保险公司需管理长期资产与负债的匹配（ALM）。</p>
+          <p class="card-text">生命保险通常为长期契约（10年〜终身），收入结构主要依赖于持续收取的保费与稳定的资产运用收益。保险公司需管理长期资产与负债的匹配<%= link_to "(ALM)", wiki_alm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>。</p>
           <h6>相关职种：资产运用 / 财务企划（資産運用・財務企画）</h6>
           <ul>
             <li>将长期保费资金投向国债、社债、股票等稳健资产</li>
             <li>规划长期收益率并控制利率波动风险</li>
-            <li>进行资产负债匹配（ALM）管理</li>
+            <li>进行<%= link_to "资产负债匹配（ALM）", wiki_alm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>管理</li>
           </ul>
         </div>
       </div>
@@ -82,12 +82,12 @@
       <div class="card h-100">
         <div class="card-body">
           <h5 class="card-title">六、数字转型与客户体验提升</h5>
-          <p class="card-text">生命保险正借助AI与ICT推动革新，如远程健康问诊、在线投保、个性化保障推荐等。</p>
-          <h6>相关职种：系统开发 / DX企划 / 数据分析（システム開発・DX企画・データ分析）</h6>
+          <p class="card-text">生命保险正借助AI与<%= link_to "ICT", wiki_ict_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>推动革新，如远程健康问诊、在线投保、个性化保障推荐等。</p>
+          <h6>相关职种：系统开发 / <%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企划 / 数据分析（システム開発・<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企画・データ分析）</h6>
           <ul>
             <li>开发线上投保与客户管理系统</li>
             <li>运用AI推荐合适保障商品</li>
-            <li>推进RPA自动化理赔审核、客户对话机器人等</li>
+            <li>推进<%= link_to "RPA", wiki_rpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>自动化理赔审核、客户对话机器人等</li>
           </ul>
         </div>
       </div>
@@ -160,7 +160,7 @@
                 <td>IT知识、架构思维、能与业务方协作</td>
               </tr>
               <tr>
-                <td>DX企划 / 数据分析（DX企画・データ分析）</td>
+                <td><%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企划 / 数据分析（DX企画・データ分析）</td>
                 <td>推动数字化；分析客户行为数据，优化服务流程</td>
                 <td>数据感强、跨部门整合能力、对技术敏感</td>
               </tr>
@@ -224,7 +224,7 @@
                 <td>若有编程、自学经验或参加IT项目，有一定机会进入产品企划或协调职能。</td>
               </tr>
               <tr>
-                <td>DX企划 / 数据分析（DX企画・データ分析）</td>
+                <td><%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企划 / 数据分析（<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企画・データ分析）</td>
                 <td>★★★☆☆（中等偏高）</td>
                 <td>需要数字素养和分析力。文科生若有Python/SQL等基础并擅长协调，则竞争力强。</td>
               </tr>

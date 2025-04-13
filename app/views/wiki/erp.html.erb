@@ -1,0 +1,114 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">ERP（企业资源计划）基础知识指南</h1>
+
+  <!-- 什么是ERP -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是ERP？</h2>
+
+          <p>ERP 是“Enterprise Resource Planning”的缩写，中文译为“企业资源计划”。</p>
+
+          <p>它是一种将企业内部各类资源（人力、资金、物料、信息等）进行整合管理的系统工具。通过一个统一平台，ERP可以让企业实现<strong>销售、采购、库存、会计、人事、生产</strong>等核心业务的信息共享与高效协作。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ERP能做什么 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">ERP主要的功能模块</h2>
+
+          <ul>
+            <li><strong>财务会计管理：</strong> 自动生成会计凭证、财务报表</li>
+            <li><strong>采购与供应链管理：</strong> 管理供应商、采购订单、入库流程</li>
+            <li><strong>销售与库存管理：</strong> 统一跟踪商品流转与库存变化</li>
+            <li><strong>生产计划与制造：</strong> 协调原料需求、工序与产能安排</li>
+            <li><strong>人力资源管理：</strong> 工资、考勤、绩效、员工信息等集中管理</li>
+          </ul>
+
+          <p class="mt-3">这些功能通过统一系统实现自动对接，减少重复录入与信息孤岛。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ERP的好处与挑战 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">ERP的优点与引入挑战</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>信息共享</td>
+                <td>打破部门之间的信息壁垒，实现数据实时同步</td>
+              </tr>
+              <tr>
+                <td>效率提升</td>
+                <td>自动化业务流程，减少人工输入与错误</td>
+              </tr>
+              <tr>
+                <td>成本可视化</td>
+                <td>帮助企业更清晰地掌握各环节成本与盈利</td>
+              </tr>
+              <tr>
+                <td>决策支持</td>
+                <td>基于数据生成报表，辅助经营分析与决策</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="mt-3"><strong>挑战：</strong> ERP系统实施周期长，费用高，需与业务深度配合，通常需要外部顾问或系统公司协助。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 常见ERP品牌 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">常见的ERP系统品牌</h2>
+
+          <ul>
+            <li><strong>SAP：</strong> 全球最大ERP厂商，适用于大型企业</li>
+            <li><strong>Oracle ERP：</strong> 强调财务模块与全球化支持</li>
+            <li><strong>Microsoft Dynamics：</strong> 与Office等产品联动强</li>
+            <li><strong>弥生 / 奉行 / OBIC7 等：</strong> 日本本土中小企业常用ERP</li>
+            <li><strong>freee / Money Forward：</strong> 新兴云ERP，适合初创与小型企业</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

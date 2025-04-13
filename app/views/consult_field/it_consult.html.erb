@@ -147,6 +147,7 @@
 
           <div class="alert alert-info mt-4">
             <p>每项IT技术背后都需要技术、业务与管理的融合支持，咨询角色至关重要。</p>
+            <p>点击此处可查看<%= link_to "ERP系统", wiki_erp_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>，<%= link_to "CRM系统", wiki_crm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>，<%= link_to "BI", wiki_bi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>，<%= link_to "RPA", wiki_rpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等专有名词的科普。</p>
           </div>
 
         </div>
@@ -185,7 +186,7 @@
           <p class="mb-3">在IT咨询公司里，确实也有很多需要技术能力的岗位，比如：</p>
           <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
             <div class="col"><div class="border rounded-3 p-3 h-100">系统开发人员（写程序）</div></div>
-            <div class="col"><div class="border rounded-3 p-3 h-100">流程自动化工具配置（比如RPA）</div></div>
+            <div class="col"><div class="border rounded-3 p-3 h-100">流程自动化工具配置（比如<%= link_to "RPA", wiki_rpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）</div></div>
             <div class="col"><div class="border rounded-3 p-3 h-100">数据分析人员（处理图表、分析销售等）</div></div>
             <div class="col"><div class="border rounded-3 p-3 h-100">做系统搭建或云服务设置的人</div></div>
           </div>
@@ -279,15 +280,15 @@
           <h4 class="mt-4">外资IT咨询公司</h4>
           <ul>
             <li><strong>Accenture（アクセンチュア）：</strong> 战略×技术×落地一体化的全球咨询巨头，日本规模最大</li>
-            <li><strong>Deloitte（デロイト）：</strong> SAP/AWS/DX相关项目经验丰富，金融与制造项目强项</li>
-            <li><strong>Capgemini（キャップジェミニ）：</strong> 法国总部，擅长ERP与系统整合</li>
+            <li><strong>Deloitte（デロイト）：</strong> SAP/AWS/<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>相关项目经验丰富，金融与制造项目强项</li>
+            <li><strong>Capgemini（キャップジェミニ）：</strong> 法国总部，擅长<%= link_to "RPA", wiki_rpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>与系统整合</li>
             <li><strong>Infosys / Cognizant：</strong> 印度系，系统迁移和工程资源强大</li>
           </ul>
 
           <h4 class="mt-4">日资IT咨询公司</h4>
           <ul>
             <li><strong>野村综合研究所（NRI）：</strong> 金融领域强项，咨询+系统开发一体</li>
-            <li><strong>日立コンサルティング：</strong> 日立集团旗下，专注DX与业务改革支援</li>
+            <li><strong>日立コンサルティング：</strong> 日立集团旗下，专注<%= link_to "dx", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>与业务改革支援</li>
             <li><strong>日本综合研究所（日本総研）：</strong> SMBC系智库，IT咨询与政策研究并行</li>
             <li><strong>大和总研：</strong> 大和证券集团支持单位，聚焦金融系统改革</li>
           </ul>

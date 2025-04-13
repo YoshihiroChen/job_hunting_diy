@@ -9,7 +9,7 @@
       <div class="card border rounded-4 shadow-sm">
         <div class="card-body p-4">
 
-          <h2>商业银行的业务逻辑 × 新卒职种全解析【以三菱UFG银行（MUFG）为例】</h2>
+          <h2>商业银行的业务逻辑与新卒职种全解析【以三菱UFG银行（MUFG）为例】</h2>
 
           <p>商业银行并不只是“存款+放贷”，它其实是一个<strong>巨大而精密的金融平台</strong>，服务对象从个人、企业到国际机构，从基础业务到高级市场操作，从IT系统到财务策略都有专门职种负责。</p>
 
@@ -27,7 +27,7 @@
 
           <h4>可能参与的业务模块：</h4>
           <ul>
-            <li>法人融资提案（RM）</li>
+            <li><%= link_to "法人融资提案（RM）", wiki_rm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></li>
             <li>个人财富管理</li>
             <li>海外分支协作</li>
             <li>业务战略/风险控制</li>
@@ -41,8 +41,8 @@
 
           <h4>业务逻辑：</h4>
           <ul>
-            <li>聚焦于<strong>全球金融服务</strong>：跨境融资、外币资金管理、海外M&A、国际合作银行网络等。</li>
-            <li>与<strong>外国金融机构、法人客户</strong>打交道，涉及国际法规（如Basel、AML等）。</li>
+            <li>聚焦于<strong>全球金融服务</strong>：跨境融资、外币资金管理、海外<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、国际合作银行网络等。</li>
+            <li>与<strong>外国金融机构、法人客户</strong>打交道，涉及国际法规（如<%= link_to "Basel", wiki_basel_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、<%= link_to "AML", wiki_aml_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等）。</li>
           </ul>
 
           <h4>对应业务：</h4>
@@ -101,7 +101,7 @@
           <h4>业务逻辑：</h4>
           <ul>
             <li>运用<strong>数学、统计、编程</strong>进行风险定量评估与模型构建。</li>
-            <li>支持衍生品定价、VaR计算、流动性评估等，保障银行资金安全。</li>
+            <li>支持衍生品定价、<%= link_to "VaR", wiki_var_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>计算、流动性评估等，保障银行资金安全。</li>
           </ul>
 
           <h4>对应任务：</h4>
@@ -116,7 +116,7 @@
 
           <hr>
 
-          <h3>【6. 戦略財務（会計・税務）职】＝ 财务规划 × 会计税务专家路线</h3>
+          <h3>【6. 戦略財務（会計・税務）职】＝ 财务规划+会计税务专家路线</h3>
 
           <h4>业务逻辑：</h4>
           <ul>

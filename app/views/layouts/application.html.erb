@@ -30,6 +30,21 @@
       gtag('config', 'G-431HGMD5CC');
     </script>
 
+
+    <style>
+      a.wiki-link {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px dashed transparent;
+        cursor: help;
+        transition: border 0.2s;
+      }
+
+      a.wiki-link:hover {
+        border-bottom: 1px dashed #007bff;
+      }
+    </style>
+
   </head>
 
   <body>
@@ -86,5 +101,52 @@
         <p class="small">本站内容仅供参考，具体就职活动请以企业官方信息为准</p>
       </div>
     </footer>
+
+
+    <script>
+      function saveScrollPosition() {
+        const y = window.scrollY;
+        localStorage.setItem("scrollPos", y);
+        console.log("✅ 保存滚动位置:", y);
+      }
+    
+      function tryRestoreScroll() {
+        const pos = localStorage.getItem("scrollPos");
+        console.log("🌀 检查滚动恢复:", pos);
+    
+        if (pos !== null && !window.location.pathname.startsWith("/wiki")) {
+          window.scrollTo(0, parseInt(pos));
+          console.log("✅ 滚动到:", pos);
+          localStorage.removeItem("scrollPos");
+          return true;
+        }
+        return false;
+      }
+    
+      function startScrollRecoveryWatcher() {
+        let attempt = 0;
+        const interval = setInterval(() => {
+          if (tryRestoreScroll() || attempt > 10) {
+            clearInterval(interval);
+          }
+          attempt++;
+        }, 100);
+      }
+    
+      window.addEventListener("load", startScrollRecoveryWatcher);
+      window.addEventListener("pageshow", startScrollRecoveryWatcher);
+    
+      // ✅ 点击“返回上一页”时，强制刷新页面（解决浏览器缓存问题）
+      function forceBackWithReload(event) {
+        event.preventDefault();
+        const target = event.currentTarget.getAttribute("href");
+        window.location.href = target; // 真正加载页面，触发 JS
+      }
+    </script>
+  
+
+
+
+
   </body>
 </html>

@@ -1,0 +1,114 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">BI（商业智能）基础知识指南</h1>
+
+  <!-- 什么是BI -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是BI（商业智能）？</h2>
+
+          <p>BI 是 “Business Intelligence” 的缩写，中文称为“商业智能”。</p>
+
+          <p>它指的是通过数据的收集、整合、分析与可视化，帮助企业做出更快速、更合理的经营判断。BI 系统通常用于<strong>经营分析、销售报表、KPI监控、预测模型等业务场景</strong>。</p>
+
+          <p>BI 不是数据库本身，而是“基于数据做决策”的分析平台。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BI系统的主要功能 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">BI系统的主要功能</h2>
+
+          <ul>
+            <li><strong>数据整合：</strong> 将ERP、CRM、Excel等多来源数据集中管理</li>
+            <li><strong>动态仪表板：</strong> 用图表形式实时展示KPI和趋势</li>
+            <li><strong>交互式分析：</strong> 用户可自由拖拽维度、筛选条件查看数据</li>
+            <li><strong>自动报表：</strong> 定期生成报表邮件，减少人工汇总</li>
+            <li><strong>预测模型：</strong> 结合机器学习或回归模型做业绩预测（部分高级BI）</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BI的优点与常见用途 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">BI的优点与常见应用</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>可视化强</td>
+                <td>图表丰富，适合向管理层汇报</td>
+              </tr>
+              <tr>
+                <td>自助分析</td>
+                <td>业务人员无需写SQL也能分析数据</td>
+              </tr>
+              <tr>
+                <td>节省时间</td>
+                <td>自动化报表流程，减少手动统计</td>
+              </tr>
+              <tr>
+                <td>实时监控</td>
+                <td>随时掌握公司经营与销售动态</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="mt-3"><strong>常见应用场景：</strong> 销售数据分析、经营会议汇报、财务KPI跟踪、客户行为分析、库存周转监控等。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 常见BI工具 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">常见的BI工具平台</h2>
+
+          <ul>
+            <li><strong>Tableau：</strong> 视觉表现力强，交互性好，分析自由度高</li>
+            <li><strong>Power BI（Microsoft）：</strong> 与Excel、Office365高度整合，适合企业内普及</li>
+            <li><strong>Looker（Google）：</strong> 基于现代数据平台，适合云分析架构</li>
+            <li><strong>Qlik：</strong> 以内存计算为特色，数据处理速度快</li>
+            <li><strong>MotionBoard、Dr.Sum（日系）：</strong> 日本本地BI厂商，擅长报表型输出</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

@@ -1,0 +1,125 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">RPA（机器人流程自动化）基础知识指南</h1>
+
+  <!-- 什么是RPA -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是RPA？</h2>
+
+          <p>RPA 是 “Robotic Process Automation（机器人流程自动化）” 的缩写，指的是通过软件机器人来自动执行以往由人手完成的重复性电脑操作。</p>
+
+          <p>这些“机器人”不是实体机器，而是安装在电脑上的程序，能模拟人类在系统中的操作行为，比如点击按钮、填写表格、读取邮件、复制粘贴等。RPA 的目的是提高工作效率，减少人为错误，释放人力资源。</p>
+
+          <h4 class="mt-4">RPA适用的典型任务</h4>
+          <ul>
+            <li>资料录入与表单填写</li>
+            <li>批量下载或上传文件</li>
+            <li>定期从系统提取数据并生成报告</li>
+            <li>从邮件中提取信息、发送自动回复</li>
+            <li>将数据从一个系统搬运到另一个系统</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 优势与适用范围 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">RPA的优势与局限</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优势</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>节省人力成本</td>
+                <td>可以替代大量手动操作，员工可专注于更有价值的工作</td>
+              </tr>
+              <tr>
+                <td>减少人为失误</td>
+                <td>机器人按照设定流程执行，不会出错或遗漏</td>
+              </tr>
+              <tr>
+                <td>部署迅速</td>
+                <td>不必更改现有系统，通过模拟人工操作即可实现自动化</td>
+              </tr>
+              <tr>
+                <td>可24小时运行</td>
+                <td>无需休息，可设定定时自动运行</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="mt-3"><strong>局限：</strong> RPA 适合“重复性强、规则明确”的任务，不适合需要创造性思考、沟通或判断力的工作。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 常见应用场景 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">RPA在企业中的实际应用</h2>
+
+          <ul>
+            <li><strong>保险业：</strong> 自动化处理理赔申请、文件审核与客户通知流程</li>
+            <li><strong>银行业：</strong> 自动开户、交易明细生成、合规报表制作</li>
+            <li><strong>人事部门：</strong> 入职资料处理、工资发放表制作</li>
+            <li><strong>行政后台：</strong> 批量处理发票、合同编号、数据整理</li>
+            <li><strong>呼叫中心：</strong> 配合聊天机器人，实现部分客户咨询的自动应答</li>
+          </ul>
+
+          <p>这些流程通过 RPA 实现后，往往可以节省数十甚至上百小时的人工工作时间。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 常见工具 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">常见的RPA工具</h2>
+
+          <ul>
+            <li>UiPath（全球普及率最高）</li>
+            <li>Automation Anywhere</li>
+            <li>Blue Prism</li>
+            <li>BizRobo!（日本市场广泛使用）</li>
+            <li>WinActor（NTT推出的日本本地品牌）</li>
+          </ul>
+
+          <p>这些工具大多具备“可视化流程编辑”功能，即使非工程背景的用户也可以快速上手。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

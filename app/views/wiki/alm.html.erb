@@ -1,0 +1,56 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">保险业界的资产负债匹配（ALM）管理</h1>
+
+  <!-- ALM简介 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是ALM（Asset Liability Management）管理？</h2>
+          <p>资产负债匹配（ALM）管理是指保险公司为确保未来负债（如保单赔付）能够顺利履行，通过精细管理资产配置与负债特性之间的匹配关系，以实现风险控制和稳定收益。</p>
+
+          <h4 class="mt-4">为什么保险公司特别重视ALM？</h4>
+          <ul>
+            <li><strong>长期负债：</strong> 比如终身保险、养老金等，需要几十年后才能支付</li>
+            <li><strong>资产运用决定赔付能力：</strong> 投保人缴纳保费后，保险公司需要通过投资获取收益</li>
+            <li><strong>利率风险存在：</strong> 市场利率变化可能导致资产收益与负债成本不匹配</li>
+          </ul>
+
+          <h4 class="mt-4">ALM管理的主要手法</h4>
+          <ul>
+            <li><strong>期限匹配：</strong> 使资产的平均久期与负债相近，降低利率变动带来的影响</li>
+            <li><strong>现金流匹配：</strong> 保证资产在特定时间点能产生与负债相符的现金流</li>
+            <li><strong>利差管理：</strong> 控制资产与负债的收益差异，确保利润空间</li>
+            <li><strong>情境分析（Stress Test）：</strong> 模拟利率波动等极端情况，测试抗风险能力</li>
+          </ul>
+
+          <h4 class="mt-4">实际案例</h4>
+          <p><strong>背景：</strong> 某保险公司预计10年后需要支付大额年金。</p>
+          <p><strong>应对方式：</strong> 公司通过购买10年期国债与企业债，确保未来可获得稳定现金流。同时运用衍生品对冲利率波动风险。</p>
+          <p><strong>效果：</strong> 保障了长期赔付的稳定性，减缓了利率变化对公司财务状况的冲击。</p>
+
+          <h4 class="mt-4">相关职种与工作领域</h4>
+          <ul>
+            <li><strong>ALM专员：</strong> 专责资产负债匹配的分析与执行</li>
+            <li><strong>资产运用部门成员：</strong> 负责资产配置策略，需配合ALM框架</li>
+            <li><strong>精算师（アクチュアリー）：</strong> 参与负债估算与风险分析</li>
+            <li><strong>风险管理人员：</strong> 提供情境分析与对冲策略建议</li>
+          </ul>
+
+          <h4 class="mt-4">总结</h4>
+          <p>ALM是保险公司经营的核心机制之一。它不仅关乎投资回报，更关系到企业是否能稳定履行对客户的长期承诺。对保险公司而言，ALM管理就像“驾驶方向盘”，维持资产和负债之间的平衡，是公司稳健经营的重要保障。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

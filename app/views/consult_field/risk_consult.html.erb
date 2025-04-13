@@ -27,7 +27,7 @@
               <tr><td>财务风险</td><td>资金链断裂、汇率波动、应收账款坏账</td></tr>
               <tr><td>IT风险</td><td>数据泄露、系统宕机、网络攻击</td></tr>
               <tr><td>合规风险</td><td>违反法律法规、内部控制失败</td></tr>
-              <tr><td>环境社会风险</td><td>碳排放、供应链人权问题、ESG评级下降</td></tr>
+              <tr><td>环境社会风险</td><td>碳排放、供应链人权问题、<%= link_to "ESG", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>评级下降</td></tr>
             </tbody>
           </table>
         </div>
@@ -35,11 +35,11 @@
         <h4 class="mt-4">风险咨询的主要服务内容</h4>
         <ul>
           <li><strong>风险评估：</strong> 识别企业潜在风险，制定应对策略</li>
-          <li><strong>内部控制设计：</strong> 构建J-SOX框架、治理制度</li>
-          <li><strong>业务连续性管理（BCP）：</strong> 制定灾害或突发事件的恢复机制</li>
+          <li><strong>内部控制设计：</strong> 构建<%= link_to "J-SOX框架", wiki_jsox_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、治理制度</li>
+          <li><strong>业务连续性管理（<%= link_to "BCP", wiki_bcp_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）：</strong> 制定灾害或突发事件的恢复机制</li>
           <li><strong>信息安全治理：</strong> 防止信息泄露和网络攻击</li>
           <li><strong>合规制度支援：</strong> 反洗钱、防贿赂、法务对策</li>
-          <li><strong>ESG相关咨询：</strong> 可持续发展风险管理与报告制度设计</li>
+          <li><strong><%= link_to "ESG", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>相关咨询：</strong> 可持续发展风险管理与报告制度设计</li>
         </ul>
 
       </div>
@@ -66,8 +66,8 @@
             </thead>
             <tbody>
               <tr><td>合规/内部控制</td><td>★☆☆☆☆</td><td>主要处理流程与制度</td></tr>
-              <tr><td>IT治理 / ESG</td><td>★★☆☆☆</td><td>偶尔需要基础数据处理</td></tr>
-              <tr><td>金融风险管理</td><td>★★★★☆</td><td>涉及VaR、信用风险建模</td></tr>
+              <tr><td>IT治理 / <%= link_to "ESG", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td><td>★★☆☆☆</td><td>偶尔需要基础数据处理</td></tr>
+              <tr><td>金融风险管理</td><td>★★★★☆</td><td>涉及<%= link_to "VaR", wiki_var_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、信用风险建模</td></tr>
               <tr><td>保险精算</td><td>★★★★★</td><td>使用概率、数理统计、精算模型</td></tr>
             </tbody>
           </table>
@@ -75,9 +75,9 @@
 
         <div class="alert alert-info">
           <ul class="mb-0 ps-3">
-            <li>文科/商科背景完全可以胜任合规、ESG、BCP等咨询</li>
+            <li>文科/商科背景完全可以胜任合规、<%= link_to "ESG", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、<%= link_to "BCP", wiki_bcp_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等咨询</li>
             <li>有数理能力者可选择建模类风险咨询</li>
-            <li>愿意学 BI/Python 等工具者也可以参与数据方向</li>
+            <li>愿意学 <%= link_to "BI", wiki_bi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>/Python 等工具者也可以参与数据方向</li>
           </ul>
         </div>
 
@@ -129,7 +129,7 @@
 
         <p>在风险咨询中，也有部分方向会接触到建模，例如：</p>
         <ul>
-          <li>金融风险建模（信用评分、VaR结构设计）</li>
+          <li>金融风险建模（信用评分、<%= link_to "VaR", wiki_var_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>结构设计）</li>
           <li>保险精算相关的顾问（生命表、现金流模拟）</li>
         </ul>
 

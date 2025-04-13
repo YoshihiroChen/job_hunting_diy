@@ -1,0 +1,95 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">Basel（巴塞尔协议）基础知识指南</h1>
+
+  <!-- 什么是Basel协议 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是Basel协议？</h2>
+
+          <p>Basel协议（バーゼル合意）是由国际清算银行（BIS）下属的“巴塞尔银行监管委员会”制定的<strong>全球银行业资本充足率与风险控制标准</strong>。</p>
+
+          <p>主要目的是通过统一的资本规定和风险管理框架，<strong>提升国际银行体系的稳定性，防止金融危机蔓延</strong>。</p>
+
+          <p>目前主要版本包括：Basel I（1988年）、Basel II（2004年）、Basel III（2010年）、Basel IV（2023年后逐步实施中）。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Basel I / II / III 概览 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">Basel协议的发展阶段</h2>
+
+          <ul>
+            <li><strong>Basel I：</strong> 提出8%的最低资本充足率标准，主要关注信用风险</li>
+            <li><strong>Basel II：</strong> 引入“3个支柱”（最低资本要求、监管审查、市场纪律），更细致区分风险</li>
+            <li><strong>Basel III：</strong> 加强资本质量，引入杠杆率、流动性覆盖率（LCR）、净稳定资金比率（NSFR）等</li>
+            <li><strong>Basel IV：</strong> 并非正式命名，泛指 Basel III 之后的新标准，强调内部模型限制与透明度</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Basel的核心概念 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">Basel协议的核心管理指标</h2>
+
+          <ul>
+            <li><strong>资本充足率：</strong> 资本 ÷ 风险资产 ≥ 规定值（通常为8%）</li>
+            <li><strong>风险加权资产（RWA）：</strong> 各类资产按风险权重计算后的总值</li>
+            <li><strong>杠杆率（Leverage Ratio）：</strong> 资本 ÷ 总资产，不考虑风险权重，防止过度膨胀</li>
+            <li><strong>流动性覆盖率（LCR）：</strong> 高质量资产 ÷ 未来30天净流出资金 ≥ 100%</li>
+            <li><strong>净稳定资金比率（NSFR）：</strong> 稳定资金 ÷ 所需稳定资金 ≥ 100%</li>
+          </ul>
+
+          <p class="mt-3">这些指标共同构成全球银行风险管理与审慎监管的核心框架。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Basel的适用场景与职种 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">Basel框架的实际应用与相关职种</h2>
+
+          <ul>
+            <li><strong>银行风险管理部：</strong> 监控资本比率、RWA计算、压力测试</li>
+            <li><strong>金融监管机构：</strong> 金融厅、央行等负责审查银行是否达标</li>
+            <li><strong>金融工程/数量分析：</strong> 开发内部模型用于风险加权计算</li>
+            <li><strong>国际金融顾问/咨询公司：</strong> 协助银行应对Basel相关改革</li>
+          </ul>
+
+          <p class="mt-3">对CFA、FRM、会计师等专业人士来说，理解Basel协议是必修内容之一。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

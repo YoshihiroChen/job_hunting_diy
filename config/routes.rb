@@ -86,6 +86,31 @@ Rails.application.routes.draw do
 
   get 'job_company', to: 'job_company#index'
 
+  # 百科系统路由
+  get 'wiki/index', to: 'wiki#index'
+  get 'wiki/alm', to: 'wiki#alm'
+  get 'wiki/ict', to: 'wiki#ict'
+  get 'wiki/rpa', to: 'wiki#rpa'
+  get 'wiki/dx', to: 'wiki#dx'
+  get 'wiki/dd', to: 'wiki#dd'
+  get 'wiki/pmi', to: 'wiki#pmi'
+  get 'wiki/ma', to: 'wiki#ma'
+  get 'wiki/esg', to: 'wiki#esg'
+  get 'wiki/erp', to: 'wiki#erp'
+  get 'wiki/crm', to: 'wiki#crm'
+  get 'wiki/bi', to: 'wiki#bi'
+  get 'wiki/ipo', to: 'wiki#ipo'
+  get 'wiki/cfa', to: 'wiki#cfa'
+  get 'wiki/cpa', to: 'wiki#cpa'
+  get 'wiki/bcp', to: 'wiki#bcp'
+  get 'wiki/jsox', to: 'wiki#jsox'
+  get 'wiki/var', to: 'wiki#var'
+  get 'wiki/telematics', to: 'wiki#telematics'
+  get 'wiki/rm', to: 'wiki#rm'
+  get 'wiki/basel', to: 'wiki#basel'
+  get 'wiki/aml', to: 'wiki#aml'
+
+
   resources :comments, only: [:index, :create, :destroy]
 
 end

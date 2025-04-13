@@ -1,0 +1,94 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">AML（反洗钱）基础知识指南</h1>
+
+  <!-- 什么是AML -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是AML（反洗钱）？</h2>
+
+          <p>AML 是 “Anti-Money Laundering” 的缩写，中文为“反洗钱”。</p>
+
+          <p>它是指防止通过银行、证券、保险等金融机构，<strong>将非法取得的资金“伪装成合法收入”并流入经济体系的行为</strong>，是全球金融合规管理的核心领域之一。</p>
+
+          <p>AML 涉及法律、系统、流程、人力等多方面的控制手段，常与反恐融资（CFT）一起被提及。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 洗钱的典型流程 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">洗钱的典型三阶段</h2>
+
+          <ul>
+            <li><strong>安置阶段（Placement）：</strong> 将现金存入银行、换成金融资产、分散转账等</li>
+            <li><strong>分层阶段（Layering）：</strong> 通过复杂交易混淆资金来源，如跨境转账、多账户交易</li>
+            <li><strong>整合阶段（Integration）：</strong> 将“清洗后”的资金用于投资、不动产、企业运营等合法领域</li>
+          </ul>
+
+          <p class="mt-3">AML 的任务就是在这三阶段中设置“阻断机制”和“监测系统”。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AML在金融机构中的实际操作 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">金融机构中的AML对策</h2>
+
+          <ul>
+            <li><strong>客户尽职调查（KYC）：</strong> 确认客户身份、背景、真实意图</li>
+            <li><strong>交易监控：</strong> 系统自动筛查异常交易（大额、频繁、跨境、不符合客户画像等）</li>
+            <li><strong>可疑交易报告（STR）：</strong> 发现异常行为后，向金融厅或相关机构报告</li>
+            <li><strong>名单筛查：</strong> 对客户与交易对象进行制裁名单（FATF、联合国、OFAC等）比对</li>
+            <li><strong>员工教育与制度整备：</strong> 建立合规体制并定期培训</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AML相关岗位与适用范围 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">AML相关职种与适用行业</h2>
+
+          <ul>
+            <li><strong>AML合规专员：</strong> 日常监控与报告制度运用</li>
+            <li><strong>KYC分析员：</strong> 审核客户资料、风险等级分类</li>
+            <li><strong>金融系统开发人员：</strong> 构建交易监控系统与筛查引擎</li>
+            <li><strong>金融顾问・事务人员：</strong> 面对客户执行KYC与定期确认</li>
+          </ul>
+
+          <p class="mt-3">银行、证券、加密资产交易平台、保险、支付公司等<strong>所有涉金融流通的机构</strong>均须遵守 AML 相关法律与监管。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

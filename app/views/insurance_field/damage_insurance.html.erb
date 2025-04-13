@@ -105,17 +105,17 @@
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
-          <h5 class="card-title">七、数字化转型（DX）推动保险行业革新</h5>
+          <h5 class="card-title">七、数字化转型（<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）推动保险行业革新</h5>
           <p class="card-text">随着科技的发展，保险行业正朝着智能化、自动化方向升级。</p>
           <ul>
-            <li>车载设备记录驾驶行为，依据评分调整保费（テレマティクス保険）</li>
+            <li>车载设备记录驾驶行为，依据评分调整保费（<%= link_to "テレマティクス保険", wiki_telematics_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）</li>
             <li>灾害发生后通过卫星影像/AI判断损失</li>
             <li>利用Chatbot与客户自动互动，在线投保/理赔</li>
           </ul>
           <h6>新兴职种：</h6>
           <ul>
             <li>数据科学家（データサイエンティスト）</li>
-            <li>DX企划（DX企画）</li>
+            <li><%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企划（<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企画）</li>
             <li>事业开发（事業開発）</li>
             <li>系统开发 / IT企划（IT企画）</li>
           </ul>
@@ -145,7 +145,7 @@
               <tr><td>承保评估（アンダーライター）</td><td>在投保前判断风险等级，决定是否承保与保费</td><td>逻辑性强、懂得合同/风险控制知识、能判断合理性</td></tr>
               <tr><td>理赔服务（損害サービス）</td><td>处理事故报告、调查损失、决定赔偿金额</td><td>现场应对力、判断力强、能兼顾客户与公司利益</td></tr>
               <tr><td>系统开发 / IT企划（システム開発・IT企画）</td><td>构建和维护投保系统、理赔系统等信息平台</td><td>IT知识扎实、能与业务沟通、推进数字化转型</td></tr>
-              <tr><td>数据分析 / DX推进（データ分析・DX企画）</td><td>分析事故数据、推动数字理赔、优化客户体验</td><td>数据思维、懂保险业务流程、适应快速变化</td></tr>
+              <tr><td>数据分析 / <%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>推进（データ分析・<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企画）</td><td>分析事故数据、推动数字理赔、优化客户体验</td><td>数据思维、懂保险业务流程、适应快速变化</td></tr>
             </tbody>
           </table>
 
@@ -207,7 +207,7 @@
                 <td>若文科生具备副修编程或自学经验，有机会参与项目协调或产品侧。</td>
               </tr>
               <tr>
-                <td>数据分析 / DX推进（データ分析・DX企画）</td>
+                <td>数据分析 / <%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>推进（データ分析・<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>企画）</td>
                 <td>★★★☆☆（中等偏高）</td>
                 <td>数据素养+跨部门沟通力为重点。文科生如具备Python/SQL技能，有竞争力。</td>
               </tr>

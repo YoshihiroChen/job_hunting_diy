@@ -1,0 +1,41 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">ICT基础知识指南</h1>
+
+  <!-- 什么是ICT -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是ICT？</h2>
+
+          <p>ICT（信息通信技术，Information and Communication Technology）是一个涵盖面广泛的综合性术语，用于描述各种以信息处理与通信为核心的技术集合。</p>
+
+          <p>ICT相较于传统的IT（信息技术），更加重视“连接性”和“交流性”，也就是说，它不仅关注技术本身，还强调人与人、人与系统、系统与系统之间的信息互动与传输。</p>
+
+          <h4 class="mt-4">ICT包含的主要技术领域</h4>
+          <ul>
+            <li>云计算（Cloud Computing）</li>
+            <li>人工智能（AI, Artificial Intelligence）</li>
+            <li>大数据分析（Big Data）</li>
+            <li>物联网（IoT, Internet of Things）</li>
+            <li>系统整合与开发（SI, System Integration）</li>
+            <li>软件工程与自动化</li>
+            <li>网络与通信基础设施</li>
+          </ul>
+
+          <p class="mt-4">这些技术广泛应用于政府、企业、教育、医疗等各类场景，成为现代社会不可或缺的基础能力。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

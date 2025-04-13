@@ -15,8 +15,8 @@
           <ul>
             <li>企业战略：中长期发展规划、新业务孵化、海外扩张等</li>
             <li>业务战略：BU级别的市场竞争战略与定位</li>
-            <li>M&A支援：并购前调查（DD）、并购整合（PMI）</li>
-            <li>数字化转型（DX）：全社DX战略策定、技术路线设计</li>
+            <li><%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>支援：<%= link_to "并购前调查（DD）", wiki_dd_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、<%= link_to "并购整合（PMI）", wiki_pmi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></li>
+            <li>数字化转型（<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）：全社DX战略策定、技术路线设计</li>
             <li>组织人事改革：高层重组、人事制度设计、变革管理</li>
           </ul>
 
@@ -32,16 +32,16 @@
                 <div class="card shadow">
                   <div class="card-body">
 
-                    <h2 class="card-title mb-4">DX战略是战略咨询还是IT咨询？</h2>
+                    <h2 class="card-title mb-4"><%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>战略是战略咨询还是IT咨询？</h2>
 
-                    <p>DX（Digital Transformation，数字转型）战略可以是<strong>战略咨询</strong>的一部分，也可以是<strong>IT咨询</strong>的一部分，关键在于切入的角度和深度：</p>
+                    <p><%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（Digital Transformation，数字转型）战略可以是<strong>战略咨询</strong>的一部分，也可以是<strong>IT咨询</strong>的一部分，关键在于切入的角度和深度：</p>
 
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead class="thead-light">
                           <tr>
                             <th>咨询类型</th>
-                            <th>DX的切入角度</th>
+                            <th><%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>的切入角度</th>
                             <th>特征说明</th>
                           </tr>
                         </thead>
@@ -63,8 +63,7 @@
                             <td>
                               <ul>
                                 <li>关注如何具体系统落地</li>
-                                <li>参与系统选型、IT基础设施规划</li>
-                                <li>提出“怎么做DX”、“导入什么技术”</li>
+                                <li>参与系统选型<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>”、“导入什么技术”</li>
                               </ul>
                             </td>
                           </tr>
@@ -81,7 +80,7 @@
 
                     <p><strong>例子：</strong></p>
                     <ul>
-                      <li><strong>战略咨询公司：</strong> 比如帮助消费品公司转型为「D2C＋数据驱动型经营」，DX战略贯穿整个业务模式设计</li>
+                      <li><strong>战略咨询公司：</strong> 比如帮助消费品公司转型为「D2C＋数据驱动型经营」，<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>战略贯穿整个业务模式设计</li>
                       <li><strong>IT咨询/SIer公司：</strong> 负责EC系统与ERP后台的集成与实施，专注于系统落地</li>
                     </ul>
 
@@ -183,12 +182,12 @@
         <div class="card-body">
           <h2 class="card-title mb-4">业务案例二：气候变动・サステナビリティ咨询</h2>
 
-          <p><strong>服务目标：</strong> 支援企业制定并推进脱碳战略、可持续发展路径，并将ESG目标转化为具体竞争优势。</p>
+          <p><strong>服务目标：</strong> 支援企业制定并推进脱碳战略、可持续发展路径，并将<%= link_to "ESG", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>目标转化为具体竞争优势。</p>
 
           <h5 class="mt-3">适用企业：</h5>
           <ul>
             <li>能源密集型企业（制造、化工、物流等）</li>
-            <li>需要进行海外融资或应对ESG评级要求的上市公司</li>
+            <li>需要进行海外融资或应对<%= link_to "ESG", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>评级要求的上市公司</li>
             <li>被纳入碳排放监管的出口型企业（如欧盟CBAM）</li>
           </ul>
 
@@ -196,7 +195,7 @@
           <ul>
             <li>碳排放（Scope 1, 2, 3）量化与建模</li>
             <li>制定脱碳转型路径（技术替代、节能、碳权等）</li>
-            <li>ESG目标设定与指标追踪体系建立</li>
+            <li><%= link_to "ESG", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>目标设定与指标追踪体系建立</li>
             <li>支援绿色融资、政府补助金申请</li>
           </ul>
 

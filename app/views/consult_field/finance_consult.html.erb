@@ -17,8 +17,8 @@
           <ul>
             <li><strong>经营管理类：</strong> 关注企业的整体盈利能力与成本结构</li>
             <li><strong>资金运用类：</strong> 优化现金流、资本结构、融资方式</li>
-            <li><strong>并购（M&A）类：</strong> 做尽职调查、估值分析、整合计划</li>
-            <li><strong>IPO支援类：</strong> 帮助企业上市，改善制度和报告流程</li>
+            <li><strong>并购（<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）类：</strong> 做尽职调查、估值分析、整合计划</li>
+            <li><strong><%= link_to "IPO支援类", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>：</strong> 帮助企业上市，改善制度和报告流程</li>
             <li><strong>企业重整类：</strong> 处理赤字企业的再生计划与债务协商</li>
             <li><strong>财务可视化：</strong> 建立分析模板和KPI仪表板，便于日常管理</li>
           </ul>
@@ -87,7 +87,7 @@
               <tr>
                 <td>事务所系（Big4顾问）</td>
                 <td>有证优先</td>
-                <td>没证也能进，但公司希望你有意愿考CPA</td>
+                <td>没证也能进，但公司希望你有意愿考<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
               </tr>
               <tr>
                 <td>税务/会计类顾问</td>
@@ -95,7 +95,7 @@
                 <td>需要有公认会计士或税理士资格或在读</td>
               </tr>
               <tr>
-                <td>IPO支援类</td>
+                <td><%= link_to "IPO支援类", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
                 <td>有证加分</td>
                 <td>没有也可以，但财务知识要扎实</td>
               </tr>
@@ -105,10 +105,10 @@
           <h4 class="mt-4">常见资格证和建议</h4>
           <ul>
             <li><strong>簿记2级：</strong> 最基本的财务资格，建议准备</li>
-            <li><strong>簿记1级：</strong> 内容接近CPA，较难，但如果已经学过会很有帮助</li>
-            <li><strong>公认会计士（CPA）：</strong> 如果想长期在这个领域发展，是非常有力的资格</li>
+            <li><strong>簿记1级：</strong> 内容接近<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>，较难，但如果已经学过会很有帮助</li>
+            <li><strong><%= link_to "公认会计士（CPA）", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>：</strong> 如果想长期在这个领域发展，是非常有力的资格</li>
             <li><strong>税理士：</strong> 偏向税务事务所方向，新卒一般不用考虑</li>
-            <li><strong>CFA：</strong> 如果你英语好，未来想走金融咨询，这张证书也有参考价值</li>
+            <li><strong><%= link_to "CFA", wiki_cfa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>：</strong> 如果你英语好，未来想走金融咨询，这张证书也有参考价值</li>
           </ul>
 
           <h4 class="mt-4">总结建议</h4>
