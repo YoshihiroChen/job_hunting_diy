@@ -109,6 +109,12 @@ Rails.application.routes.draw do
   get 'wiki/rm', to: 'wiki#rm'
   get 'wiki/basel', to: 'wiki#basel'
   get 'wiki/aml', to: 'wiki#aml'
+  get 'wiki/sloan', to: 'wiki#sloan'
+  get 'wiki/lc', to: 'wiki#lc'
+  get 'wiki/ifrs', to: 'wiki#ifrs'
+  get 'wiki/dwh', to: 'wiki#dwh'
+  get 'wiki/api', to: 'wiki#api'
+  get 'wiki/etl', to: 'wiki#etl'
 
 
   resources :comments, only: [:index, :create, :destroy]

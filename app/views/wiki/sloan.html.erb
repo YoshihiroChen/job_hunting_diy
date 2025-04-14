@@ -1,0 +1,122 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">联贷（Syndicated Loan）基础知识指南</h1>
+
+  <!-- 什么是联贷 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是联贷（シンジケートローン）？</h2>
+
+          <p>联贷（Syndicated Loan，日语中常称为“シンジケートローン”）是指由<strong>多个金融机构联合向一个企业客户提供的大型贷款</strong>。</p>
+
+          <p>这种贷款方式适用于资金需求金额大、需要快速融资、或希望分散融资银行之间责任的大型企业或项目融资。</p>
+
+          <p>联贷通常由一家或几家主办银行（Lead Bank / 主幹事）组织，并协调其他参与行共同签约与出资。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 联贷的基本结构 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">联贷的基本结构与参与方</h2>
+
+          <ul>
+            <li><strong>借款人（Borrower）：</strong> 需要大额融资的企业或项目主体</li>
+            <li><strong>主办银行（Lead Bank）：</strong> 起草合同、协调谈判、牵头贷款结构</li>
+            <li><strong>代理银行（Agent Bank）：</strong> 负责后续的资金收付、利息计算、信息通知等事务</li>
+            <li><strong>参加银行（Participant Banks）：</strong> 共同出资的其他银行或金融机构</li>
+          </ul>
+
+          <p class="mt-3">各银行根据事先协议承担不同金额与风险，并共享收益与合同条款。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 联贷的优点与注意事项 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">联贷的优点与注意事项</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>融资规模大</td>
+                <td>可通过多家金融机构共同出资，满足高额资金需求</td>
+              </tr>
+              <tr>
+                <td>手续统一</td>
+                <td>只需一套合同、一个协调窗口，简化沟通</td>
+              </tr>
+              <tr>
+                <td>分散风险</td>
+                <td>各银行共同承担风险，降低单一行的信用暴露</td>
+              </tr>
+              <tr>
+                <td>提升企业信用</td>
+                <td>能获得多家银行支持，提升市场信赖度</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">注意事项：</h4>
+          <ul>
+            <li>利率通常比双边贷款更高</li>
+            <li>需公开部分财务与业务信息给多家银行</li>
+            <li>协商流程较长，适合事前规划</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 联贷的实际应用场景与职种 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">应用场景与相关职种</h2>
+
+          <ul>
+            <li><strong>适用场景：</strong> 大型设备投资、房地产开发、M&A融资、基础设施项目等</li>
+            <li><strong>法人RM（客户经理）：</strong> 发掘融资需求，构建融资结构</li>
+            <li><strong>信贷分析员 / 审查部门：</strong> 分析企业信用与联贷结构合理性</li>
+            <li><strong>法务・合同管理人员：</strong> 审阅合约条款、处理多方签约流程</li>
+            <li><strong>银行后台・代理银行担当：</strong> 负责资金清算与信息协调</li>
+          </ul>
+
+          <p class="mt-3">联贷是一种<strong>高复杂度 × 高金额 × 多方协调</strong>的专业融资手段。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

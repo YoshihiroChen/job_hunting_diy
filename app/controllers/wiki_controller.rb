@@ -64,4 +64,19 @@ class WikiController < ApplicationController
 
   def aml
   end
+
+  def sloan
+  end
+
+  def lc
+  end
+
+  def ifrs
+  end
+
+  def api
+  end
+
+  def etl
+  end
 end

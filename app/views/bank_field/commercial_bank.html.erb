@@ -48,8 +48,8 @@
           <h4>对应业务：</h4>
           <ul>
             <li>海外拠点协作</li>
-            <li>外币融资、信用状（L/C）</li>
-            <li>联贷（Syndicated Loan）管理</li>
+            <li>外币融资、<%= link_to "信用状（L/C）", wiki_lc_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></li>
+            <li><%= link_to "联贷（Syndicated Loan）管理", wiki_sloan_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></li>
             <li>国际风险监控</li>
           </ul>
 
@@ -81,7 +81,7 @@
 
           <h4>业务逻辑：</h4>
           <ul>
-            <li>为企业客户提供<strong>贸易相关的外汇结算服务</strong>，如信用状（L/C）、外币汇款、进口融资等。</li>
+            <li>为企业客户提供<strong>贸易相关的外汇结算服务</strong>，如<%= link_to "信用状（L/C）", wiki_lc_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、外币汇款、进口融资等。</li>
             <li>这是支持<strong>日本企业全球贸易</strong>不可或缺的环节。</li>
           </ul>
 
@@ -127,7 +127,7 @@
           <h4>对应业务：</h4>
           <ul>
             <li>管理会计（管理层向KPI分析）</li>
-            <li>IFRS财报作成</li>
+            <li><%= link_to "IFRS财报", wiki_ifrs_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>作成</li>
             <li>税务战略（国际税务）</li>
             <li>投资家向的财报说明（Investor Relations）</li>
           </ul>
@@ -141,15 +141,15 @@
           <h4>业务逻辑：</h4>
           <ul>
             <li>开发维护<strong>核心银行系统（如账务系统、结算平台）</strong>。</li>
-            <li>推进<strong>DX（Digital Transformation）</strong>，如网银App、AI客服、大数据风控。</li>
+            <li>推进<strong><%= link_to "DX（Digital Transformation）", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></strong>，如网银App、AI客服、大数据风控。</li>
           </ul>
 
           <h4>对应任务：</h4>
           <ul>
             <li>系统开发（Java / C / Python）</li>
-            <li>RPA流程自动化</li>
-            <li>数据平台建设（DWH / ETL）</li>
-            <li>数字金融服务企划（API / Fintech）</li>
+            <li><%= link_to "RPA", wiki_rpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>流程自动化</li>
+            <li>数据平台建设（<%= link_to "DWH", wiki_dwh_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> / <%= link_to "ETL", wiki_etl_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）</li>
+            <li>数字金融服务企划（<%= link_to "API", wiki_api_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> / Fintech）</li>
           </ul>
 
           <blockquote>“银行的引擎室”，以技术支撑大规模金融运作，兼顾安全性与创新性。</blockquote>

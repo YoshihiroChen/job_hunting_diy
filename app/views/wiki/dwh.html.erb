@@ -1,0 +1,98 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">DWH（数据仓库）基础知识指南</h1>
+
+  <!-- 什么是DWH -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是DWH（数据仓库）？</h2>
+
+          <p>DWH 是 “Data Warehouse” 的缩写，中文通常称为“数据仓库”。</p>
+
+          <p>它是一种用于<strong>整合多个系统数据、支持企业经营分析与决策</strong>的大规模数据库架构。</p>
+
+          <p>DWH 的特点是只用于分析（非事务处理），通过汇总后的结构化数据，帮助企业构建报表、KPI管理、趋势预测等“数据驱动”的业务模式。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DWH与普通数据库的区别 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">DWH与普通数据库的区别</h2>
+
+          <ul>
+            <li><strong>用途不同：</strong> 事务型数据库用于日常业务操作，DWH用于分析与统计</li>
+            <li><strong>数据结构：</strong> DWH 中数据已被清洗、转换并汇总，适合分析使用</li>
+            <li><strong>更新频率：</strong> DWH 通常按日、周、月批量更新，而事务系统为实时写入</li>
+            <li><strong>性能优化：</strong> DWH 更重视读取性能与多维查询</li>
+          </ul>
+
+          <p class="mt-3">DWH 是 BI（商业智能）系统的基础平台，是构建数据驱动企业的关键。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DWH的结构与构建流程 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">DWH的基本构成与构建流程</h2>
+
+          <ul>
+            <li><strong>数据来源：</strong> ERP、CRM、Web系统、Excel、外部API等</li>
+            <li><strong>ETL处理：</strong> 提取（Extract）、转换（Transform）、加载（Load）</li>
+            <li><strong>数据建模：</strong> 以事实表与维度表方式构建多维结构（星型 / 雪花型）</li>
+            <li><strong>存储平台：</strong> 传统数据库、列式数据库、云数据仓库（如BigQuery）</li>
+            <li><strong>BI工具连接：</strong> 如Power BI、Tableau，用于可视化与分析</li>
+          </ul>
+
+          <p class="mt-3">DWH 的构建需跨部门协调，涉及业务理解、数据治理与系统设计。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 常见的DWH工具与使用场景 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">主流DWH产品与应用场景</h2>
+
+          <ul>
+            <li><strong>Snowflake：</strong> 云原生DWH，支持弹性扩展与多租户</li>
+            <li><strong>Google BigQuery：</strong> Google Cloud 提供的大数据分析平台</li>
+            <li><strong>Amazon Redshift：</strong> AWS 提供的云数据仓库服务</li>
+            <li><strong>Oracle Exadata：</strong> 传统大型企业常用的高性能DWH平台</li>
+            <li><strong>国内工具：</strong> 阿里云 MaxCompute、华为 GaussDB(DWS) 等</li>
+          </ul>
+
+          <p class="mt-3">DWH 广泛应用于营销分析、财务BI、客户行为分析、数据报表自动化等场景。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

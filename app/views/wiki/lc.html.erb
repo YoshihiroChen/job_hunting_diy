@@ -1,0 +1,117 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">信用状（L/C）基础知识指南</h1>
+
+  <!-- 什么是信用状 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是信用状（Letter of Credit, L/C）？</h2>
+
+          <p>信用状（L/C）是“Letter of Credit”的缩写，中文称为“信用证”，日语为「信用状」。</p>
+
+          <p>它是一种国际贸易中常用的付款保障工具，由买方银行开出，<strong>承诺在卖方提交符合规定的单据时，代买方向卖方支付货款</strong>。</p>
+
+          <p>L/C 在进出口交易中起到“第三方信用担保”的作用，降低了买卖双方的交易风险。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- L/C的基本结构与参与方 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">L/C的基本结构与参与方</h2>
+
+          <ul>
+            <li><strong>申请人（Applicant）：</strong> 进口商，即信用状的申请人</li>
+            <li><strong>开证行（Issuing Bank）：</strong> 进口商所在地银行，开立并承担付款责任</li>
+            <li><strong>受益人（Beneficiary）：</strong> 出口商，凭单据收款</li>
+            <li><strong>通知行 / 议付行（Advising / Negotiating Bank）：</strong> 位于出口方国家，通知信用状或代为审核单据并付款</li>
+          </ul>
+
+          <p class="mt-3">L/C 中的“单据付款”原则强调“货物分离”，即银行只依据单据内容付款，而不实际检查货物。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- L/C的优点与风险 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">L/C的优点与注意事项</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>对卖方有保障</td>
+                <td>只要按时提交符合L/C条款的单据，就能获得付款</td>
+              </tr>
+              <tr>
+                <td>对买方有控制力</td>
+                <td>只有卖方履行条件后才会付款，保障资金安全</td>
+              </tr>
+              <tr>
+                <td>适用于不熟悉的交易伙伴</td>
+                <td>通过银行信用来替代双方直接信任</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">注意事项：</h4>
+          <ul>
+            <li>单据必须完全符合信用状规定（如发票、装运单、产地证明等）</li>
+            <li>即使货物无误，只要单据有误，银行也可拒付</li>
+            <li>开证成本较高，需承担手续费、议付费等</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- L/C的种类与适用场景 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">L/C的主要种类与应用场景</h2>
+
+          <ul>
+            <li><strong>即期信用状（Sight L/C）：</strong> 单据审核无误后立即付款</li>
+            <li><strong>远期信用状（Usance L/C）：</strong> 单据审核后，在一定天数后付款</li>
+            <li><strong>保兑信用状（Confirmed L/C）：</strong> 通知行也承担付款义务，进一步保障出口商</li>
+            <li><strong>可转让信用状（Transferable L/C）：</strong> 出口商可将部分信用状权益转让给他人</li>
+          </ul>
+
+          <p class="mt-3">适用于国际贸易中的大宗商品、机械设备、OEM订单等交易金额大、风险高的场合。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

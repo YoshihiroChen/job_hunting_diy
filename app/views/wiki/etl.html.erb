@@ -1,0 +1,102 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">ETL（提取・转换・加载）基础知识指南</h1>
+
+  <!-- 什么是ETL -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是ETL？</h2>
+
+          <p>ETL 是 “Extract, Transform, Load” 的缩写，中文称为“提取、转换、加载”。</p>
+
+          <p>ETL 是一种将来自多个来源的数据，<strong>统一提取、处理转换、并加载到数据仓库或分析系统中</strong>的标准流程，是数据集成的核心技术。</p>
+
+          <p>无论是构建 DWH（数据仓库）、BI系统，还是做大数据分析、报表自动化，ETL 都是基础组成部分之一。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETL三步骤详解 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">ETL 的三大步骤</h2>
+
+          <ul>
+            <li><strong>Extract（提取）：</strong> 从多个系统中抽取数据（如ERP、CRM、Excel、Web API等）</li>
+            <li><strong>Transform（转换）：</strong> 清洗数据、统一字段格式、去重、计算派生字段、匹配编码等</li>
+            <li><strong>Load（加载）：</strong> 将处理好的数据加载进数据库或数据仓库中，供后续分析使用</li>
+          </ul>
+
+          <p class="mt-3">一个良好的ETL流程可以提高数据质量、保证数据一致性，并显著减轻分析工作负担。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETL工具与技术选型 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">常见的ETL工具与平台</h2>
+
+          <ul>
+            <li><strong>Talend：</strong> 开源ETL工具，适用于中大型项目</li>
+            <li><strong>Informatica：</strong> 企业级ETL平台，功能强大，多用于银行等领域</li>
+            <li><strong>Apache NiFi：</strong> 流式ETL架构，适用于实时数据处理</li>
+            <li><strong>Airbyte / Fivetran：</strong> 新兴的云ETL平台，适用于SaaS数据对接</li>
+            <li><strong>Python（Pandas + SQLAlchemy 等）：</strong> 程序化ETL开发方案，适合数据工程师</li>
+          </ul>
+
+          <p>现代ETL工具越来越倾向于“低代码 + 云平台 + 可视化操作”，但仍需理解背后的处理逻辑。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETL的应用场景与相关职种 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">ETL的应用场景与相关职种</h2>
+
+          <ul>
+            <li><strong>数据仓库构建：</strong> 将多个系统的结构化数据汇总到统一分析平台</li>
+            <li><strong>定期报表输出：</strong> 结合调度器定期生成KPI、销售报表等</li>
+            <li><strong>营销分析准备：</strong> 整理客户行为日志、打通CRM与广告数据</li>
+            <li><strong>金融风控：</strong> 提取交易与授信信息，整合风控引擎</li>
+          </ul>
+
+          <h4 class="mt-4">相关职种：</h4>
+          <ul>
+            <li>数据工程师（Data Engineer）</li>
+            <li>BI开发者 / 报表开发工程师</li>
+            <li>系统集成工程师（SIer中的后台数据处理）</li>
+            <li>IT顾问（负责数据平台构建）</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

@@ -1,0 +1,98 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">IFRS财报（国际财务报告准则）基础知识指南</h1>
+
+  <!-- 什么是IFRS -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是IFRS？</h2>
+
+          <p>IFRS 是 “International Financial Reporting Standards” 的缩写，中文称为“国际财务报告准则”。</p>
+
+          <p>它是一套由国际会计准则理事会（IASB）制定的全球统一的会计准则，目的是提升各国企业财务报表的透明度与可比性。</p>
+
+          <p>采用 IFRS 的企业需根据其规则编制财务报表，适用于上市公司、跨国企业等在多个国家有业务的公司。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IFRS与日本会计准则的区别 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">IFRS与日本会计准则（J-GAAP）的主要区别</h2>
+
+          <ul>
+            <li><strong>资产计量方式：</strong> IFRS更倾向于公允价值计量，而J-GAAP偏向历史成本</li>
+            <li><strong>无形资产确认：</strong> IFRS更广泛允许确认研发资产、品牌、客户关系等</li>
+            <li><strong>合并范围判断：</strong> IFRS更强调“实质控制”，J-GAAP更偏向形式上的持股比例</li>
+            <li><strong>减值处理：</strong> IFRS要求资产定期评估是否减值，并立即确认损失</li>
+            <li><strong>盈余认定：</strong> IFRS采用“原则主义”，J-GAAP偏向“规则主义”</li>
+          </ul>
+
+          <p class="mt-3">对于投资者来说，IFRS报表的信息揭示更全面、反映市场价值更及时。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IFRS报表的结构组成 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">IFRS财务报表的基本构成</h2>
+
+          <ul>
+            <li><strong>资产负债表（Balance Sheet）：</strong> 企业在某一时点的资产、负债与资本状况</li>
+            <li><strong>损益表（Profit and Loss Statement）：</strong> 一定期间内的收入与费用、净利润</li>
+            <li><strong>综合收益表（Comprehensive Income）：</strong> 包括汇率变动、评估差额等非经营损益</li>
+            <li><strong>现金流量表（Cash Flow Statement）：</strong> 经营、投资、融资活动的现金流入流出</li>
+            <li><strong>权益变动表：</strong> 股东权益的变动情况</li>
+            <li><strong>附注与说明：</strong> 报表后需详细解释会计处理方针、估计假设等</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IFRS适用企业与人才需求 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">IFRS适用场景与相关职种</h2>
+
+          <ul>
+            <li><strong>适用企业：</strong> 日本大型上市公司（如丰田、索尼）、跨国集团、希望赴海外IPO的初创公司</li>
+            <li><strong>财务会计人员：</strong> 负责编制与转换IFRS报表</li>
+            <li><strong>审计师：</strong> 进行IFRS审计、评估资产减值与控制风险</li>
+            <li><strong>财务顾问 / IPO顾问：</strong> 协助企业引入IFRS、进行制度构建与说明</li>
+            <li><strong>CFA・CPA持证人：</strong> 熟悉IFRS原则是金融分析与国际业务的基础</li>
+          </ul>
+
+          <p class="mt-3">近年来日本企业采用IFRS的趋势逐年增加，熟悉IFRS的会计人才需求也在提升。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

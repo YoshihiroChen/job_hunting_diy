@@ -1,0 +1,99 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">API（应用程序接口）基础知识指南</h1>
+
+  <!-- 什么是API -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是API？</h2>
+
+          <p>API 是 “Application Programming Interface” 的缩写，中文称为“应用程序接口”。</p>
+
+          <p>它是一种让<strong>不同的软件系统之间能够相互通信、交换数据或功能</strong>的技术接口。</p>
+
+          <p>通过API，开发者可以调用他人系统的功能，而无需了解对方的内部实现细节。它就像“菜单”一样，告诉你可以点什么菜（功能），而不需要进入厨房（程序内部）操作。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- API的基本用途与例子 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">API的用途举例</h2>
+
+          <ul>
+            <li><strong>地图嵌入：</strong> 使用 Google Maps API 在网页中嵌入地图</li>
+            <li><strong>支付功能：</strong> 使用 Stripe 或 PayPay 提供的API接入结算功能</li>
+            <li><strong>天气数据调用：</strong> 利用气象API获取实时天气并展示在App中</li>
+            <li><strong>系统间数据交换：</strong> 企业内部系统间通过API自动传输订单与库存数据</li>
+            <li><strong>OAuth登录：</strong> 用Google、Facebook、LINE等账号登录第三方网站</li>
+          </ul>
+
+          <p class="mt-3">在现代Web系统与SaaS服务中，API 是连接前端、后端、第三方平台的关键桥梁。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- API的类型与格式 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">常见的API类型</h2>
+
+          <ul>
+            <li><strong>REST API：</strong> 基于HTTP协议的通用Web API，使用JSON格式，结构简单，易于使用</li>
+            <li><strong>SOAP API：</strong> 较老的标准，使用XML传输，更严格，常用于金融系统</li>
+            <li><strong>GraphQL API：</strong> 由Facebook开发，前端可灵活选择返回字段，适用于复杂查询</li>
+            <li><strong>私有API：</strong> 公司内部系统之间使用的非公开接口</li>
+            <li><strong>公开API（Open API）：</strong> 面向外部开发者开放的接口服务</li>
+          </ul>
+
+          <p>不同类型API适用于不同的开发场景和安全要求。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- API相关岗位与技术角色 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">API相关岗位与工作内容</h2>
+
+          <ul>
+            <li><strong>后端开发工程师：</strong> 设计并实现提供服务的API</li>
+            <li><strong>前端开发工程师：</strong> 调用API获取数据，用于页面展示</li>
+            <li><strong>系统架构师：</strong> 设计跨系统API接口标准与认证机制</li>
+            <li><strong>API产品经理：</strong> 规划API功能开放策略与使用规范</li>
+            <li><strong>测试工程师：</strong> 编写测试用例，验证API返回结果的正确性与性能</li>
+          </ul>
+
+          <p class="mt-3">在“系统对接”、“企业数字化”、“SaaS平台整合”等项目中，API 是必不可少的技术要素。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>
