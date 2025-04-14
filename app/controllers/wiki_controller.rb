@@ -106,4 +106,16 @@ class WikiController < ApplicationController
 
   def ideco
   end
+
+  def cicd
+  end
+
+  def uiux
+  end
+
+  def kpi
+  end
+
+  def saas
+  end
 end

@@ -1,0 +1,102 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">KPI（关键绩效指标）基础知识指南</h1>
+
+  <!-- 什么是KPI -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是KPI？</h2>
+
+          <p>KPI 是 “Key Performance Indicator” 的缩写，中文常译为“关键绩效指标”。</p>
+
+          <p>它是企业、团队或个人用来衡量业务目标达成程度的<strong>量化指标</strong>，是管理中“可视化成果”的核心工具之一。</p>
+
+          <p>KPI 的设定必须与公司战略或部门目标紧密挂钩，能够帮助决策者与执行者“对齐目标、衡量成果、推动改进”。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI的设定原则与实例 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">KPI的设定原则与常见示例</h2>
+
+          <ul>
+            <li><strong>与目标对齐：</strong> KPI必须与上层的OKR、战略目标一致</li>
+            <li><strong>可量化：</strong> 需要设定具体数值，便于评估</li>
+            <li><strong>可追踪：</strong> 数据来源清晰，可定期追踪变化</li>
+            <li><strong>可行动：</strong> 能通过实际行为进行干预与改善</li>
+          </ul>
+
+          <h4 class="mt-4">常见KPI示例：</h4>
+          <ul>
+            <li>销售部门：月销售额、客户转化率、客户维系成本</li>
+            <li>营销部门：广告点击率、线索获取数、CPA（获客成本）</li>
+            <li>客服部门：客户满意度（CSAT）、首次解决率、响应时间</li>
+            <li>产品部门：活跃用户数（DAU）、留存率、功能使用率</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI与其他指标的关系 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">KPI与其他管理指标的区别</h2>
+
+          <ul>
+            <li><strong>KGI（Key Goal Indicator）：</strong> 终极目标，如“年度营收突破10亿日元”</li>
+            <li><strong>KPI：</strong> 为达成KGI而设的过程性指标，如“每月新增客户数”</li>
+            <li><strong>OKR：</strong> 包含目标（Objective）与成果指针（Key Results），更重视定性目标</li>
+            <li><strong>CSF（关键成功因素）：</strong> 达成KPI背后的重要驱动条件</li>
+          </ul>
+
+          <p class="mt-3">KGI 是结果，KPI 是路径，OKR 是方法。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI的注意事项与应用建议 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">KPI使用时的注意事项</h2>
+
+          <ul>
+            <li>不要设定太多KPI（推荐每人3～5个）</li>
+            <li>避免“只看数字不看背景”的 KPI 盲点</li>
+            <li>适时调整KPI，反映业务阶段的变化</li>
+            <li>将KPI与奖惩制度结合需谨慎，防止短视行为</li>
+          </ul>
+
+          <p class="mt-3">好的KPI是驱动成长的“导航仪”，而不是“成绩单”。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

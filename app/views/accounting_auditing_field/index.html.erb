@@ -144,8 +144,8 @@
                   </tr>
                   <tr>
                     <td>执行机构</td>
-                    <td>監査法人、CPA</td>
-                    <td>CPA、税理士、咨询公司</td>
+                    <td>監査法人、<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
+                    <td><%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、税理士、咨询公司</td>
                   </tr>
                   <tr>
                     <td>常见用途</td>

@@ -41,7 +41,7 @@
             <td>④</td>
             <td>财务分析与支援</td>
             <td>用数据分析业务、制定预算、辅助决策</td>
-            <td>KPI、财务可视化、预算控制</td>
+            <td><%= link_to "KPI", wiki_kpi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、财务可视化、预算控制</td>
           </tr>
         </tbody>
       </table>
@@ -104,7 +104,7 @@
         <li><strong>所属部门：</strong> 財務企画部、経営企画部。</li>
         <li><strong>目标角色：</strong> 战略型财务人才、未来CFO候选人。</li>
         <li><strong>能力要求：</strong> 财务 + 战略思考 + 沟通能力。</li>
-        <li><strong>推荐背景：</strong> MBA / CPA / 咨询经验者。</li>
+        <li><strong>推荐背景：</strong> MBA / <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> / 咨询经验者。</li>
       </ul>
     </div>
   </div>
@@ -119,7 +119,7 @@
         <li><strong>服务类型：</strong> SAP导入、合并会计咨询、内部控制整备。</li>
         <li><strong>所属机构：</strong> Big4顾问部、中型咨询公司。</li>
         <li><strong>发展路径：</strong> 从专业顾问 → 项目经理 → 高级经理 / 合伙人。</li>
-        <li><strong>推荐资质：</strong> CPA + 会计实务经验。</li>
+        <li><strong>推荐资质：</strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> + 会计实务经验。</li>
       </ul>
     </div>
   </div>
@@ -168,7 +168,7 @@
             <td><strong>会计类顾问（会計系コンサル）</strong></td>
             <td>★★☆☆☆（挑战型）</td>
             <td>虽然文科生可以申请，但实际面试时往往竞争激烈，理工或CPA持有者更有优势。需要强逻辑思维和项目执行力。</td>
-            <td>文科生需准备好“簿記/CPA资格 + 咨询逻辑 + IT素养（如ERP）”。可先从FAS、事务所顾问部入手。</td>
+            <td>文科生需准备好“簿記/<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>资格 + 咨询逻辑 + IT素养（如ERP）”。可先从FAS、事务所顾问部入手。</td>
           </tr>
         </tbody>
       </table>
@@ -393,7 +393,7 @@
         <thead class="table-light">
           <tr>
             <th>项目（項目）</th>
-            <th>公認会計士（CPA）</th>
+            <th>公認会計士（<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）</th>
             <th>税理士（Zeirishi）</th>
           </tr>
         </thead>
@@ -439,19 +439,19 @@
       <h4 class="mt-4">举例说明</h4>
       <p>假设你是中小企业老板：</p>
       <ul>
-        <li><strong>想上市、提交审计报告：</strong> 你需要雇佣 <strong>CPA（公認会計士）</strong></li>
+        <li><strong>想上市、提交审计报告：</strong> 你需要雇佣 <strong><%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（公認会計士）</strong></li>
         <li><strong>想做合法节税、申报法人税：</strong> 你需要找 <strong>税理士（Zeirishi）</strong></li>
         <li><strong>想做预算规划与KPI设计：</strong> 两者都可能，但CPA偏制度构建，税理士偏实务操作</li>
       </ul>
 
       <h4 class="mt-4">补充说明</h4>
       <ul>
-        <li><strong>CPA 是唯一拥有“签发法定审计报告”权利的职业。</strong></li>
+        <li><strong><%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> 是唯一拥有“签发法定审计报告”权利的职业。</strong></li>
         <li><strong>税理士 在企业、个体户、富裕层中非常重要，能合法代理纳税与交涉。</strong></li>
-        <li>许多 Big4 员工会同时持有 CPA + 注册税理士资格，以扩大执业范围。</li>
+        <li>许多 Big4 员工会同时持有 <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> + 注册税理士资格，以扩大执业范围。</li>
       </ul>
 
-      <p class="mt-3"><strong>总结：</strong> CPA 和 税理士 各有专业领域，CPA 偏“审计+资本市场”，税理士偏“税务+中小企业支援”。如果你目标是 <%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、上市咨询、财务战略 → 更适合 CPA；如果目标是报税、节税、顾问 → 税理士是首选。</p>
+      <p class="mt-3"><strong>总结：</strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>和税理士 各有专业领域，<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>偏“审计+资本市场”，税理士偏“税务+中小企业支援”。如果你目标是 <%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、上市咨询、财务战略 → 更适合 CPA；如果目标是报税、节税、顾问 → 税理士是首选。</p>
 
     </div>
   </div>
@@ -537,7 +537,7 @@
       <h4 class="mt-4">山田＆パートナーズ（Yamada & Partners）</h4>
       <ul>
         <li>专注高净值客户与跨境税务顾问</li>
-        <li>擅长企业承继、M&A、海外税制规划</li>
+        <li>擅长企业承继、<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、海外税制规划</li>
         <li>拥有会计、法律、估值等综合团队</li>
       </ul>
 
@@ -550,7 +550,7 @@
 
       <h4 class="mt-4">freee 株式会社</h4>
       <ul>
-        <li>会计SaaS平台开发商（创业型Fintech）</li>
+        <li>会计<%= link_to "SaaS", wiki_saas_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>平台开发商（创业型Fintech）</li>
         <li>主打产品“freee会計”广泛用于中小企业</li>
         <li>与税理士合作，构建“软件+顾问”生态</li>
       </ul>
@@ -558,7 +558,7 @@
       <h4 class="mt-4">弥生株式会社（Yayoi Co., Ltd.）</h4>
       <ul>
         <li>传统会计软件巨头，“弥生会計”占据市场大份额</li>
-        <li>近年来转型SaaS，提供在线记账、报税服务</li>
+        <li>近年来转型<%= link_to "SaaS", wiki_saas_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>，提供在线记账、报税服务</li>
         <li>与事务所合作推动一站式财务支援</li>
       </ul>
 
@@ -583,7 +583,7 @@
             <td>偏向中小企业经营改善与制度构建</td>
           </tr>
           <tr>
-            <td>SaaS平台型</td>
+            <td><%= link_to "SaaS", wiki_saas_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>平台型</td>
             <td>freee、弥生</td>
             <td>通过软件实现财务自动化并配合顾问合作</td>
           </tr>

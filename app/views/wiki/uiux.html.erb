@@ -1,0 +1,97 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">UI/UX（用户界面与用户体验）基础知识指南</h1>
+
+  <!-- 什么是UI/UX -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是UI/UX？</h2>
+
+          <p>UI 是 “User Interface（用户界面）” 的缩写，指用户与系统交互时所看到的界面元素；UX 是 “User Experience（用户体验）” 的缩写，指用户在使用产品过程中所获得的整体感受与满意度。</p>
+
+          <p>UI关注“看起来是否清晰好用”，UX关注“用起来是否顺畅舒服”。</p>
+
+          <p>UI/UX 是产品设计中不可分割的两部分，尤其在Web开发、App开发、企业系统设计中扮演核心角色。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UI与UX的区别与联系 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">UI与UX的区别与联系</h2>
+
+          <ul>
+            <li><strong>UI设计：</strong> 包括按钮、颜色、图标、排版、动画、响应式布局等视觉与操作界面设计</li>
+            <li><strong>UX设计：</strong> 包括用户旅程、页面流程、信息架构、操作逻辑、用户调研与可用性测试</li>
+            <li><strong>联系：</strong> 好的UI是提升UX的重要工具；UX规划将决定UI该呈现哪些元素与逻辑</li>
+          </ul>
+
+          <p class="mt-3">UI 是“产品的外表”，UX 是“产品的灵魂”。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UI/UX设计流程与方法 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">UI/UX设计的常见流程</h2>
+
+          <ul>
+            <li><strong>用户调研：</strong> 理解目标用户的需求与痛点（问卷、访谈、观察）</li>
+            <li><strong>用户旅程图设计：</strong> 可视化用户在系统中的行为流程</li>
+            <li><strong>信息架构设计：</strong> 合理组织页面内容与菜单结构</li>
+            <li><strong>线框图与原型设计：</strong> 使用Figma、Adobe XD、Sketch等工具设计交互原型</li>
+            <li><strong>UI视觉设计：</strong> 应用品牌色、字体、组件库进行界面设计</li>
+            <li><strong>可用性测试：</strong> 观察用户实际操作中的反馈并优化</li>
+          </ul>
+
+          <p class="mt-3">UI/UX设计是不断验证与迭代的过程，需要与开发团队密切配合。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UI/UX的岗位与必备技能 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">UI/UX相关岗位与技能要求</h2>
+
+          <ul>
+            <li><strong>UI设计师：</strong> 精通设计工具、颜色搭配、响应式设计，关注视觉一致性</li>
+            <li><strong>UX设计师：</strong> 懂用户心理、善于数据分析、逻辑架构、用户测试</li>
+            <li><strong>产品经理：</strong> 协调UI/UX与技术团队，负责用户需求转化为功能规划</li>
+            <li><strong>前端开发者：</strong> 实现UI设计稿、优化交互效果、确保响应速度</li>
+          </ul>
+
+          <p class="mt-3">优秀的UI/UX能力能显著提升用户留存率、转化率与客户满意度。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

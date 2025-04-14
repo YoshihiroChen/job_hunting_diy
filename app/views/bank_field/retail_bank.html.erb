@@ -294,12 +294,12 @@
             <tr>
               <td>产品思维</td>
               <td>以用户体验为导向</td>
-              <td>UI/UX为核心，注重App设计与功能测试</td>
+              <td><%= link_to "UI/UX", wiki_uiux_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>为核心，注重App设计与功能测试</td>
             </tr>
             <tr>
               <td>技术组织</td>
               <td>内部开发主导</td>
-              <td>使用敏捷开发、<%= link_to "API", wiki_api_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>平台、CI/CD流程</td>
+              <td>使用敏捷开发、<%= link_to "API", wiki_api_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>平台、<%= link_to "CI/CD流程", wiki_cicd_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
             </tr>
             <tr>
               <td>组织结构</td>

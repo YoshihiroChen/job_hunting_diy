@@ -1,0 +1,116 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">SaaS（软件即服务）基础知识指南</h1>
+
+  <!-- 什么是SaaS -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是SaaS？</h2>
+
+          <p>SaaS 是 “Software as a Service” 的缩写，中文为“软件即服务”。</p>
+
+          <p>它是一种通过<strong>互联网提供软件功能</strong>的服务模式，用户无需下载安装，即可通过网页或App访问所需功能。</p>
+
+          <p>SaaS 属于云计算的一种，常与IaaS（基础设施即服务）、PaaS（平台即服务）并列。代表服务包括 Gmail、Slack、Salesforce、freee、Money Forward 等。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SaaS的特点与优势 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">SaaS的主要特点与优势</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>特点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>无需安装</td>
+                <td>通过浏览器或App即可使用，无需部署到本地电脑</td>
+              </tr>
+              <tr>
+                <td>按月/年付费</td>
+                <td>通常为订阅制，按用户数或功能模块收费</td>
+              </tr>
+              <tr>
+                <td>持续更新</td>
+                <td>由服务商统一维护与功能升级，用户总用最新版本</td>
+              </tr>
+              <tr>
+                <td>远程协作</td>
+                <td>支持多人异地同时使用，提高业务效率</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SaaS的应用场景与代表产品 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">SaaS的应用领域与代表服务</h2>
+
+          <ul>
+            <li><strong>企业协作：</strong> Slack、Microsoft Teams、Zoom</li>
+            <li><strong>客户管理（CRM）：</strong> Salesforce、HubSpot</li>
+            <li><strong>会计财务：</strong> freee、Money Forward、弥生会计Online</li>
+            <li><strong>人力资源：</strong> SmartHR、jinjer、カオナビ</li>
+            <li><strong>市场营销：</strong> Mailchimp、Klaviyo、Marketo</li>
+            <li><strong>开发者工具：</strong> GitHub、Figma、Notion、Jira</li>
+          </ul>
+
+          <p class="mt-3">现代企业的IT系统建设，越来越多采用SaaS方式替代传统自建系统。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SaaS的商业模式与指标 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">SaaS的商业模式与关键指标</h2>
+
+          <ul>
+            <li><strong>订阅制营收（MRR/ARR）：</strong> 月度或年度持续收入模型（Monthly/Annual Recurring Revenue）</li>
+            <li><strong>LTV（客户生命周期价值）：</strong> 客户在有效期内可带来的总收益</li>
+            <li><strong>CAC（获客成本）：</strong> 获得一位付费客户所需的平均投入</li>
+            <li><strong>Churn Rate（流失率）：</strong> 取消订阅的用户比例，是核心运营指标</li>
+          </ul>
+
+          <p class="mt-3">SaaS企业的估值与成长潜力，通常依赖以上指标进行判断。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

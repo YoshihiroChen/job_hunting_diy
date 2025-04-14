@@ -124,6 +124,11 @@ Rails.application.routes.draw do
   get 'wiki/rmbs', to: 'wiki#rmbs'
   get 'wiki/aum', to: 'wiki#aum'
   get 'wiki/ideco', to: 'wiki#ideco'
+  get 'wiki/cicd', to: 'wiki#cicd'
+  get 'wiki/uiux', to: 'wiki#uiux'
+  get 'wiki/kpi', to: 'wiki#kpi'
+  get 'wiki/saas', to: 'wiki#saas'
+
   
 
 
