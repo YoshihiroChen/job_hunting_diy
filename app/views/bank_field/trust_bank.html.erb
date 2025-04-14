@@ -35,7 +35,7 @@
               <td>不动产业务</td>
               <td>企业、富裕个人</td>
               <td>仲介手续费、不动产管理费</td>
-              <td>办公楼、住宅、REIT、物流设施的收购、管理与销售</td>
+              <td>办公楼、住宅、<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、物流设施的收购、管理与销售</td>
             </tr>
             <tr>
               <td>普通银行业务</td>
@@ -85,7 +85,7 @@
       <!-- 3. アクチュアリー -->
       <h5 class="fw-bold text-success mt-4">3. アクチュアリー（精算师）</h5>
       <ul>
-        <li><strong>内容：</strong>负责年金数理分析、未来负债建模、ALM等；支援企业年金制度设计与评估。</li>
+        <li><strong>内容：</strong>负责年金数理分析、未来负债建模、<%= link_to "ALM", wiki_alm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等；支援企业年金制度设计与评估。</li>
         <li><strong>发展方向：</strong>年金精算部门 → 取得アクチュアリー资格。</li>
         <li><strong>适合人群：</strong>数学、统计、理工科背景，有志于考取精算师资格。</li>
         <li><strong>文科生选考可能性：</strong>极低（★☆☆☆☆）</li>
@@ -97,7 +97,7 @@
       <ul>
         <li><strong>内容：</strong>管理信托资产、构建投资组合、进行有价证券分析与运用。</li>
         <li><strong>发展方向：</strong>资产管理本部 → 基金经理、策略分析师。</li>
-        <li><strong>适合人群：</strong>对金融市场和资产配置有兴趣，有CFA或金融工学背景更佳。</li>
+        <li><strong>适合人群：</strong>对金融市场和资产配置有兴趣，有<%= link_to "CFA", wiki_cfa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>或金融工学背景更佳。</li>
         <li><strong>文科生选考可能性：</strong>较低（★★☆☆☆）</li>
         <li><strong>特征总结：</strong>属于少数精英路径，偏向资产管理型投行人才。</li>
       </ul>
@@ -106,7 +106,7 @@
       <h5 class="fw-bold text-success mt-4">5. システム・デジタル（IT系统与数字化）</h5>
       <ul>
         <li><strong>内容：</strong>初期配属至系统企划、开发、基盘维护等，推动数字化改革。</li>
-        <li><strong>发展方向：</strong>IT战略部、DX推进本部、系统开发管理。</li>
+        <li><strong>发展方向：</strong>IT战略部、<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>推进本部、系统开发管理。</li>
         <li><strong>适合人群：</strong>信息工学、计算机专业背景，能编程者。</li>
         <li><strong>文科生选考可能性：</strong>很低（★☆☆☆☆）</li>
         <li><strong>特征总结：</strong>纯理系向技术职，与传统信托业务较远。</li>
@@ -201,7 +201,7 @@
             <tr>
               <td><strong>3. アクチュアリー</strong></td>
               <td>直接关联</td>
-              <td>如果风险计算与年金负债建模、ALM有关，该职种为核心归属，但门槛较高，面向理系。</td>
+              <td>如果风险计算与年金负债建模、<%= link_to "ALM", wiki_alm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>有关，该职种为核心归属，但门槛较高，面向理系。</td>
             </tr>
             <tr>
               <td><strong>4. ファンドマネージャー</strong></td>
@@ -240,7 +240,7 @@
       <!-- 2. 资产运用 -->
       <h5 class="fw-bold text-primary mt-4">2. 资产运用业务（投资管理）</h5>
       <ul>
-        <li><strong>收入来源：</strong>委托管理报酬（按AUM）、成果报酬、证券买卖佣金</li>
+        <li><strong>收入来源：</strong>委托管理报酬（按<%= link_to "AUM", wiki_aum_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）、成果报酬、证券买卖佣金</li>
         <li><strong>盈利逻辑：</strong>接受机构客户资金委托进行证券投资，根据规模和业绩收取费用</li>
         <li><strong>常见客户：</strong>企业年金、宗教法人、学校法人、保险公司</li>
         <li><strong>收入特点：</strong>与市场联动，绩效费机制灵活，需要投研/风控系统支持</li>
@@ -249,9 +249,9 @@
       <!-- 3. 不动产业务 -->
       <h5 class="fw-bold text-primary mt-4">3. 不动产业务</h5>
       <ul>
-        <li><strong>收入来源：</strong>不动产仲介手续费、管理费、REIT管理报酬、开发顾问费</li>
+        <li><strong>收入来源：</strong>不动产仲介手续费、管理费、<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>管理报酬、开发顾问费</li>
         <li><strong>盈利逻辑：</strong>作为受托人管理/运营客户不动产并收取服务报酬</li>
-        <li><strong>常见服务：</strong>大楼租售、估值、遗产税对策、私募REIT开发</li>
+        <li><strong>常见服务：</strong>大楼租售、估值、遗产税对策、私募<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>开发</li>
         <li><strong>收入特点：</strong>交易金额大、一次性收益高、周期性强、依赖专业人员</li>
       </ul>
 
@@ -267,9 +267,9 @@
       <!-- 5. 结构融资 -->
       <h5 class="fw-bold text-primary mt-4">5. 证券化与结构融资（ストラクチャードファイナンス）</h5>
       <ul>
-        <li><strong>收入来源：</strong>结构设计佣金、发行协助费、SPC管理报酬</li>
-        <li><strong>盈利逻辑：</strong>帮助企业设计资产证券化结构并设立SPC，进行发行和信托管理</li>
-        <li><strong>应用场景：</strong>ABS、RMBS、不动产信托受益权销售、贷款资产流动化</li>
+        <li><strong>收入来源：</strong>结构设计佣金、发行协助费、<%= link_to "SPC管理报酬", wiki_spc_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></li>
+        <li><strong>盈利逻辑：</strong>帮助企业设计资产证券化结构并设立<%= link_to "SPC", wiki_spc_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>，进行发行和信托管理</li>
+        <li><strong>应用场景：</strong><%= link_to "ABS", wiki_abs_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、<%= link_to "RMBS", wiki_rmbs_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、不动产信托受益权销售、贷款资产流动化</li>
         <li><strong>收入特点：</strong>项目型高收益、依赖专业结构设计能力、适合大型客户</li>
       </ul>
 
@@ -294,13 +294,13 @@
             </tr>
             <tr>
               <td>管理报酬型</td>
-              <td>年金、AUM投资管理</td>
+              <td>年金、<%= link_to "AUM", wiki_aum_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>投资管理</td>
               <td>随资产变化</td>
               <td>★★☆☆☆</td>
             </tr>
             <tr>
               <td>成果报酬型</td>
-              <td>投资运用、REIT、私募基金</td>
+              <td>投资运用、<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、私募基金</td>
               <td>与市场波动相关</td>
               <td>★★★☆☆</td>
             </tr>
@@ -382,8 +382,8 @@
             </tr>
             <tr>
               <td>管理方式</td>
-              <td>证券投资、AUM控制</td>
-              <td>租赁、出售、REIT运用</td>
+              <td>证券投资、<%= link_to "AUM", wiki_aum_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>控制</td>
+              <td>租赁、出售、<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>运用</td>
             </tr>
             <tr>
               <td>服务对象</td>

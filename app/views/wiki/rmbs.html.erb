@@ -1,0 +1,118 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">RMBS（住宅抵押贷款支持证券）基础知识指南</h1>
+
+  <!-- 什么是RMBS -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是RMBS？</h2>
+
+          <p>RMBS 是 “Residential Mortgage-Backed Securities” 的缩写，中文称为“住宅抵押贷款支持证券”，是资产支持证券（ABS）的一种。</p>
+
+          <p>它是以<strong>个人住房贷款（住宅ローン）</strong>为基础资产，通过证券化结构发行的金融商品。发行人将众多住宅贷款打包，并通过SPC（特设目的公司）或信托方式发行证券，向投资者筹集资金。</p>
+
+          <p>RMBS 广泛用于住房金融机构的融资工具，在日本、美国等市场均为重要的固定收益商品。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RMBS的结构与参与方 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">RMBS的结构与参与方</h2>
+
+          <ul>
+            <li><strong>原始贷款人（Originator）：</strong> 银行、信用金库、住宅金融支援机构等</li>
+            <li><strong>SPC / 信托受托人：</strong> 接收贷款资产、发行证券并收取还款</li>
+            <li><strong>证券评级机构：</strong> 对RMBS进行信用评级，帮助投资判断</li>
+            <li><strong>信用增级机构：</strong> 提供担保、次级分层等方式增强信用</li>
+            <li><strong>投资者：</strong> 保险公司、银行、机构投资者等购买者</li>
+          </ul>
+
+          <p class="mt-3">RMBS的本质是将长期的按揭贷款变为可交易、可分层的资本市场商品。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RMBS的现金流结构与信用分层 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">RMBS的现金流分配机制</h2>
+
+          <ul>
+            <li><strong>优先级分层：</strong> 将证券分为优先级（Senior）与次级（Subordinated）</li>
+            <li><strong>现金流分配：</strong> 首先偿还优先级，剩余再用于次级</li>
+            <li><strong>提前还款风险：</strong> 借款人提前还贷可能影响收益预测</li>
+            <li><strong>违约损失吸收机制：</strong> 次级份额用于吸收前期损失，保护高级债券</li>
+          </ul>
+
+          <p class="mt-3">通过“结构化信用增级”方式，RMBS 可实现 AAA 等高信用评级。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RMBS的优缺点与市场用途 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">RMBS的优势与注意事项</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>提高资金流动性</td>
+                <td>将长期贷款资产迅速转化为现金</td>
+              </tr>
+              <tr>
+                <td>信用分层管理</td>
+                <td>不同风险偏好者可选择相应级别投资</td>
+              </tr>
+              <tr>
+                <td>风险隔离</td>
+                <td>通过SPC分离资产与发起机构本体风险</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">注意事项：</h4>
+          <ul>
+            <li>提前还款与违约风险需通过模型控制</li>
+            <li>结构复杂、需要专业判断</li>
+            <li>市场利率变动可能影响投资价值</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

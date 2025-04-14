@@ -1,0 +1,113 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">JGBs（日本国债）基础知识指南</h1>
+
+  <!-- 什么是JGBs -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是JGBs（日本国债）？</h2>
+
+          <p>JGBs 是 “Japanese Government Bonds” 的缩写，中文称为“日本国债”。</p>
+
+          <p>它是由日本政府发行的债券，用于筹措国家预算资金，主要由财政部（財務省）通过定期招标方式发行。</p>
+
+          <p>JGBs 是日本最重要的固定收益金融商品之一，也是银行、保险公司、养老金等机构投资组合的核心组成部分。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JGBs的种类 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">JGBs的主要种类</h2>
+
+          <ul>
+            <li><strong>10年期固定利率国债：</strong> 最具代表性的长期国债，常作为基准利率</li>
+            <li><strong>短期国债（T-Bills）：</strong> 发行期为3个月、6个月、1年等，零息折价发行</li>
+            <li><strong>浮动利率国债：</strong> 利率根据市场变化定期调整</li>
+            <li><strong>通货膨胀连动国债：</strong> 本金与利息与CPI挂钩，防止通胀影响</li>
+            <li><strong>零售国债：</strong> 面向个人投资者发行，有固定利率型和变动利率型</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JGBs的特点与作用 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">JGBs的特点与功能</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>特点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>安全性高</td>
+                <td>由日本政府担保偿还，是违约风险最低的金融商品</td>
+              </tr>
+              <tr>
+                <td>流动性强</td>
+                <td>有活跃的二级市场，银行间可随时交易</td>
+              </tr>
+              <tr>
+                <td>利率指标</td>
+                <td>10年期JGB收益率常被视为“无风险利率”</td>
+              </tr>
+              <tr>
+                <td>货币政策工具</td>
+                <td>日本银行通过买卖JGBs调控市场流动性（量化宽松）</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 投资者与实务运用 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">JGBs的投资者与实务应用</h2>
+
+          <ul>
+            <li><strong>主要持有者：</strong> 日本央行（BOJ）、商业银行、保险公司、年金基金</li>
+            <li><strong>金融机构用途：</strong> 作为资本缓冲资产、流动性储备、抵押品</li>
+            <li><strong>个人投资者用途：</strong> 作为安全的长期资产配置</li>
+            <li><strong>金融市场应用：</strong> 衍生品定价、利率互换、收益率曲线分析</li>
+          </ul>
+
+          <p class="mt-3">JGBs不仅是政府融资工具，也是整个金融市场的重要基石资产。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

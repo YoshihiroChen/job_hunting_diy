@@ -74,7 +74,7 @@
           </tr>
           <tr>
             <td>金融商品销售</td>
-            <td>销售投信、保险、iDeCo 相关商品</td>
+            <td>销售投信、保险、<%= link_to "iDeCo", wiki_ideco_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>相关商品</td>
             <td>获得销售佣金与管理分润</td>
             <td>手续费型</td>
           </tr>
@@ -91,7 +91,7 @@
             <td>平台服务型</td>
           </tr>
           <tr>
-            <td>API接口服务</td>
+            <td><%= link_to "API", wiki_api_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>接口服务</td>
             <td>为企业客户提供转账与资金管理接口</td>
             <td>收取接口使用或系统接入费用</td>
             <td>系统服务型</td>
@@ -104,6 +104,31 @@
           </tr>
         </tbody>
       </table>
+      <div class="alert alert-info">
+        <h5 class="mb-3">什么是银行的 API 对接？</h5>
+        <p>API（Application Programming Interface）是应用程序接口，指的是一种系统间的对接协议。银行开放API接口后，企业客户可以将自己的系统与银行后台对接，实现账户查询、自动转账、对账结算等操作的自动化。</p>
+
+        <h6 class="mt-3">实际例子说明</h6>
+        <p>某电商平台使用银行提供的 API 接口，客户下单后，系统会自动调用“转账API”向供应商付款；退款时也能自动调用“退款API”；财务结算阶段可以直接通过“余额查询API”拉取数据，无需人工登录网银。</p>
+
+        <h6 class="mt-3">带来的主要好处</h6>
+        <ul>
+          <li>自动化处理，无需人工操作</li>
+          <li>提高效率，减少人力成本</li>
+          <li>交易实时执行，提高对账效率</li>
+          <li>安全可靠，符合金融合规要求</li>
+          <li>可嵌入ERP、电商系统、SaaS平台等多种场景</li>
+        </ul>
+
+        <h6 class="mt-3">银行的盈利方式</h6>
+        <ul>
+          <li>按笔计费（如每次调用转账API收取手续费）</li>
+          <li>固定月费（提供API服务套餐）</li>
+          <li>定制开发费（为企业对接特定接口）</li>
+        </ul>
+
+        <p class="mb-0"><strong>总结：</strong> 银行的 API 对接是一种“数字化服务接口”，为企业客户提供智能金融能力，是一种典型的 BtoB（企业对企业）服务，已成为现代网络银行的重要盈利来源之一。</p>
+      </div>
     </div>
   </div>
 
@@ -174,7 +199,7 @@
             <tr>
               <td>エンジニア職（開発）</td>
               <td>相当于系统部</td>
-              <td>参与自家服务的系统设计与开发，包括 App、API、核心银行系统等技术相关工作</td>
+              <td>参与自家服务的系统设计与开发，包括 App、<%= link_to "API", wiki_api_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、核心银行系统等技术相关工作</td>
             </tr>
             <tr>
               <td>データ／分析系</td>
@@ -274,7 +299,7 @@
             <tr>
               <td>技术组织</td>
               <td>内部开发主导</td>
-              <td>使用敏捷开发、API平台、CI/CD流程</td>
+              <td>使用敏捷开发、<%= link_to "API", wiki_api_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>平台、CI/CD流程</td>
             </tr>
             <tr>
               <td>组织结构</td>

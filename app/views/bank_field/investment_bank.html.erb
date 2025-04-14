@@ -23,9 +23,9 @@
 
       <!-- 投资银行部 -->
       <h5 class="fw-bold mt-4">3. 投资银行部门（投資銀行部門）</h5>
-      <p>提供企业融资（ECM、DCM）、并购（M&A）等资本市场与战略顾问服务。</p>
+      <p>提供企业融资（<%= link_to "ECM", wiki_ecm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、<%= link_to "DCM", wiki_dcm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）、并购（<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）等资本市场与战略顾问服务。</p>
       <ul>
-        <li><strong>IBコース：</strong> 初始配属至投资银行本部，专注于并购、IPO、债券发行等投行业务。</li>
+        <li><strong>IBコース：</strong> 初始配属至投资银行本部，专注于并购、<%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、债券发行等投行业务。</li>
       </ul>
 
       <!-- 市场商品部 -->
@@ -74,13 +74,13 @@
 
       <!-- 1. 手续费收入 -->
       <h5 class="fw-bold mt-4">1. 手续费收入（手数料収入）</h5>
-      <p><strong>为客户提供融资、并购、资本市场服务所收取的专业服务费</strong><br>代表业务：IPO（首次公开募股）、DCM（债券发行）、M&A（并购）</p>
+      <p><strong>为客户提供融资、并购、资本市场服务所收取的专业服务费</strong><br>代表业务：<%= link_to "IPO（首次公开募股）", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、<%= link_to "ECM", wiki_ecm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（债券发行）、<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（并购）</p>
       <h6 class="fw-semibold">收入来源机制：</h6>
       <table class="table table-bordered">
         <thead class="table-light"><tr><th>步骤</th><th>内容</th></tr></thead>
         <tbody>
           <tr><td>①</td><td>企业向投行提出融资/并购需求（例：A公司想上市或想收购B公司）</td></tr>
-          <tr><td>②</td><td>投行提供解决方案（如IPO结构设计、投资人介绍、M&A估值建议）</td></tr>
+          <tr><td>②</td><td>投行提供解决方案（如<%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>结构设计、投资人介绍、<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>估值建议）</td></tr>
           <tr><td>③</td><td>签署委托协议（通常包含「基本顾问费」+「成功报酬（success fee）」）</td></tr>
           <tr><td>④</td><td>完成交易后收取手续费（按融资额的2%~7%收取）</td></tr>
         </tbody>
@@ -148,8 +148,8 @@
 
       <!-- 5. 融资收益 -->
       <h5 class="fw-bold mt-4">5. 融资收益（スプレッド）</h5>
-      <p><strong>在证券承销时，发行价与销售价之间的价差所形成的收入</strong><br>代表业务：IPO、增资发行、公司债券发行</p>
-      <h6 class="fw-semibold">收入来源机制（以IPO为例）：</h6>
+      <p><strong>在证券承销时，发行价与销售价之间的价差所形成的收入</strong><br>代表业务：<%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、增资发行、公司债券发行</p>
+      <h6 class="fw-semibold">收入来源机制（以<%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>为例）：</h6>
       <table class="table table-bordered">
         <thead class="table-light"><tr><th>步骤</th><th>内容</th></tr></thead>
         <tbody>
@@ -255,7 +255,7 @@
 
   <div class="card shadow mb-4">
   <div class="card-body">
-    <h3 class="card-title mb-3">投资银行与咨询公司（M&A/财务咨询）的区别</h3>
+    <h3 class="card-title mb-3">投资银行与咨询公司（<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>/财务咨询）的区别</h3>
 
     <p class="mb-3">投资银行与咨询公司在并购、融资、战略支援等业务上看似接近，但在工作内容、角色定位、收费方式等方面存在根本差异。</p>
 
@@ -363,7 +363,7 @@
       <ul>
         <li><%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（首次公开募股）承销</li>
         <li>债券发行</li>
-        <li>并购（M&A）顾问</li>
+        <li>并购（<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）顾问</li>
         <li>金融商品（如衍生品、结构化金融产品）设计与销售</li>
         <li>资本结构咨询、企业估值、股票研究等</li>
       </ul>
@@ -406,7 +406,7 @@
             <td>以证券公司为实施主体</td>
           </tr>
           <tr>
-            <td>承销 / M&A</td>
+            <td>承销 / <%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
             <td>由投行专业部门完成</td>
             <td>由证券公司内部的“投资银行部”执行</td>
           </tr>

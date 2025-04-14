@@ -1,0 +1,113 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">SPC管理报酬基础知识指南</h1>
+
+  <!-- 什么是SPC及其管理报酬 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是SPC管理报酬？</h2>
+
+          <p>SPC 是 “Special Purpose Company” 的缩写，中文常译为“特设目的公司”或“特定目的公司”。</p>
+
+          <p>它通常被设立用于资产证券化、不动产信托、项目融资（PFI/PPP）等结构中，作为资产持有与资金流转的专用法人实体。</p>
+
+          <p>SPC本身不设人员，因此实际运营由受托管理者（通常是信托银行、资产管理公司或律师事务所）执行，<strong>SPC管理报酬即为这部分“运营代行服务”的对价</strong>。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 管理报酬的构成与种类 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">SPC管理报酬的构成</h2>
+
+          <ul>
+            <li><strong>设立时费用：</strong> 公司登记、印纸税、公证、注册代理费用</li>
+            <li><strong>日常运营费用：</strong> 会计记账、纳税申报、合同管理、董事会议运营</li>
+            <li><strong>银行账户管理费：</strong> 与托管账户相关的事务成本</li>
+            <li><strong>法务合规费用：</strong> 应对审计、税务局或金融厅检查时的专业支持</li>
+            <li><strong>解散清算费用：</strong> 业务完结时的注销与清算支援</li>
+          </ul>
+
+          <p class="mt-3">这些报酬通常由“资产管理收益”或“项目租金收入”等中扣除后支付给管理方。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPC管理人角色与收费主体 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">谁负责SPC管理？</h2>
+
+          <ul>
+            <li><strong>资产管理公司（AM）：</strong> 在不动产REIT结构中，负责运营方针与报酬设定</li>
+            <li><strong>信托银行：</strong> 提供信托与会计功能，管理现金流与资产登记</li>
+            <li><strong>会计事务所：</strong> 承担记账与纳税申报服务</li>
+            <li><strong>律师事务所：</strong> 提供公司治理与契约履行方面的支援</li>
+          </ul>
+
+          <p class="mt-3">SPC管理服务常通过“年度合约”或“项目合约”方式收取固定或变动费用。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 管理报酬的实务金额与注意事项 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">实务中的费用范围与注意点</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>费用类型</th>
+                <th>常见金额范围（以日元计）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>设立初期费用</td>
+                <td>约 50万～100万</td>
+              </tr>
+              <tr>
+                <td>每年管理报酬</td>
+                <td>约 50万～200万（视项目规模与复杂度）</td>
+              </tr>
+              <tr>
+                <td>解散清算费用</td>
+                <td>约 30万～80万</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="mt-3">若SPC结构较复杂，或为海外投资结构，费用可能更高；企业在设立前应评估成本与风险。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

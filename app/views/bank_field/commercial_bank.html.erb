@@ -224,12 +224,12 @@
               <td>✔️ 有</td>
             </tr>
             <tr>
-              <td>金融工程方法（如VaR、蒙特卡洛）</td>
+              <td>金融工程方法（如<%= link_to "VaR", wiki_var_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、蒙特卡洛）</td>
               <td>✔️ 有</td>
               <td>✔️ 有</td>
             </tr>
             <tr>
-              <td>监管框架下的模型（Basel）</td>
+              <td>监管框架下的模型（<%= link_to "Basel", wiki_basel_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）</td>
               <td>✔️ 有</td>
               <td>✔️ 有</td>
             </tr>
@@ -309,7 +309,7 @@
         <ul>
           <li><strong>银行将自身资产配置到：</strong>
             <ul>
-              <li>日本国债（JGBs）</li>
+              <li><%= link_to "日本国债（JGBs）", wiki_jgbs_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></li>
               <li>短期金融市场（回购协议等）</li>
               <li>外币存款/债券</li>
             </ul>
@@ -327,7 +327,7 @@
             <ul>
               <li>网上银行系统（对法人/个人）</li>
               <li>外汇平台使用费</li>
-              <li>API连接费用（例如和企业系统连接）</li>
+              <li><%= link_to "API", wiki_api_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>连接费用（例如和企业系统连接）</li>
               <li>事務代行、汇总表制作服务费等</li>
             </ul>
           </li>

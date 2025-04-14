@@ -1,0 +1,123 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">REIT（不动产投资信托）基础知识指南</h1>
+
+  <!-- 什么是REIT -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是REIT？</h2>
+
+          <p>REIT 是 “Real Estate Investment Trust” 的缩写，中文称为“不动产投资信托”，在日本称为「不動産投資信託」或「J-REIT」。</p>
+
+          <p>它是一种将众多投资者的资金集中起来，<strong>投资于可产生租金收益的不动产（如写字楼、商场、住宅、物流设施等）</strong>，并将收入按比例分配给投资者的金融商品。</p>
+
+          <p>REIT 在证券交易所上市，投资者可以像买卖股票一样轻松参与不动产投资，具有较高流动性和稳定分红特征。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REIT的运作机制 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">REIT的基本结构与运作机制</h2>
+
+          <ul>
+            <li><strong>投资者：</strong> 购买REIT份额，享受分红</li>
+            <li><strong>资产管理公司（AM）：</strong> 负责资产运用、租赁管理、增值战略</li>
+            <li><strong>信托银行：</strong> 实际持有不动产，并托管运营资产</li>
+            <li><strong>REIT本体：</strong> 作为上市法人，对外融资与资产持有的法律载体</li>
+            <li><strong>交易所：</strong> J-REIT 多数在东京证券交易所上市，像股票一样买卖</li>
+          </ul>
+
+          <p class="mt-3">REIT 的收入主要来自租金收益与物业买卖差价，需将90%以上的利润作为分红返还。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REIT的种类与投资标的 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">REIT的主要类型与投资标的</h2>
+
+          <ul>
+            <li><strong>综合型REIT：</strong> 同时投资于写字楼、商铺、住宅等多种不动产</li>
+            <li><strong>写字楼型：</strong> 投资于大都市商务区的办公楼，受经济景气影响大</li>
+            <li><strong>住宅型：</strong> 投资于出租公寓，租金稳定</li>
+            <li><strong>物流型：</strong> 投资于仓库、物流中心，电商增长带动需求</li>
+            <li><strong>酒店型：</strong> 受访日游客等旅游需求波动较大</li>
+          </ul>
+
+          <p>J-REIT 也逐渐出现 ESG型、新型城市开发型等特色产品。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REIT的优缺点与适合人群 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">REIT的优缺点与适合人群</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>门槛低</td>
+                <td>普通个人投资者也可轻松参与不动产投资</td>
+              </tr>
+              <tr>
+                <td>流动性高</td>
+                <td>可在证券市场中随时买卖</td>
+              </tr>
+              <tr>
+                <td>分红稳定</td>
+                <td>收益来源为稳定租金，适合长期持有</td>
+              </tr>
+              <tr>
+                <td>专业运营</td>
+                <td>由专业团队管理资产、提高价值</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">适合人群：</h4>
+          <ul>
+            <li>追求稳定收益的投资者</li>
+            <li>希望参与不动产但不想直接买房的人</li>
+            <li>想通过资产配置实现抗通胀与分散风险的人</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

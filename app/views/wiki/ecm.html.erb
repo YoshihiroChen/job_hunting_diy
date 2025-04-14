@@ -1,0 +1,114 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">ECM（股权资本市场）基础知识指南</h1>
+
+  <!-- 什么是ECM -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是ECM（Equity Capital Markets）？</h2>
+
+          <p>ECM 是 “Equity Capital Markets” 的缩写，中文称为“股权资本市场”。</p>
+
+          <p>它是金融市场中的一个专门领域，<strong>帮助企业通过发行股票或相关金融商品从投资者处筹集资金</strong>，属于投行（Investment Banking）业务的一环。</p>
+
+          <p>ECM 团队通常负责协调 IPO、增发、可转债发行、公开或私募配售等各类股权融资项目。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ECM的主要业务 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">ECM的主要业务内容</h2>
+
+          <ul>
+            <li><strong>IPO（首次公开募股）：</strong> 协助企业首次上市融资，制定估值与分销策略</li>
+            <li><strong>PO（后续增发）：</strong> 上市公司追加发行股份融资（公募或私募）</li>
+            <li><strong>CB（可转换债券）：</strong> 混合型融资工具，兼具股权与债权性质</li>
+            <li><strong>Block Trade：</strong> 大宗股票交易协调，安排配售窗口</li>
+            <li><strong>股权融资结构设计：</strong> 包括定价建议、市场窗口判断、投资者沟通</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ECM的参与者与角色 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">ECM的参与者与协作结构</h2>
+
+          <ul>
+            <li><strong>发行人（Issuer）：</strong> 需要筹资的企业（例如即将上市的公司）</li>
+            <li><strong>主承销商（Lead Manager）：</strong> 主要投行，主导定价与销售流程</li>
+            <li><strong>会计师 / 律师事务所：</strong> 协助制作招股说明书、完成法律文件</li>
+            <li><strong>投资者（机构 / 个人）：</strong> 购买股票或相关金融商品</li>
+            <li><strong>交易所：</strong> 提供股票挂牌与监管平台（如东京证券交易所）</li>
+          </ul>
+
+          <p class="mt-3">ECM团队在整个股权融资过程中起到桥梁与项目管理者的作用。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ECM的特点与所需能力 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">ECM的特点与所需能力</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>特点</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>节奏快</td>
+                <td>市场行情影响大，需快速完成窗口期内的融资动作</td>
+              </tr>
+              <tr>
+                <td>跨部门协作多</td>
+                <td>需协调企业、法律、审计、销售等多个团队</td>
+              </tr>
+              <tr>
+                <td>财务金融知识要求高</td>
+                <td>涉及估值、资本结构、股权稀释等复杂知识</td>
+              </tr>
+              <tr>
+                <td>对沟通能力要求高</td>
+                <td>需与企业高管、销售团队、投资者反复协调</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

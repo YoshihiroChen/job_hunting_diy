@@ -115,6 +115,16 @@ Rails.application.routes.draw do
   get 'wiki/dwh', to: 'wiki#dwh'
   get 'wiki/api', to: 'wiki#api'
   get 'wiki/etl', to: 'wiki#etl'
+  get 'wiki/jgbs', to: 'wiki#jgbs'
+  get 'wiki/ecm', to: 'wiki#ecm'
+  get 'wiki/dcm', to: 'wiki#dcm'
+  get 'wiki/reit', to: 'wiki#reit'
+  get 'wiki/spc', to: 'wiki#spc'
+  get 'wiki/abs', to: 'wiki#abs'
+  get 'wiki/rmbs', to: 'wiki#rmbs'
+  get 'wiki/aum', to: 'wiki#aum'
+  get 'wiki/ideco', to: 'wiki#ideco'
+  
 
 
   resources :comments, only: [:index, :create, :destroy]

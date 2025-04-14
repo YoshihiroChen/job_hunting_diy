@@ -79,4 +79,31 @@ class WikiController < ApplicationController
 
   def etl
   end
+
+  def jgbs
+  end
+
+  def ecm
+  end
+
+  def dcm
+  end
+
+  def reit
+  end
+
+  def spc
+  end
+
+  def abs
+  end
+
+  def rmbs
+  end
+
+  def aum
+  end
+
+  def ideco
+  end
 end

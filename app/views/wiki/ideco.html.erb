@@ -1,0 +1,116 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">iDeCo（个人型定义缴费养老金）基础知识指南</h1>
+
+  <!-- 什么是iDeCo -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是iDeCo？</h2>
+
+          <p>iDeCo 是 “individual-type Defined Contribution pension plan” 的缩写，是日本政府推出的<strong>个人型自愿加入的养老金制度</strong>。</p>
+
+          <p>加入者可按月缴纳一定金额，由本人选择投资商品（如定期存款、投信等），<strong>积累退休资金的同时享受税制优惠</strong>。</p>
+
+          <p>该制度旨在鼓励个人为老后做资金准备，属于“私的年金”的一种类型，与企业年金、公的年金（国民年金・厚生年金）互为补充。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- iDeCo的制度特点与运作流程 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">iDeCo的基本制度与流程</h2>
+
+          <ul>
+            <li><strong>加入资格：</strong> 原则上20岁以上、65岁以下的日本居民，包括自雇者、公司职员、公务员、家庭主妇等</li>
+            <li><strong>缴费金额：</strong> 每月上限依职业类别而异（例：公司职员为12,000～23,000日元）</li>
+            <li><strong>投资方式：</strong> 选择投信商品、定期存款、保险等，收益归个人所有</li>
+            <li><strong>领取方式：</strong> 原则上60岁以后可一次性领取或按月领取</li>
+          </ul>
+
+          <p class="mt-3">iDeCo是一种“长期投资＋税优”的理财制度，强调自助养老。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- iDeCo的三大税制优待 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">iDeCo的三大税优优势</h2>
+
+          <ul>
+            <li><strong>缴费时：</strong> 每月缴纳金额可全额作为“所得控除”，降低当年所得税与住民税</li>
+            <li><strong>运用时：</strong> 投资期间的利息・收益部分<strong>完全免税</strong></li>
+            <li><strong>领取时：</strong> 可适用“退职所得控除”或“公的年金控除”，领取金额也可减税</li>
+          </ul>
+
+          <p class="mt-3">即便收益不高，仅税金节约部分也有显著的财富增值效果。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- iDeCo的适用人群与注意事项 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">适合人群与注意事项</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>适合人群</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>有稳定收入的公司职员</td>
+                <td>可享所得控除带来的实质性税负减轻</td>
+              </tr>
+              <tr>
+                <td>想长期投资的人</td>
+                <td>适合以退休为目标的长期资产积累</td>
+              </tr>
+              <tr>
+                <td>税率较高的高收入者</td>
+                <td>可最大化节税效果</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">注意事项：</h4>
+          <ul>
+            <li>原则上60岁前<strong>不能中途取出</strong></li>
+            <li>操作平台（金融机构）选择影响手续费与商品种类</li>
+            <li>需每年申报所得控除或由公司统一申报</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>
