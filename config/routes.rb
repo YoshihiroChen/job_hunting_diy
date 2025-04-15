@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
  
+  
   get '/admin/login', to: 'admin_sessions#new'
   post '/admin/login', to: 'admin_sessions#create'
   delete '/admin/logout', to: 'admin_sessions#destroy'
@@ -73,6 +74,9 @@ Rails.application.routes.draw do
   get 'house_field/advisor', to: 'house_field#advisor'
   get 'house_field/rent', to: 'house_field#rent'
 
+  get 'advertisement_field/index', to: 'advertisement_field#index'
+  get 'advertisement_field/agency', to: 'advertisement_field#agency'
+
   get 'questions/index', to: 'questions#index'
   get 'questions/mathematics', to: 'questions#mathematics'
   get 'questions/salaries', to: 'questions#salaries'
@@ -128,6 +132,8 @@ Rails.application.routes.draw do
   get 'wiki/uiux', to: 'wiki#uiux'
   get 'wiki/kpi', to: 'wiki#kpi'
   get 'wiki/saas', to: 'wiki#saas'
+  get 'wiki/fas', to: 'wiki#fas'
+  get 'wiki/cfo', to: 'wiki#cfo'
 
   
 

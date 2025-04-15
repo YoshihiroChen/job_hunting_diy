@@ -118,4 +118,10 @@ class WikiController < ApplicationController
 
   def saas
   end
+
+  def fas
+  end
+
+  def cfo
+  end
 end

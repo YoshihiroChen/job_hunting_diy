@@ -59,7 +59,7 @@
         <li><strong>定义：</strong> 企业内部从事账务、报表、税务准备等工作的会计人员。</li>
         <li><strong>常见工作内容：</strong> 发票管理、仕訳、费用精算、月次决算、税务协助。</li>
         <li><strong>所属部门：</strong> 経理部 / 財務部。</li>
-        <li><strong>发展方向：</strong> 财务主管、経営企画、CFO辅助。</li>
+        <li><strong>发展方向：</strong> 财务主管、経営企画、<%= link_to "CFO", wiki_cfo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>辅助。</li>
         <li><strong>推荐资格：</strong> 日商簿記2級 / 1級。</li>
       </ul>
     </div>
@@ -97,12 +97,12 @@
   <!-- 卡片5：財務企画・CFO支援 -->
   <div class="card border rounded-4 shadow-sm mb-4">
     <div class="card-body">
-      <h2 class="card-title mb-4">財務企画 / CFO支援</h2>
+      <h2 class="card-title mb-4">財務企画 / <%= link_to "CFO", wiki_cfo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>支援</h2>
 
       <ul>
-        <li><strong>职责：</strong> 制定预算、资本政策、财务预测与KPI管理等。</li>
+        <li><strong>职责：</strong> 制定预算、资本政策、财务预测与<%= link_to "KPI", wiki_kpi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>管理等。</li>
         <li><strong>所属部门：</strong> 財務企画部、経営企画部。</li>
-        <li><strong>目标角色：</strong> 战略型财务人才、未来CFO候选人。</li>
+        <li><strong>目标角色：</strong> 战略型财务人才、未来<%= link_to "CFO", wiki_cfo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>候选人。</li>
         <li><strong>能力要求：</strong> 财务 + 战略思考 + 沟通能力。</li>
         <li><strong>推荐背景：</strong> MBA / <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> / 咨询经验者。</li>
       </ul>
@@ -115,7 +115,7 @@
       <h2 class="card-title mb-4">会计类顾问（会计系コンサルタント）</h2>
 
       <ul>
-        <li><strong>定义：</strong> 以会计专业为基础，参与客户制度改革、ERP导入、IFRS转换等项目。</li>
+        <li><strong>定义：</strong> 以会计专业为基础，参与客户制度改革、<%= link_to "ERP", wiki_erp_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>导入、IFRS转换等项目。</li>
         <li><strong>服务类型：</strong> SAP导入、合并会计咨询、内部控制整备。</li>
         <li><strong>所属机构：</strong> Big4顾问部、中型咨询公司。</li>
         <li><strong>发展路径：</strong> 从专业顾问 → 项目经理 → 高级经理 / 合伙人。</li>
@@ -368,7 +368,7 @@
           <tr>
             <td><strong>会计类顾问（会計系コンサルタント）</strong></td>
             <td>会计师事务所的顾问部 / 咨询公司</td>
-            <td>例如四大FAS部、BCG等战略咨询公司</td>
+            <td>例如四大<%= link_to "FAS", wiki_fas_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>部、BCG等战略咨询公司</td>
           </tr>
         </tbody>
       </table>
@@ -415,12 +415,12 @@
           </tr>
           <tr>
             <td>是否可以自动互认</td>
-            <td>CPA可自动取得税理士资格</td>
-            <td>税理士不能成为CPA或做审计业务</td>
+            <td><%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>可自动取得税理士资格</td>
+            <td>税理士不能成为<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>或做审计业务</td>
           </tr>
           <tr>
             <td>主要就业方向</td>
-            <td>审计法人（Big4）、CFO、财务顾问</td>
+            <td>审计法人（Big4）、<%= link_to "CFO", wiki_cfo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、财务顾问</td>
             <td>税理士事务所、自营开业、中小企业顾问</td>
           </tr>
           <tr>
@@ -441,7 +441,7 @@
       <ul>
         <li><strong>想上市、提交审计报告：</strong> 你需要雇佣 <strong><%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（公認会計士）</strong></li>
         <li><strong>想做合法节税、申报法人税：</strong> 你需要找 <strong>税理士（Zeirishi）</strong></li>
-        <li><strong>想做预算规划与KPI设计：</strong> 两者都可能，但CPA偏制度构建，税理士偏实务操作</li>
+        <li><strong>想做预算规划与<%= link_to "KPI", wiki_kpi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>设计：</strong> 两者都可能，但<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>偏制度构建，税理士偏实务操作</li>
       </ul>
 
       <h4 class="mt-4">补充说明</h4>
@@ -451,7 +451,7 @@
         <li>许多 Big4 员工会同时持有 <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> + 注册税理士资格，以扩大执业范围。</li>
       </ul>
 
-      <p class="mt-3"><strong>总结：</strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>和税理士 各有专业领域，<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>偏“审计+资本市场”，税理士偏“税务+中小企业支援”。如果你目标是 <%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、上市咨询、财务战略 → 更适合 CPA；如果目标是报税、节税、顾问 → 税理士是首选。</p>
+      <p class="mt-3"><strong>总结：</strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>和税理士 各有专业领域，<%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>偏“审计+资本市场”，税理士偏“税务+中小企业支援”。如果你目标是 <%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、上市咨询、财务战略 → 更适合</strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>；如果目标是报税、节税、顾问 → 税理士是首选。</p>
 
     </div>
   </div>
@@ -466,18 +466,18 @@
       <h4 class="mt-4">公認会計士的主要工作领域</h4>
       <ul>
         <li>在审计法人（如四大）从事法定审计工作</li>
-        <li>在FAS/顾问公司做并购、<%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等财务支援</li>
-        <li>跳槽企业后担任CFO或财务企画等职位</li>
+        <li>在<%= link_to "FAS", wiki_fas_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>/顾问公司做并购、<%= link_to "IPO", wiki_ipo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等财务支援</li>
+        <li>跳槽企业后担任<%= link_to "CFO", wiki_cfo_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>或财务企画等职位</li>
       </ul>
 
       <h4 class="mt-4">他们“不是做账的人”，而是“检查账的人”</h4>
-      <p>CPA 很少从事日常账务工作。他们主要是站在第三方的角度审查财务报表的合法性与真实性。</p>
+      <p></strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>很少从事日常账务工作。他们主要是站在第三方的角度审查财务报表的合法性与真实性。</p>
 
       <h4 class="mt-4">总结</h4>
       <ul>
-        <li>CPA 是一个资格（可以做很多种工作）</li>
-        <li>CPA ≠ 经常编财务报表</li>
-        <li>CPA 通常以“审计人”身份活跃在事务所或资本市场相关业务中</li>
+        <li></strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>是一个资格（可以做很多种工作）</li>
+        <li></strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>≠经常编财务报表</li>
+        <li></strong> <%= link_to "CPA", wiki_cpa_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>通常以“审计人”身份活跃在事务所或资本市场相关业务中</li>
       </ul>
 
       <div class="alert alert-primary mt-4">
@@ -544,7 +544,7 @@
       <h4 class="mt-4">みらいコンサルティング集团</h4>
       <ul>
         <li>“会计+战略”型综合咨询公司</li>
-        <li>提供财务KPI设计、制度构建、预算控制等服务</li>
+        <li>提供财务<%= link_to "KPI", wiki_kpi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>设计、制度构建、预算控制等服务</li>
         <li>支援成长型中小企业，强调经营视角</li>
       </ul>
 
