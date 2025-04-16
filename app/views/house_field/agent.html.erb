@@ -50,7 +50,7 @@
         <tbody>
           <tr><td>客户来源</td><td>网络房源页面、门店访问、电话/邮件咨询</td></tr>
           <tr><td>担当工作</td><td>接待客户，听取需求（希望的地区、价格、房型等）</td></tr>
-          <tr><td>工具支持</td><td>使用 CRM 系统记录客户信息，推荐房源</td></tr>
+          <tr><td>工具支持</td><td>使用<%= link_to "CRM系统", wiki_crm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>记录客户信息，推荐房源</td></tr>
         </tbody>
       </table>
 
@@ -130,14 +130,14 @@
           <tr><td>内容</td><td>房源平台建设、线上导览系统、客户推荐算法等</td></tr>
           <tr><td>技能</td><td>系统开发、UX设计、数据分析</td></tr>
           <tr><td>适合人群</td><td>有IT素养、文理皆可挑战</td></tr>
-          <tr><td>举例</td><td>“野村の仲介＋”设有PropTech推进组、“三井のリハウス”推AI房屋评估系统</td></tr>
+          <tr><td>举例</td><td>“野村の仲介＋”设有<%= link_to "Proptech", wiki_proptech_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>推进组、“三井のリハウス”推AI房屋评估系统</td></tr>
         </tbody>
       </table>
 
       <h5>④ 店舗マネジメント（店长候补）</h5>
       <table class="table table-bordered">
         <tbody>
-          <tr><td>内容</td><td>门店运营管理、人材育成、KPI管理</td></tr>
+          <tr><td>内容</td><td>门店运营管理、人材育成、<%= link_to "KPI", wiki_kpi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>管理</td></tr>
           <tr><td>来源</td><td>从营业职中选拔，升任后管理其他营业成员</td></tr>
           <tr><td>特点</td><td>实力主义，适合想“领导一线团队”的人</td></tr>
         </tbody>
@@ -182,7 +182,7 @@
             <td>
               此类岗位多为理系/信息系学生主力。<br>
               不过如果文科生有 Python、SQL、UX/UI、数据分析经验，或大学辅修了相关课程，也可以挑战。<br>
-              PropTech 推进中有时也欢迎具策划力的文科生参与。
+              <%= link_to "Proptech", wiki_proptech_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> 推进中有时也欢迎具策划力的文科生参与。
             </td>
           </tr>
           <tr>
@@ -303,7 +303,7 @@
             <td><strong>野村不動産ソリューションズ</strong></td>
             <td>野村の仲介＋（野村不動産）</td>
             <td>住宅买卖＋IT平台开发</td>
-            <td>重视数据与客户体验，推PropTech</td>
+            <td>重视数据与客户体验，推<%= link_to "Proptech", wiki_proptech_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
             <td>有逻辑性、IT素养强者</td>
           </tr>
           <tr>

@@ -134,7 +134,7 @@
           </tr>
           <tr>
             <td>法人形态不同</td>
-            <td>AM 公司多为 REIT 或信托基金下属法人，并非一般物业管理会社的内部职能</td>
+            <td>AM 公司多为 <%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %> 或信托基金下属法人，并非一般物业管理会社的内部职能</td>
           </tr>
           <tr>
             <td>人才要求不同</td>
@@ -237,7 +237,7 @@
             <td><strong>野村不動産パートナーズ</strong></td>
             <td>野村不動産集团</td>
             <td>マンション、ビル、商办综合设施</td>
-            <td>PM・BM・CM・AM一体化，支持REIT，强调技术融合</td>
+            <td>PM・BM・CM・AM一体化，支持<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>，强调技术融合</td>
           </tr>
           <tr>
             <td><strong>東急コミュニティー</strong></td>

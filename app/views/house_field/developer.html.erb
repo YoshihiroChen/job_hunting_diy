@@ -55,7 +55,7 @@
         <tbody>
           <tr><td>営業部門</td><td>面向个人（住宅）或企业客户（办公/商铺）进行销售/招租</td></tr>
           <tr><td>広報部</td><td>推出广告宣传、品牌推广（如“パークホームズ”）</td></tr>
-          <tr><td>IR室</td><td>若涉及REIT或公开项目，对外解释收益结构</td></tr>
+          <tr><td>IR室</td><td>若涉及<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>或公开项目，对外解释收益结构</td></tr>
           <tr><td>海外事業本部</td><td>若为外国人/企业客户，引导海外业务接洽</td></tr>
         </tbody>
       </table>
@@ -65,8 +65,8 @@
         <thead><tr><th>参与部门</th><th>工作内容</th></tr></thead>
         <tbody>
           <tr><td>PM部門（资产管理）</td><td>管理租户、维修、提升资产价值</td></tr>
-          <tr><td>可持续发展推进本部</td><td>持续改善能源使用，达成ESG指标</td></tr>
-          <tr><td>DX本部</td><td>引入智能物业系统、CRM系统等</td></tr>
+          <tr><td>可持续发展推进本部</td><td>持续改善能源使用，达成<%= link_to "ESG指标", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td></tr>
+          <tr><td>DX本部</td><td>引入智能物业系统、<%= link_to "CRM系统", wiki_crm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等</td></tr>
           <tr><td>IR/経理部</td><td>管理项目财务回报、收益率分析，向投资者报告</td></tr>
         </tbody>
       </table>
@@ -180,7 +180,7 @@
           </tr>
           <tr>
             <td><strong>可持续发展推进本部</strong></td>
-            <td>ESG政策、绿色建筑运营</td>
+            <td><%= link_to "ESG政策", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、绿色建筑运营</td>
             <td>★★★☆☆</td>
             <td>社会学/环境政策/企划型文科生可挑战</td>
           </tr>
@@ -352,14 +352,14 @@
         <tbody>
           <tr>
             <td><strong>三井不動産</strong></td>
-            <td>办公楼、住宅、商业、物流、酒店、海外、DX</td>
+            <td>办公楼、住宅、商业、物流、酒店、海外、<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
             <td>Tokyo Midtown、ららぽーと、三井Garden Hotel</td>
             <td>综合实力最强，“まちづくり”理念，数字化转型积极</td>
             <td>想在综合平台培养多方向能力者</td>
           </tr>
           <tr>
             <td><strong>三菱地所</strong></td>
-            <td>办公楼开发、住宅、商业、REIT、海外</td>
+            <td>办公楼开发、住宅、商业、<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、海外</td>
             <td>丸の内再开发（新丸大楼、Otemachi Tower）</td>
             <td>东京地段核心地主，写字楼资产实力最强</td>
             <td>逻辑性强，对都市开发有志者</td>

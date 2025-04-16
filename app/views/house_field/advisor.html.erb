@@ -14,10 +14,10 @@
         <tbody>
           <tr><td>资产取得</td><td>协助投资人评估物业、做尽调、报价判断</td></tr>
           <tr><td>策略制定</td><td>确定出租策略、租金设定、翻修提案</td></tr>
-          <tr><td>招租方针</td><td>指示 PM、制定改善空室率的 KPI</td></tr>
+          <tr><td>招租方针</td><td>指示 PM、制定改善空室率的<%= link_to "KPI", wiki_kpi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td></tr>
           <tr><td>收支计划</td><td>年度/季度预算与收益目标制定</td></tr>
           <tr><td>CAPEX/OPEX管理</td><td>大修投资（CAPEX）与日常费用（OPEX）控制</td></tr>
-          <tr><td>报告</td><td>向投资人（REIT、私募）提交财务/运用报告</td></tr>
+          <tr><td>报告</td><td>向投资人（<%= link_to "REIT", wiki_reit_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、私募）提交财务/运用报告</td></tr>
           <tr><td>卖却判断</td><td>判断资产是否应当卖出并实施 EXIT</td></tr>
         </tbody>
       </table>

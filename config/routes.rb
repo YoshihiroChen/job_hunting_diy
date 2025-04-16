@@ -134,6 +134,11 @@ Rails.application.routes.draw do
   get 'wiki/saas', to: 'wiki#saas'
   get 'wiki/fas', to: 'wiki#fas'
   get 'wiki/cfo', to: 'wiki#cfo'
+  get 'wiki/ae', to: 'wiki#ae'
+  get 'wiki/cm', to: 'wiki#cm'
+  get 'wiki/martech', to: 'wiki#martech'
+  get 'wiki/proptech', to: 'wiki#proptech'
+
 
   
 

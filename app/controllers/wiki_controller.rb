@@ -124,4 +124,16 @@ class WikiController < ApplicationController
 
   def cfo
   end
+
+  def ae
+  end
+
+  def cm
+  end
+
+  def martech
+  end
+
+  def proptech
+  end
 end
