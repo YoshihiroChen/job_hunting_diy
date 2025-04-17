@@ -136,4 +136,13 @@ class WikiController < ApplicationController
 
   def proptech
   end
+
+  def cadcae
+  end
+
+  def tps
+  end
+
+  def iot
+  end
 end

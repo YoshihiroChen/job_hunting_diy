@@ -1,0 +1,391 @@
+<div class="container mt-4">
+
+  
+  <h1 class="text-center mb-4">日本汽车行业业务流程</h1>
+
+  <div class="card shadow">
+    <div class="card-body">
+      <h2 class="card-title mb-4">【一】业务流程（業務全体の流れ）</h2>
+
+      <h5 class="mt-4">1. 企画・開発（规划与研发）</h5>
+      <ul>
+        <li>根据市场需求、法规、技术发展等，规划新车型。</li>
+        <li>包括概念设定、设计原型、试验评估等。</li>
+      </ul>
+
+      <h5 class="mt-4">2. 設計（设计）</h5>
+      <ul>
+        <li><strong>车辆整体设计</strong>：包括内外饰、结构设计。</li>
+        <li><strong>功能与安全设计</strong>：动力系统、安全性能、舒适性等。</li>
+        <li>使用<%= link_to "CAD", wiki_cadcae_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>等系统设计零部件、整车结构。</li>
+      </ul>
+
+      <h5 class="mt-4">3. 試作・評価（试制与评估）</h5>
+      <ul>
+        <li>制作样车，进行各类性能、安全、耐久测试。</li>
+        <li>数据收集后优化设计。</li>
+      </ul>
+
+      <h5 class="mt-4">4. 調達・購買（采购）</h5>
+      <ul>
+        <li>从一级、二级供应商处采购零部件（Tier 1, 2）。</li>
+        <li>管理供应链、成本控制与质量审核。</li>
+      </ul>
+
+      <h5 class="mt-4">5. 生産・製造（生产制造）</h5>
+      <ul>
+        <li>在工厂完成车身、组装、涂装、总装等流程。</li>
+        <li>推行“カンバン方式（看板方式）”等精益生产模式（如丰田生产方式TPS）。</li>
+      </ul>
+
+      <h5 class="mt-4">6. 品質管理（质量管理）</h5>
+      <ul>
+        <li>监控生产质量，实施品控流程。</li>
+        <li>包括“品質保証（QA）”与“品質管理（QC）”。</li>
+      </ul>
+
+      <h5 class="mt-4">7. 販売・マーケティング（销售与市场）</h5>
+      <ul>
+        <li>通过经销网络销售车辆，开展品牌推广活动。</li>
+        <li>包括定价策略、广告、客户服务等。</li>
+      </ul>
+
+      <h5 class="mt-4">8. アフターサービス（售后服务）</h5>
+      <ul>
+        <li>提供维护保养、客户支持。</li>
+        <li>建立反馈机制以改善下一代车型。</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <h1 class="text-center mb-4">日本汽车行业职种及工作内容分析（以丰田为例）</h1>
+  <div class="card shadow">
+    <div class="card-body">
+      <h2 class="card-title mb-4">丰田各类职种在业务流程中的角色</h2>
+
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>业务流程阶段</th>
+              <th>技術職（コース）</th>
+              <th>事務職（本部）</th>
+              <th>業務職（一般職）</th>
+              <th>生産関係職（技能職）</th>
+              <th>医務職</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>① 研究・企画・先行開発</strong></td>
+              <td>✔ 研究所、先行开发中心主导；新能源、电池、自动驾驶等前沿技术领域研发</td>
+              <td>△ 参与战略企划支援、调研支援</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+            </tr>
+            <tr>
+              <td><strong>② 量産開発（设计）</strong></td>
+              <td>✔ <%= link_to "CAD/CAE", wiki_cadcae_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>进行整车与零件设计、电动控制、嵌入式软件开发、车联网系统开发</td>
+              <td>✖（业务非主导）</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+            </tr>
+            <tr>
+              <td><strong>③ 調達・物流・生産管理</strong></td>
+              <td>✔ 与供应商进行技术协议、制定品质要求；制定制造条件</td>
+              <td>✔ 主导供应商谈判、物流安排、成本控制、日程管理</td>
+              <td>✔ 协助文书处理、供应链协调</td>
+              <td>✖</td>
+              <td>✖</td>
+            </tr>
+            <tr>
+              <td><strong>④ 製造技術開発・ライン導入</strong></td>
+              <td>✔ 工厂自动化、机器人设备开发、生产线设计及导入、<%= link_to "TPS", wiki_tps_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>优化</td>
+              <td>△ 计划支持、经费管理、现场协调</td>
+              <td>✔ 工程文书、会议记录、支援协调</td>
+              <td>✖</td>
+              <td>✖</td>
+            </tr>
+            <tr>
+              <td><strong>⑤ 製造・品質管理</strong></td>
+              <td>✔ 设定制程标准，推进<%= link_to "IoT", wiki_iot_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>/AI品管；质量改善与追踪</td>
+              <td>✔ 品质报告管理、客户反馈整理与分析</td>
+              <td>✔ 文件处理、标准化支持</td>
+              <td>✔ 实际操作流程（组装、涂装、检测等）</td>
+              <td>✖</td>
+            </tr>
+            <tr>
+              <td><strong>⑥ 販売・マーケティング</strong></td>
+              <td>△ 提供产品技术说明书、支援技术提案（技术营业）</td>
+              <td>✔ 销售策略、市场调研、全球客户管理</td>
+              <td>✔ 销售文书支持、客户日程调整</td>
+              <td>✖</td>
+              <td>✖</td>
+            </tr>
+            <tr>
+              <td><strong>⑦ アフターサービス</strong></td>
+              <td>✔ 回收故障数据、技术改进、故障诊断工具开发</td>
+              <td>✔ 售后服务计划管理、客户咨询、维保流程构建</td>
+              <td>✔ 客户情报处理、回访记录、维保手册支持</td>
+              <td>✖</td>
+              <td>✔ 员工健康管理、工厂健康巡回</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-info mt-4">
+        <p>丰田的新卒招聘将招聘渠道分为了五个コース：事務職、技術職、医務職、業務職、技能職。（其中事務職与技術職合称総合職）</p>
+        <p>其中每个コース内还有更为细致的职种，具体可看以下的文科生选考可能性分析。</p>
+        <p>需要注意的是，丰田的業務職和不动产行业中的業務職一样，年薪要比総合職低上了一大截。</p>
+      </div>
+
+    </div>
+  </div>
+
+  <h1 class="text-center mb-4">文科生选考可能性及推荐专业分析</h1>
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h2 class="card-title mb-4">文科生选考可能性及推荐专业对照表（以丰田为例）</h2>
+
+      <h5 class="mb-3">【事務職（本部）】</h5>
+      <div class="table-responsive mb-4">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>职种/课程名称</th>
+              <th>文科生选考可能性</th>
+              <th>推荐专业方向</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>国内営業</td>
+              <td>★★★★☆</td>
+              <td>经济学、商学、社会学、国际关系、外语类</td>
+            </tr>
+            <tr>
+              <td>海外営業</td>
+              <td>★★★★★</td>
+              <td>国际贸易、商学、语言类、地区研究、国际关系</td>
+            </tr>
+            <tr>
+              <td>生産管理・物流</td>
+              <td>★★☆☆☆</td>
+              <td>商学、产业管理、经济学、工业工程</td>
+            </tr>
+            <tr>
+              <td>調達</td>
+              <td>★★☆☆☆</td>
+              <td>商学、供应链管理、经济学、工业工程</td>
+            </tr>
+            <tr>
+              <td>経理</td>
+              <td>★★★☆☆</td>
+              <td>会计、财务、经济学、商学</td>
+            </tr>
+            <tr>
+              <td>渉外広報</td>
+              <td>★★★★☆</td>
+              <td>传播学、新闻、公关、语言、政治</td>
+            </tr>
+            <tr>
+              <td>総務・人事</td>
+              <td>★★★★☆</td>
+              <td>心理学、法学、社会学、人力资源管理</td>
+            </tr>
+            <tr>
+              <td>Gazoo Racing</td>
+              <td>★★☆☆☆</td>
+              <td>商学、体育管理、品牌管理、设计类</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h5 class="mb-3">【技術職（コース）】</h5>
+      <div class="table-responsive mb-4">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>职种/课程名称</th>
+              <th>文科生选考可能性</th>
+              <th>推荐专业方向</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>モビリティ・デジタルソフト領域</td>
+              <td>☆☆☆☆☆</td>
+              <td>计算机科学、信息工程、AI工程、软件工程</td>
+            </tr>
+            <tr>
+              <td>カーボンニュートラル・パワーエレクトロニクス技術</td>
+              <td>☆☆☆☆☆</td>
+              <td>电气工程、能源工程、材料科学、物理</td>
+            </tr>
+            <tr>
+              <td>パワートレーン系制御</td>
+              <td>☆☆☆☆☆</td>
+              <td>机械工程、车辆工程、控制工程</td>
+            </tr>
+            <tr>
+              <td>電池開発</td>
+              <td>☆☆☆☆☆</td>
+              <td>化学工程、材料科学、能源材料</td>
+            </tr>
+            <tr>
+              <td>製造技術開発</td>
+              <td>☆☆☆☆☆</td>
+              <td>机械工程、制造工程、工业工程、机器人</td>
+            </tr>
+            <tr>
+              <td>モノづくり開発</td>
+              <td>☆☆☆☆☆</td>
+              <td>机械系统、机电一体化、电气电子</td>
+            </tr>
+            <tr>
+              <td>カスタマーファースト（品質保証・アフターサービス）</td>
+              <td>★☆☆☆☆</td>
+              <td>系统工程、质量管理、经营工程、工业管理</td>
+            </tr>
+            <tr>
+              <td>未来創生</td>
+              <td>★☆☆☆☆</td>
+              <td>城市规划、战略管理、产业设计、公共政策</td>
+            </tr>
+            <tr>
+              <td>デジタル情報通信</td>
+              <td>☆☆☆☆☆</td>
+              <td>通信工程、网络工程、<%= link_to "ICT系统", wiki_ict_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td>
+            </tr>
+            <tr>
+              <td>プラント・環境技術</td>
+              <td>☆☆☆☆☆</td>
+              <td>环境工程、建筑设备、能源管理、土木工程</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h5 class="mb-3">【業務職（コース）】</h5>
+      <table class="table table-bordered align-middle text-center">
+        <thead class="table-light">
+          <tr>
+            <th>职种/课程名称</th>
+            <th>文科生选考可能性</th>
+            <th>推荐专业方向（日本学部表记）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>業務職（一般職）</td>
+            <td>★★★☆☆</td>
+            <td><strong>短期大学・専門学校</strong>（商業実務、ビジネス系、語学系、秘書、簿記など）</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+
+  <h1 class="text-center mb-4">日本代表性车企一览</h1>
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <h2 class="card-title mb-4">日本代表性汽车企业一览</h2>
+
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>公司名称</th>
+              <th>总部所在地</th>
+              <th>代表车型</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>トヨタ自動車（Toyota）</strong></td>
+              <td>愛知県 豊田市</td>
+              <td>プリウス、クラウン、ヤリス、ハリアー</td>
+              <td>全球销量第一；推进电动化与自动驾驶</td>
+            </tr>
+            <tr>
+              <td><strong>ホンダ（Honda）</strong></td>
+              <td>東京都 港区</td>
+              <td>N-BOX、フィット、シビック</td>
+              <td>摩托车全球第一；擅长小型车和混合动力</td>
+            </tr>
+            <tr>
+              <td><strong>日産自動車（Nissan）</strong></td>
+              <td>神奈川県 横浜市</td>
+              <td>リーフ、エクストレイル、セレナ</td>
+              <td>与法国雷诺集团联盟；EV领域先行者</td>
+            </tr>
+            <tr>
+              <td><strong>スズキ（Suzuki）</strong></td>
+              <td>静岡県 浜松市</td>
+              <td>アルト、スイフト、ジムニー</td>
+              <td>轻型车强势；印度市场占有率高</td>
+            </tr>
+            <tr>
+              <td><strong>マツダ（Mazda）</strong></td>
+              <td>広島県 広島市</td>
+              <td>CX-5、MAZDA3、ロードスター</td>
+              <td>擅长创意设计与转子引擎技术</td>
+            </tr>
+            <tr>
+              <td><strong>三菱自動車（Mitsubishi Motors）</strong></td>
+              <td>東京都 港区</td>
+              <td>アウトランダー、エクリプス クロス</td>
+              <td>与日产合作，专注SUV与海外市场</td>
+            </tr>
+            <tr>
+              <td><strong>SUBARU（スバル）</strong></td>
+              <td>東京都 渋谷区</td>
+              <td>フォレスター、レヴォーグ、インプレッサ</td>
+              <td>四轮驱动与EyeSight安全系统强势</td>
+            </tr>
+            <tr>
+              <td><strong>ダイハツ（Daihatsu）</strong></td>
+              <td>大阪府 池田市</td>
+              <td>タント、ミライース、ロッキー</td>
+              <td>丰田旗下，专注轻自动车（軽自動車）</td>
+            </tr>
+            <tr>
+              <td><strong>いすゞ自動車（ISUZU）</strong></td>
+              <td>東京都 品川区</td>
+              <td>エルフ、ギガ</td>
+              <td>商用车（卡车、巴士）领域强势</td>
+            </tr>
+            <tr>
+              <td><strong>日野自動車（Hino）</strong></td>
+              <td>東京都 日野市</td>
+              <td>プロフィア、レンジャー</td>
+              <td>丰田集团，商用车为主</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="text-center mt-4">
+            <%= link_to '返回制造业界分析首页', maker_field_index_path, class: 'btn btn-secondary' %>
+          </div>
+
+
+
+
+
+
+</div>

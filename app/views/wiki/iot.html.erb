@@ -1,0 +1,122 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">IoT（物联网）基础知识指南</h1>
+
+  <!-- 什么是IoT -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是IoT？</h2>
+
+          <p>IoT 是 “Internet of Things” 的缩写，中文称为“物联网”。</p>
+
+          <p>它指的是通过网络将各种<strong>物理设备（Things）与互联网连接</strong>，实现数据采集、远程控制与智能分析的技术体系。</p>
+
+          <p>IoT 是数字化社会的基础设施之一，被广泛应用于制造、物流、医疗、农业、城市建设等多个领域。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IoT的基本结构与构成要素 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">IoT的基本结构</h2>
+
+          <ul>
+            <li><strong>感知层：</strong> 利用传感器采集信息（如温度、湿度、位置、震动等）</li>
+            <li><strong>网络层：</strong> 将设备连接至网络（如Wi-Fi、LTE、LPWA、5G）</li>
+            <li><strong>平台层：</strong> 数据汇总与处理（如AWS IoT、Azure IoT Hub等）</li>
+            <li><strong>应用层：</strong> 提供可视化、预测、自动化等具体业务功能</li>
+          </ul>
+
+          <p class="mt-3">IoT 的核心在于“让万物互联，并能赋予设备以数据价值与智能响应能力”。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IoT的代表应用场景 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">IoT的代表性应用场景</h2>
+
+          <ul>
+            <li><strong>智能制造（IIoT）：</strong> 设备状态监控、预测性维护、生产线优化</li>
+            <li><strong>智慧城市：</strong> 交通信号控制、垃圾收集优化、路灯节能管理</li>
+            <li><strong>远程医疗：</strong> 可穿戴设备监测病人健康状态并发送警报</li>
+            <li><strong>物流与仓储：</strong> 温湿度追踪、位置监控、资产管理</li>
+            <li><strong>智慧家居：</strong> 远程控制家电、安防系统与能源管理</li>
+          </ul>
+
+          <p class="mt-3">IoT 已从“概念”转向“落地”，成为DX（数位转型）核心推动力之一。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IoT的优势与挑战 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">IoT的优势与挑战</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优势</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>实时性</td>
+                <td>能实时采集并传输现场信息，提高响应速度</td>
+              </tr>
+              <tr>
+                <td>可视化</td>
+                <td>将看不见的设备状态与业务流程数据化</td>
+              </tr>
+              <tr>
+                <td>自动化</td>
+                <td>可与AI、规则引擎结合，实现无人操作与预警控制</td>
+              </tr>
+              <tr>
+                <td>数据积累</td>
+                <td>作为DX与AI应用的基础数据源</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">挑战：</h4>
+          <ul>
+            <li>安全性（信息泄露、非法接入）</li>
+            <li>设备兼容性与标准化问题</li>
+            <li>大量数据的存储与处理成本</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

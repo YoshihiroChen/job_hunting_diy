@@ -1,0 +1,101 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本制造业界分析</h1>
+  
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+        <%= link_to '汽车', maker_field_auto_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '食品', maker_field_food_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+    
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+
+          <h2 class="mb-4">日本メーカー的主要分类方式</h2>
+
+          <h5>❶ 按照产品或用途分类（代表性分类方式）</h5>
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle text-center">
+              <thead class="table-light">
+                <tr>
+                  <th>分类</th>
+                  <th>代表性公司</th>
+                  <th>特征与说明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>汽车</strong></td>
+                  <td>トヨタ、ホンダ、日産、スズキ</td>
+                  <td>就业体量大，技术开发分工精细。BtoC为主，但也有面向企业车辆（BtoB）。</td>
+                </tr>
+                <tr>
+                  <td><strong>电机/电子/半导体</strong></td>
+                  <td>ソニー、パナソニック、日立、東芝、村田製作所</td>
+                  <td>产品范围广，涉及消费电子、产业设备、材料。包含硬件+软件。</td>
+                </tr>
+                <tr>
+                  <td><strong>重工业/机械</strong></td>
+                  <td>三菱重工、川崎重工、コマツ</td>
+                  <td>BtoB为主，产品包括船舶、飞机、能源设备、工程机械。</td>
+                </tr>
+                <tr>
+                  <td><strong>化学</strong></td>
+                  <td>旭化成、三菱ケミカル、信越化学</td>
+                  <td>提供基础材料、树脂、功能材料，对其他制造业支撑大。</td>
+                </tr>
+                <tr>
+                  <td><strong>食品</strong></td>
+                  <td>味の素、明治、日清食品、キッコーマン</td>
+                  <td>文科生岗位多，BtoC，注重品牌和营销。</td>
+                </tr>
+                <tr>
+                  <td><strong>医药/医疗设备</strong></td>
+                  <td>武田薬品、第一三共、テルモ</td>
+                  <td>招聘门槛较高，但也接受文科生从事海外业务、药品企划等。</td>
+                </tr>
+                <tr>
+                  <td><strong>日用品/化妆品</strong></td>
+                  <td>P&G、花王、資生堂、ユニ・チャーム</td>
+                  <td>BtoC为主，品牌经营导向，适合文科生。</td>
+                </tr>
+                <tr>
+                  <td><strong>住宅/建材/家电</strong></td>
+                  <td>大和ハウス、積水ハウス、LIXIL</td>
+                  <td>跨足住宅开发、建材制造、家电生产等，包含BtoC和BtoB。</td>
+                </tr>
+                <tr>
+                  <td><strong>精密仪器</strong></td>
+                  <td>キーエンス、オリンパス、ニコン</td>
+                  <td>高利润率，BtoB多，招募文理皆有，但注重逻辑力与商谈力。</td>
+                </tr>
+                <tr>
+                  <td><strong>航空宇宙/防卫</strong></td>
+                  <td>川崎重工、IHI、防卫省参与企业</td>
+                  <td>多为BtoG，需日语/安全保障审查，技术性强。</td>
+                </tr>
+                <tr>
+                  <td><strong>造纸/印刷</strong></td>
+                  <td>王子製紙、大日本印刷</td>
+                  <td>传统制造，但近年向数字化转型中。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+    
+  </div> <!-- End row -->
+</div>
+

@@ -1,0 +1,95 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">TPS（丰田生产方式）基础知识指南</h1>
+
+  <!-- 什么是TPS -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是TPS？</h2>
+
+          <p>TPS 是 “Toyota Production System” 的缩写，中文称为“丰田生产方式”。</p>
+
+          <p>它是由丰田汽车公司发展出的<strong>生产管理哲学与现场改善方法论</strong>，其目标是在保证品质的前提下，最大限度地消除浪费（ムダ），实现高效率的制造流程。</p>
+
+          <p>TPS 是精益生产（Lean Production）思想的源流之一，对全球制造业产生了深远影响。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TPS的两大支柱 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">TPS的两大核心支柱</h2>
+
+          <ul>
+            <li><strong>自働化（Jidoka）：</strong> 即“有智能的自动化”，当异常发生时自动停止，防止品质问题扩大</li>
+            <li><strong>准时化（Just-in-Time）：</strong> 追求“需要的物品、在需要的时候、以需要的数量”进行生产</li>
+          </ul>
+
+          <p class="mt-3">在这两大支柱之上，还强调标准作业、目视管理、5S活动、改善（Kaizen）等方法的日常实践。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TPS的常见概念与工具 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">TPS的常用术语与改善工具</h2>
+
+          <ul>
+            <li><strong>看板（Kanban）：</strong> 流程控制工具，防止生产过剩，实现拉动式供给</li>
+            <li><strong>安灯（Andon）：</strong> 灯号系统，作业员可随时示警异常</li>
+            <li><strong>5S：</strong> 整理・整顿・清扫・清洁・素养，为改善之基础</li>
+            <li><strong>Kaizen：</strong> 持续改善，鼓励员工主动提出现场改良方案</li>
+            <li><strong>Heijunka（平准化）：</strong> 避免生产波动，实现节拍化</li>
+          </ul>
+
+          <p class="mt-3">这些概念不仅适用于制造业，也被广泛应用于服务业、IT、物流等领域。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TPS的价值与企业实践 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">TPS的价值与适用范围</h2>
+
+          <ul>
+            <li><strong>减少浪费：</strong> 包括库存、等待、搬运、过度加工等七大浪费</li>
+            <li><strong>提高品质：</strong> 通过现场自律机制防止不良品流出</li>
+            <li><strong>强化现场力：</strong> 鼓励员工参与改善，打造“止まる勇気”的文化</li>
+            <li><strong>提升效率与利润率：</strong> 实现低成本、高灵活性的生产系统</li>
+          </ul>
+
+          <p class="mt-3">TPS不仅是一种技术方法，更是一种“现场哲学”，强调<strong>人・物・流程</strong>的持续优化。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

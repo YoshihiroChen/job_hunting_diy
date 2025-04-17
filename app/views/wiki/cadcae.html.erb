@@ -1,0 +1,119 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">CAD / CAE（设计与工程分析）基础知识指南</h1>
+
+  <!-- 什么是CAD与CAE -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是CAD与CAE？</h2>
+
+          <p><strong>CAD（Computer-Aided Design）</strong> 是“计算机辅助设计”，用于绘制产品的二维图纸或三维模型。</p>
+
+          <p><strong>CAE（Computer-Aided Engineering）</strong> 是“计算机辅助工程”，用于对CAD模型进行<strong>结构、热力、流体、振动等方面的仿真分析</strong>。</p>
+
+          <p>CAD/CAE 是制造业、建筑业、汽车与航空产业中不可或缺的核心工具，是从“图纸设计”到“功能验证”的关键环节。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAD / CAE的应用流程与角色分工 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">CAD / CAE 的常见流程与角色分工</h2>
+
+          <ul>
+            <li><strong>CAD设计师：</strong> 使用工具（如AutoCAD、SolidWorks、CATIA）进行产品建模与图纸输出</li>
+            <li><strong>CAE工程师：</strong> 使用仿真工具（如ANSYS、Abaqus、MSC Nastran）进行应力、热、动态等分析</li>
+            <li><strong>开发工程师：</strong> 根据CAE结果优化产品结构或材料参数</li>
+            <li><strong>制造团队：</strong> 参考CAD图纸进行实际生产或加工</li>
+          </ul>
+
+          <p class="mt-3">通常由CAD建模起步，接着由CAE验证，最后反馈回设计优化，形成“设计→验证→改良”的循环。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAD / CAE 工具举例与使用行业 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">常见CAD / CAE工具与应用领域</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>工具</th>
+                <th>主要功能</th>
+                <th>典型行业</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AutoCAD</td>
+                <td>2D绘图、建筑平面图</td>
+                <td>建筑、土木、基础设施</td>
+              </tr>
+              <tr>
+                <td>SolidWorks / Inventor</td>
+                <td>3D建模、装配模拟</td>
+                <td>机械、制造、电子产品</td>
+              </tr>
+              <tr>
+                <td>ANSYS / Abaqus</td>
+                <td>有限元分析（FEA）、热力/结构分析</td>
+                <td>汽车、航天、精密设备</td>
+              </tr>
+              <tr>
+                <td>CATIA / NX</td>
+                <td>高精度三维设计与仿真集成</td>
+                <td>航空、汽车、重工</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAD / CAE 的价值与趋势 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">CAD / CAE 的价值与未来发展</h2>
+
+          <ul>
+            <li><strong>缩短开发周期：</strong> 在实际生产前就能预测问题并改进</li>
+            <li><strong>降低成本：</strong> 减少打样次数、降低材料浪费</li>
+            <li><strong>提升精度：</strong> 高精度建模与仿真分析可保障品质</li>
+            <li><strong>与AI/云端融合趋势：</strong> 利用AI进行设计优化、在云端协同作业</li>
+          </ul>
+
+          <p class="mt-3">未来CAD/CAE将与PLM（产品生命周期管理）、IoT（物联网）等系统深度整合，形成智能制造的基础。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || root_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>
