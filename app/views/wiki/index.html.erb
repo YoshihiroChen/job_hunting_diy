@@ -1,2 +1,67 @@
-<h1>Wiki#index</h1>
-<p>Find me in app/views/wiki/index.html.erb</p>
+<div class="container mt-5">
+  <h1 class="mb-4 text-center">百科索引</h1>
+  <h2 class="mb-4 text-center">这里面包含了所有在业界分析中出现的专有名词的词条。</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% wiki_entries = {
+      "ALM（资产负债匹配）" => wiki_alm_path,
+      "API（应用程序接口）" => wiki_api_path,
+      "ABS（资产支持证券）" => wiki_abs_path,
+      "AE（广告客户经理）" => wiki_ae_path,
+      "AML（反洗钱）" => wiki_aml_path,
+      "AUM（资产管理规模）" => wiki_aum_path,
+      "Basel（巴塞尔协议）" => wiki_basel_path,
+      "BCP（业务连续性计划）" => wiki_bcp_path,
+      "BI（商业智能）" => wiki_bi_path,
+      "CAD/CAE（计算机辅助设计/工程）" => wiki_cadcae_path,
+      "CFO（首席财务官）" => wiki_cfo_path,
+      "CFA（特许金融分析师）" => wiki_cfa_path,
+      "CPA（注册会计师）" => wiki_cpa_path,
+      "CM（广告导演）" => wiki_cm_path,
+      "CRM（客户关系管理）" => wiki_crm_path,
+      "CI/CD（持续集成/持续部署）" => wiki_cicd_path,
+      "DCM（债务资本市场）" => wiki_dcm_path,
+      "DD（尽职调查）" => wiki_dd_path,
+      "DWH（数据仓库）" => wiki_dwh_path,
+      "DX（数字转型）" => wiki_dx_path,
+      "ECM（股权资本市场）" => wiki_ecm_path,
+      "ERP（企业资源计划）" => wiki_erp_path,
+      "ETL（提取、转换、加载）" => wiki_etl_path,
+      "ESG（环境・社会・治理）" => wiki_esg_path,
+      "FAS（财务顾问服务）" => wiki_fas_path,
+      "ICT（信息通信技术）" => wiki_ict_path,
+      "IoT（物联网）" => wiki_iot_path,
+      "iDeCo（个人型退休金制度）" => wiki_ideco_path,
+      "IFRS（国际财务报告准则）" => wiki_ifrs_path,
+      "IPO（首次公开募股）" => wiki_ipo_path,
+      "JGBs（日本国债）" => wiki_jgbs_path,
+      "J-SOX（日本版萨班斯法案）" => wiki_jsox_path,
+      "KPI（关键绩效指标）" => wiki_kpi_path,
+      "LC（信用证）" => wiki_lc_path,
+      "M&A（并购）" => wiki_ma_path,
+      "Martech（营销科技）" => wiki_martech_path,
+      "PMI（并购后整合）" => wiki_pmi_path,
+      "Proptech（房地产科技）" => wiki_proptech_path,
+      "REIT（房地产投资信托）" => wiki_reit_path,
+      "RM（关系经理）" => wiki_rm_path,
+      "RMBs（住房抵押贷款支持证券）" => wiki_rmbs_path,
+      "RPA（机器人流程自动化）" => wiki_rpa_path,
+      "SaaS（软件即服务）" => wiki_saas_path,
+      "Sloan（斯隆管理学派）" => wiki_sloan_path,
+      "SPC（特殊目的公司）" => wiki_spc_path,
+      "TPS（丰田生产方式）" => wiki_tps_path,
+      "Telematics（车联网技术）" => wiki_telematics_path,
+      "UI/UX（用户界面/用户体验）" => wiki_uiux_path,
+      "VaR（风险价值）" => wiki_var_path
+    } %>
+
+    <% wiki_entries.sort.each do |title, path| %>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex align-items-center justify-content-center text-center">
+            <%= link_to title, path, class: 'stretched-link text-decoration-none fw-bold' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
