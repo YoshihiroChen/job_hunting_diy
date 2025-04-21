@@ -92,6 +92,7 @@ Rails.application.routes.draw do
   get 'questions/japanese', to: 'questions#japanese'
   get 'questions/intern', to: 'questions#intern'
   get 'questions/arts_science_difference', to: 'questions#arts_science_difference'
+  get 'questions/telework', to: 'questions#telework'
 
   get 'job_company', to: 'job_company#index'
 

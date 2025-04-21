@@ -28,4 +28,7 @@ class QuestionsController < ApplicationController
 
   def arts_science_difference
   end
+
+  def telework
+  end
 end
