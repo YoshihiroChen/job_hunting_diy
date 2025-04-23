@@ -1,0 +1,135 @@
+<div class="container mt-4">
+
+  <h1 class="mb-4">1. 弁護士是做什么的？</h1>
+  <div class="card shadow mb-5">
+    <div class="card-body">
+      <h5 class="card-title">弁護士的主要工作内容</h5>
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>类别</th><th>具体内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>民事案件</td><td>处理离婚、债务、合同纠纷、不动产纠纷、交通事故等</td></tr>
+          <tr><td>刑事案件</td><td>担任被告辩护人或受害者代理人（有国选与私选两种）</td></tr>
+          <tr><td>商事法律顾问</td><td>公司法务支援、契约审查、<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、知识产权、公司治理</td></tr>
+          <tr><td>企业危机管理</td><td>应对内部举报、欺诈、信息泄露、劳动纠纷等</td></tr>
+          <tr><td>法律文书作成</td><td>起草契约书、通知书、同意书、内容证明等法律文件</td></tr>
+          <tr><td>诉讼代理</td><td>代表客户在法院进行诉讼或调停程序</td></tr>
+          <tr><td>法律咨询</td><td>向个人或企业客户提供法律建议、风险评估</td></tr>
+          <tr><td>公益活动</td><td>为低收入者提供法律援助（日本的「法テラス」）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 class="mb-4">2. 如何成为弁護士？——司法試験简介</h1>
+  <div class="card shadow mb-5">
+    <div class="card-body">
+      <table class="table table-bordered">
+        <tbody>
+          <tr><th>国家考试名称</th><td>司法試験（しほうしけん）</td></tr>
+          <tr><th>主办单位</th><td>法務省（Ministry of Justice）</td></tr>
+          <tr><th>报考条件</th><td>通常需完成「法科大学院（ロースクール）」或通过「予備試験」</td></tr>
+          <tr><th>合格率</th><td>平均约20%（极难）</td></tr>
+          <tr><th>必考科目</th><td>民法、刑法、宪法、行政法、民事诉讼法、刑事诉讼法、商法（会社法）等</td></tr>
+          <tr><th>通过后流程</th><td>进入「司法修習」一年，参加实务训练后，通过结业考试，获得执业资格</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 class="mb-4">3. 拥有弁護士资格可以从事的职种</h1>
+  <div class="card shadow mb-5">
+    <div class="card-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>职种 / 职位</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>律师（律师事务所）</td><td>最常见，处理各类案件、顾问</td></tr>
+          <tr><td>企業法務部</td><td>担任公司法务、契约审查、内部统制等</td></tr>
+          <tr><td>コンプライアンス担当</td><td>企业内部法规遵守、反洗钱等</td></tr>
+          <tr><td><%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>顾问</td><td>在金融机构或咨询公司中参与企业并购</td></tr>
+          <tr><td>リーガルテック企業顧問</td><td>法律科技公司中担任专业顾问或产品设计</td></tr>
+          <tr><td>立法支援者 / 政策顾问</td><td>参与政策设计、政府立法辅佐</td></tr>
+          <tr><td>检察官 / 法官</td><td>司法修习后也可成为国家公务员</td></tr>
+          <tr><td>大学讲师 / 法律培训师</td><td>参与法律教育或司法考试辅导机构教学</td></tr>
+          <tr><td>国际机构或外企法律顾问</td><td>如联合国、外资律所、跨国企业总部法务部门</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 class="mb-4">4. 常见就职公司及行业</h1>
+  <div class="card shadow mb-5">
+    <div class="card-body">
+      <h5>律师事务所（法律事务所）</h5>
+      <table class="table table-bordered mb-4">
+        <thead>
+          <tr><th>类型</th><th>特征</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>大型法律事务所（四大）</td><td>西村あさひ、森・濱田松本、TMI综合法律事务所、アンダーソン・毛利・友常</td></tr>
+          <tr><td>中型事务所</td><td>针对特定领域如不动产、家庭法、知识产权等</td></tr>
+          <tr><td>独立律师事务所</td><td>自主接案、开展法律咨询和诉讼</td></tr>
+        </tbody>
+      </table>
+
+      <h5>企业 / 组织（インハウスロイヤー）</h5>
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>公司类型</th><th>弁護士职种</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>大型综合商社</td><td>法务、合规负责人</td></tr>
+          <tr><td>金融机构</td><td><%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、公司治理、国际法务</td></tr>
+          <tr><td>外资企业</td><td>合同审查、知识产权、劳动法管理</td></tr>
+          <tr><td>制药、制造业</td><td>法规对策、产品责任、环境合规</td></tr>
+          <tr><td>咨询公司</td><td>法律战略顾问、调查支援</td></tr>
+          <tr><td>政府机关</td><td>法律审查、立法支援、政策顾问</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 class="mb-4">5. 弁護士的职业前景与趋势</h1>
+  <div class="card shadow mb-5">
+    <div class="card-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>趋势类型</th><th>内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>インハウス化</td><td>越来越多弁護士转入企业内部，避免长时间劳动、提高生活质量</td></tr>
+          <tr><td>专业化倾向</td><td>律所中出现专业分野：IT、医疗、能源、金融、环境等专精型律师</td></tr>
+          <tr><td>国际化发展</td><td>拥有日英双语能力的律师需求上升，尤其是在跨境交易、海外合规中</td></tr>
+          <tr><td>リーガルテック</td><td>法律与AI结合的新领域兴起，例如契约自动审查、法律搜索系统</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 class="mb-4">6. 是否适合外国人？</h1>
+  <div class="card shadow mb-5">
+    <div class="card-body">
+      <table class="table table-bordered">
+        <tbody>
+          <tr><th>语言要求</th><td>极高（母语级法律日语能力）</td></tr>
+          <tr><th>考试难度</th><td>非常高，适合精通法律日语+有留学经验的少数人</td></tr>
+          <tr><th>实例</th><td>日本有极少数通过司法考试的中国人、韩国人、台湾人，但非常罕见</td></tr>
+          <tr><th>实际可行性</th><td>若希望进入法律领域，更推荐先成为企业法务或以行政书士等为起点</td></tr>
+        </tbody>
+      </table>
+      <div class="alert alert-danger mt-4">
+            <p>根据几位在日本做法务的大佬的经验来看，中国留学生中通过了日本司法考试的大部分人都是从小学初中就来到日本留学的，日语能力已经接近native水平。</p>
+            <p>但近几年有越来越多的中国留学生通过了日本司法考试，从几年才一个到一年好几个。</p>
+            <p>目前，中国留学生在日本当弁護士依旧面临着非常严峻的情况，一个大问题就是“身份信任问题”：日本人都倾向于找本国人来做律师。另一个问题是“法律市场本身较小”：律师人数虽逐年增加，但诉讼案件偏少，多数纠纷通过调解或自行解决。目前在日本，诉讼业务不是主流，大部分律师处理的是民事调停、合同纠纷、家庭法等低收费事务，商事诉讼、高端案件集中在少数大型律所。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+            <%= link_to '返回士业分析首页', shi_field_index_path, class: 'btn btn-secondary' %>
+          </div>
+
+</div>

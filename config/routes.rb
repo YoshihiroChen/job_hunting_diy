@@ -2,6 +2,7 @@ Rails.application.routes.draw do
  
   
   
+  get 'hello/index'
   get '/admin/login', to: 'admin_sessions#new'
   post '/admin/login', to: 'admin_sessions#create'
   delete '/admin/logout', to: 'admin_sessions#destroy'
@@ -28,13 +29,13 @@ Rails.application.routes.draw do
   get 'info_collection/npo', to: 'info_collection#npo'
   get 'info_collection/official', to: 'info_collection#official'
 
-
+  # 业界分析路由
   get 'job_field', to: 'job_field#index'
   get 'job_field/arts_science', to: 'job_field#arts_science'
   get 'job_field/web_sier', to: 'job_field#web_sier'
   get 'job_field/salary_compare', to: 'job_field#salary_compare'
   get 'job_field/certificate', to: 'job_field#certificate'
-
+  
   get 'it_field/index', to: 'it_field#index'
   get 'it_field/arts_science', to: 'it_field#arts_science'
   get 'it_field/web_sier', to: 'it_field#web_sier'
@@ -81,6 +82,20 @@ Rails.application.routes.draw do
   get 'maker_field/index', to: 'maker_field#index'
   get 'maker_field/auto', to: 'maker_field#auto'
   get 'maker_field/food', to: 'maker_field#food'
+  get 'maker_field/daily', to: 'maker_field#daily'
+
+  get 'shi_field/index', to: 'shi_field#index'
+  get 'shi_field/lawyer', to: 'shi_field#lawyer'
+  get 'shi_field/shihoshoshi', to: 'shi_field#shihoshoshi'
+  get 'shi_field/gyoseishoshi', to: 'shi_field#gyoseishoshi'
+  get 'shi_field/benrishi', to: 'shi_field#benrishi'
+  get 'shi_field/sharoshi', to: 'shi_field#sharoshi'
+  get 'shi_field/kanteishi', to: 'shi_field#kanteishi'
+  get 'shi_field/chosashi', to: 'shi_field#chosashi'
+  get 'shi_field/dairishi', to: 'shi_field#dairishi'
+  get 'shi_field/yohoshi', to: 'shi_field#yohoshi'
+
+
 
   get 'questions/index', to: 'questions#index'
   get 'questions/mathematics', to: 'questions#mathematics'

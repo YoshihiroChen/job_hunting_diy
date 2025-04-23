@@ -1,0 +1,151 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本士业分析</h1>
+  
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+        <%= link_to '弁護士', shi_field_lawyer_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '司法書士', shi_field_shihoshoshi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '行政書士', shi_field_gyoseishoshi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '弁理士', shi_field_benrishi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '社会保険労務士', shi_field_sharoshi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '不動産鑑定士', shi_field_kanteishi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '土地家屋調査士', shi_field_chosashi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '海事代理士', shi_field_dairishi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '気象予報士', shi_field_yohoshi_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+    
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title mb-4">代表性士业职种一览</h2>
+          <p>在日本，士业是一个非常特殊的行业，这里我把公認会計士以及税理士这两个已经被归入会计&审计行业的国家资格（职种）剔除掉，把其他士的种类做成了一个表，并简单写了一下对外国人的匹配度。</p>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>日文原文</th>
+                <th>是否适合外国人</th>
+                <th>简要说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>弁護士</td>
+                <td>非常不适合</td>
+                <td>国家考试难度高，需高等法律知识+母语级日语</td>
+              </tr>
+              <tr>
+                <td>司法書士</td>
+                <td>不适合</td>
+                <td>对法令理解和程序书作成能力要求极高</td>
+              </tr>
+              <tr>
+                <td>行政書士</td>
+                <td>有少量外国人成功</td>
+                <td>在外国人签证业务方向上有可能性（需极强日语）</td>
+              </tr>
+              <tr>
+                <td>弁理士</td>
+                <td>技术背景有利</td>
+                <td>理工科博士出身+英日双语者有可能，仍需高日语能力</td>
+              </tr>
+              <tr>
+                <td>社会保険労務士</td>
+                <td>较难</td>
+                <td>处理劳务纠纷、制度相关，有语言+文化障碍</td>
+              </tr>
+              <tr>
+                <td>不動産鑑定士</td>
+                <td>不适合</td>
+                <td>多为法律+经济综合知识，需社会经验+日语精通</td>
+              </tr>
+              <tr>
+                <td>土地家屋調査士</td>
+                <td>不适合</td>
+                <td>极为专业，且需与不动产行业、法务沟通</td>
+              </tr>
+              <tr>
+                <td>海事代理士</td>
+                <td>基本不适合</td>
+                <td>领域狭窄，机会极少</td>
+              </tr>
+              <tr>
+                <td>気象予報士</td>
+                <td>适合度高</td>
+                <td>技术为主，且媒体工作者中有外籍成功者</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>士业名称</th>
+                <th>文科生选考可能性</th>
+                <th>简要理由</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>行政書士</td>
+                <td>★★★★★</td>
+                <td>考试为纯文科内容（法律、常识），无数学或技术科目</td>
+              </tr>
+              <tr>
+                <td>司法書士</td>
+                <td>★★★★☆</td>
+                <td>虽有实务作图，但整体为法律文书处理，文科生可应对</td>
+              </tr>
+              <tr>
+                <td>社会保険労務士</td>
+                <td>★★★★☆</td>
+                <td>法规与制度为主，虽涉及企业制度，但不需理科背景</td>
+              </tr>
+              <tr>
+                <td>弁護士</td>
+                <td>★★★★☆</td>
+                <td>法学为核心，无需理工知识，文科生优势明显</td>
+              </tr>
+              <tr>
+                <td>不動産鑑定士</td>
+                <td>★★★☆☆</td>
+                <td>涉及会计与经济分析，需数理基础，需补课</td>
+              </tr>
+              <tr>
+                <td>海事代理士</td>
+                <td>★★★★☆</td>
+                <td>法规＋行政文书，考试偏文科，对航运有兴趣即可</td>
+              </tr>
+              <tr>
+                <td>土地家屋調査士</td>
+                <td>★★☆☆☆</td>
+                <td>测量作图与坐标计算要求高，文科生需大量补习理工</td>
+              </tr>
+              <tr>
+                <td>気象予報士</td>
+                <td>★☆☆☆☆</td>
+                <td>强数理能力（气象动力学、模型推理），对文科生难度大</td>
+              </tr>
+              <tr>
+                <td>弁理士</td>
+                <td>★☆☆☆☆</td>
+                <td>理工系专业为主，需电气、化学等技术知识和逻辑表达能力</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+    
+  </div> <!-- End row -->
+</div>
+
+

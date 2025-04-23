@@ -7,4 +7,7 @@ class MakerFieldController < ApplicationController
 
   def food
   end
+
+  def daily
+  end
 end

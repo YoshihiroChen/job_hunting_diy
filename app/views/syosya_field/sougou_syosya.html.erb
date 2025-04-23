@@ -103,7 +103,7 @@
   
 
 
-  <!-- 卡片：职种分类 -->
+  <!-- 卡片：职种分类（文科生选考可能性 文字星级版） -->
   <div class="card mb-4">
     <div class="card-body">
       <h5 class="card-title">综合商社的主要职种</h5>
@@ -115,6 +115,7 @@
               <th>中文说明</th>
               <th>主要职责</th>
               <th>适合人群</th>
+              <th>文科生选考可能性</th>
             </tr>
           </thead>
           <tbody>
@@ -123,36 +124,42 @@
               <td>营业综合职</td>
               <td>推动业务、谈判合同、管理项目、海外驻在等</td>
               <td>喜欢业务挑战、善于沟通的人</td>
+              <td>★★★★☆（很高）<br><span class="text-muted small">不限专业，文科生主力</span></td>
             </tr>
             <tr>
               <td>事業企画職</td>
               <td>战略/新事业开发</td>
               <td>市场分析、事业企划、<%= link_to "M&A", wiki_ma_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>方案设计等</td>
               <td>擅长逻辑思维与数据分析</td>
+              <td>★★★★☆（很高）<br><span class="text-muted small">商学、经济等文科专业优势明显</span></td>
             </tr>
             <tr>
               <td>コーポレート職</td>
               <td>后台职能类</td>
               <td>法务、人事、财务、IT、风控等</td>
               <td>喜欢专业职能、偏稳定路线者</td>
+              <td>★★★☆☆（中等偏高）<br><span class="text-muted small">多数岗位文科理科皆可，法务/人事/会计等常见文科生</span></td>
             </tr>
             <tr>
               <td>技術職</td>
               <td>技术支持/工程管理</td>
               <td>发电、制造、物流等项目中提供技术方案</td>
               <td>理工科出身，懂现场与工程管理</td>
+              <td>★☆☆☆☆（较低）<br><span class="text-muted small">理工科为主，文科生极少</span></td>
             </tr>
             <tr>
               <td>貿易事務職</td>
               <td>贸易实务支持（缩减中）</td>
               <td>订单处理、出货管理、报关协调等</td>
               <td>注重细节、耐心强，现多转为派遣或外包</td>
+              <td>★★★☆☆（中等偏高）<br><span class="text-muted small">传统文科生主力岗位，现岗位减少</span></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
+
 
   <!-- 卡片：魅力与挑战 -->
   <div class="card mb-4">
