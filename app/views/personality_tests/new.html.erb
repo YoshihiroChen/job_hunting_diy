@@ -1,0 +1,1026 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">性格类型测试（仿玉手箱风格）</h1>
+  <p class="mb-4 text-center">请在每道题中，分别选择你“最符合”的选项和“最不符合”的选项，每道题都必须各选一个，且同一选项不能同时选为“最喜欢”和“最不喜欢”。</p>
+
+  <%= form_with url: personality_tests_path, method: :post do %>
+
+    <!-- 第1题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢结识新朋友</td>
+              <td class="text-center"><%= radio_button_tag "q1_most", "A", false, id: "q1_most_A" %> <label for="q1_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q1_least", "A", false, id: "q1_least_A" %> <label for="q1_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 更愿独处思考</td>
+              <td class="text-center"><%= radio_button_tag "q1_most", "B", false, id: "q1_most_B" %> <label for="q1_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q1_least", "B", false, id: "q1_least_B" %> <label for="q1_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 习惯提前制定计划</td>
+              <td class="text-center"><%= radio_button_tag "q1_most", "C", false, id: "q1_most_C" %> <label for="q1_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q1_least", "C", false, id: "q1_least_C" %> <label for="q1_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 遇事随性调整</td>
+              <td class="text-center"><%= radio_button_tag "q1_most", "D", false, id: "q1_most_D" %> <label for="q1_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q1_least", "D", false, id: "q1_least_D" %> <label for="q1_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第2题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 解决问题靠逻辑分析</td>
+              <td class="text-center"><%= radio_button_tag "q2_most", "A", false, id: "q2_most_A" %> <label for="q2_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q2_least", "A", false, id: "q2_least_A" %> <label for="q2_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 按感觉决定行动</td>
+              <td class="text-center"><%= radio_button_tag "q2_most", "B", false, id: "q2_most_B" %> <label for="q2_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q2_least", "B", false, id: "q2_least_B" %> <label for="q2_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 做事果断迅速</td>
+              <td class="text-center"><%= radio_button_tag "q2_most", "C", false, id: "q2_most_C" %> <label for="q2_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q2_least", "C", false, id: "q2_least_C" %> <label for="q2_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 细致考虑每一步</td>
+              <td class="text-center"><%= radio_button_tag "q2_most", "D", false, id: "q2_most_D" %> <label for="q2_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q2_least", "D", false, id: "q2_least_D" %> <label for="q2_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第3题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A.  有很强的情绪控制力</td>
+              <td class="text-center"><%= radio_button_tag "q3_most", "A", false, id: "q3_most_A" %> <label for="q3_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q3_least", "A", false, id: "q3_least_A" %> <label for="q3_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 经常会控制不好情绪</td>
+              <td class="text-center"><%= radio_button_tag "q3_most", "B", false, id: "q3_most_B" %> <label for="q3_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q3_least", "B", false, id: "q3_least_B" %> <label for="q3_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 非常现实</td>
+              <td class="text-center"><%= radio_button_tag "q3_most", "C", false, id: "q3_most_C" %> <label for="q3_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q3_least", "C", false, id: "q3_least_C" %> <label for="q3_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 会有天马行空的想法</td>
+              <td class="text-center"><%= radio_button_tag "q3_most", "D", false, id: "q3_most_D" %> <label for="q3_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q3_least", "D", false, id: "q3_least_D" %> <label for="q3_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第4题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 常主导团队工作</td>
+              <td class="text-center"><%= radio_button_tag "q4_most", "A", false, id: "q4_most_A" %> <label for="q4_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q4_least", "A", false, id: "q4_least_A" %> <label for="q4_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 喜欢按指示完成分工</td>
+              <td class="text-center"><%= radio_button_tag "q4_most", "B", false, id: "q4_most_B" %> <label for="q4_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q4_least", "B", false, id: "q4_least_B" %> <label for="q4_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 决策时注重事实</td>
+              <td class="text-center"><%= radio_button_tag "q4_most", "C", false, id: "q4_most_C" %> <label for="q4_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q4_least", "C", false, id: "q4_least_C" %> <label for="q4_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 经常想象美好未来</td>
+              <td class="text-center"><%= radio_button_tag "q4_most", "D", false, id: "q4_most_D" %> <label for="q4_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q4_least", "D", false, id: "q4_least_D" %> <label for="q4_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第5题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 快速决定，立即行动</td>
+              <td class="text-center"><%= radio_button_tag "q5_most", "A", false, id: "q5_most_A" %> <label for="q5_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q5_least", "A", false, id: "q5_least_A" %> <label for="q5_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 慎重考虑后才行动</td>
+              <td class="text-center"><%= radio_button_tag "q5_most", "B", false, id: "q5_most_B" %> <label for="q5_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q5_least", "B", false, id: "q5_least_B" %> <label for="q5_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 喜欢感情的宣泄</td>
+              <td class="text-center"><%= radio_button_tag "q5_most", "C", false, id: "q5_most_C" %> <label for="q5_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q5_least", "C", false, id: "q5_least_C" %> <label for="q5_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 会控制自己的情绪</td>
+              <td class="text-center"><%= radio_button_tag "q5_most", "D", false, id: "q5_most_D" %> <label for="q5_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q5_least", "D", false, id: "q5_least_D" %> <label for="q5_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第6题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 依靠自律控制习惯</td>
+              <td class="text-center"><%= radio_button_tag "q6_most", "A", false, id: "q6_most_A" %> <label for="q6_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q6_least", "A", false, id: "q6_least_A" %> <label for="q6_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 容易冲动行事</td>
+              <td class="text-center"><%= radio_button_tag "q6_most", "B", false, id: "q6_most_B" %> <label for="q6_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q6_least", "B", false, id: "q6_least_B" %> <label for="q6_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 喜欢群体互动</td>
+              <td class="text-center"><%= radio_button_tag "q6_most", "C", false, id: "q6_most_C" %> <label for="q6_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q6_least", "C", false, id: "q6_least_C" %> <label for="q6_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 宁愿独自完成任务</td>
+              <td class="text-center"><%= radio_button_tag "q6_most", "D", false, id: "q6_most_D" %> <label for="q6_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q6_least", "D", false, id: "q6_least_D" %> <label for="q6_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第7题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 目标实际可达成</td>
+              <td class="text-center"><%= radio_button_tag "q7_most", "A", false, id: "q7_most_A" %> <label for="q7_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q7_least", "A", false, id: "q7_least_A" %> <label for="q7_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 追求更高理想</td>
+              <td class="text-center"><%= radio_button_tag "q7_most", "B", false, id: "q7_most_B" %> <label for="q7_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q7_least", "B", false, id: "q7_least_B" %> <label for="q7_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 坚守既定流程</td>
+              <td class="text-center"><%= radio_button_tag "q7_most", "C", false, id: "q7_most_C" %> <label for="q7_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q7_least", "C", false, id: "q7_least_C" %> <label for="q7_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 常提出独特看法</td>
+              <td class="text-center"><%= radio_button_tag "q7_most", "D", false, id: "q7_most_D" %> <label for="q7_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q7_least", "D", false, id: "q7_least_D" %> <label for="q7_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第8题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 经常主动发言</td>
+              <td class="text-center"><%= radio_button_tag "q8_most", "A", false, id: "q8_most_A" %> <label for="q8_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q8_least", "A", false, id: "q8_least_A" %> <label for="q8_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 更多时间倾听他人</td>
+              <td class="text-center"><%= radio_button_tag "q8_most", "B", false, id: "q8_most_B" %> <label for="q8_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q8_least", "B", false, id: "q8_least_B" %> <label for="q8_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 更愿意追逐理想</td>
+              <td class="text-center"><%= radio_button_tag "q8_most", "C", false, id: "q8_most_C" %> <label for="q8_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q8_least", "C", false, id: "q8_least_C" %> <label for="q8_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 制定目标前会先考虑现实可行性</td>
+              <td class="text-center"><%= radio_button_tag "q8_most", "D", false, id: "q8_most_D" %> <label for="q8_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q8_least", "D", false, id: "q8_least_D" %> <label for="q8_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第9题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢自我管理</td>
+              <td class="text-center"><%= radio_button_tag "q9_most", "A", false, id: "q9_most_A" %> <label for="q9_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q9_least", "A", false, id: "q9_least_A" %> <label for="q9_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 易受情绪波动影响</td>
+              <td class="text-center"><%= radio_button_tag "q9_most", "B", false, id: "q9_most_B" %> <label for="q9_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q9_least", "B", false, id: "q9_least_B" %> <label for="q9_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 推动团队朝目标前进</td>
+              <td class="text-center"><%= radio_button_tag "q9_most", "C", false, id: "q9_most_C" %> <label for="q9_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q9_least", "C", false, id: "q9_least_C" %> <label for="q9_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 愿服从安排确保平稳</td>
+              <td class="text-center"><%= radio_button_tag "q9_most", "D", false, id: "q9_most_D" %> <label for="q9_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q9_least", "D", false, id: "q9_least_D" %> <label for="q9_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第10题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 决定时关注数据依据</td>
+              <td class="text-center"><%= radio_button_tag "q10_most", "A", false, id: "q10_most_A" %> <label for="q10_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q10_least", "A", false, id: "q10_least_A" %> <label for="q10_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 依赖自身感觉</td>
+              <td class="text-center"><%= radio_button_tag "q10_most", "B", false, id: "q10_most_B" %> <label for="q10_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q10_least", "B", false, id: "q10_least_B" %> <label for="q10_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 追求创新突破</td>
+              <td class="text-center"><%= radio_button_tag "q10_most", "C", false, id: "q10_most_C" %> <label for="q10_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q10_least", "C", false, id: "q10_least_C" %> <label for="q10_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 喜欢按流程办事</td>
+              <td class="text-center"><%= radio_button_tag "q10_most", "D", false, id: "q10_most_D" %> <label for="q10_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q10_least", "D", false, id: "q10_least_D" %> <label for="q10_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第11题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 擅长带领他人完成目标</td>
+              <td class="text-center"><%= radio_button_tag "q11_most", "A", false, id: "q11_most_A" %> <label for="q11_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q11_least", "A", false, id: "q11_least_A" %> <label for="q11_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 喜欢明确分工听从指挥</td>
+              <td class="text-center"><%= radio_button_tag "q11_most", "B", false, id: "q11_most_B" %> <label for="q11_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q11_least", "B", false, id: "q11_least_B" %> <label for="q11_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 注重细节和规范</td>
+              <td class="text-center"><%= radio_button_tag "q11_most", "C", false, id: "q11_most_C" %> <label for="q11_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q11_least", "C", false, id: "q11_least_C" %> <label for="q11_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 偏爱抓住机会立即行动</td>
+              <td class="text-center"><%= radio_button_tag "q11_most", "D", false, id: "q11_most_D" %> <label for="q11_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q11_least", "D", false, id: "q11_least_D" %> <label for="q11_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第12题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢设定并遵守时间表</td>
+              <td class="text-center"><%= radio_button_tag "q12_most", "A", false, id: "q12_most_A" %> <label for="q12_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q12_least", "A", false, id: "q12_least_A" %> <label for="q12_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 做事随心所欲</td>
+              <td class="text-center"><%= radio_button_tag "q12_most", "B", false, id: "q12_most_B" %> <label for="q12_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q12_least", "B", false, id: "q12_least_B" %> <label for="q12_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 倾向用逻辑推理决策</td>
+              <td class="text-center"><%= radio_button_tag "q12_most", "C", false, id: "q12_most_C" %> <label for="q12_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q12_least", "C", false, id: "q12_least_C" %> <label for="q12_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 主要靠直觉选择</td>
+              <td class="text-center"><%= radio_button_tag "q12_most", "D", false, id: "q12_most_D" %> <label for="q12_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q12_least", "D", false, id: "q12_least_D" %> <label for="q12_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第13题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 乐于参与社交活动</td>
+              <td class="text-center"><%= radio_button_tag "q13_most", "A", false, id: "q13_most_A" %> <label for="q13_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q13_least", "A", false, id: "q13_least_A" %> <label for="q13_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 更喜欢独处放松</td>
+              <td class="text-center"><%= radio_button_tag "q13_most", "B", false, id: "q13_most_B" %> <label for="q13_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q13_least", "B", false, id: "q13_least_B" %> <label for="q13_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 重视现实中的结果</td>
+              <td class="text-center"><%= radio_button_tag "q13_most", "C", false, id: "q13_most_C" %> <label for="q13_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q13_least", "C", false, id: "q13_least_C" %> <label for="q13_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 喜欢憧憬未来蓝图</td>
+              <td class="text-center"><%= radio_button_tag "q13_most", "D", false, id: "q13_most_D" %> <label for="q13_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q13_least", "D", false, id: "q13_least_D" %> <label for="q13_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第14题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 不断尝试新事物</td>
+              <td class="text-center"><%= radio_button_tag "q14_most", "A", false, id: "q14_most_A" %> <label for="q14_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q14_least", "A", false, id: "q14_least_A" %> <label for="q14_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 更相信经验和惯例</td>
+              <td class="text-center"><%= radio_button_tag "q14_most", "B", false, id: "q14_most_B" %> <label for="q14_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q14_least", "B", false, id: "q14_least_B" %> <label for="q14_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 习惯自律早睡早起</td>
+              <td class="text-center"><%= radio_button_tag "q14_most", "C", false, id: "q14_most_C" %> <label for="q14_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q14_least", "C", false, id: "q14_least_C" %> <label for="q14_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 情绪常常自然流露</td>
+              <td class="text-center"><%= radio_button_tag "q14_most", "D", false, id: "q14_most_D" %> <label for="q14_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q14_least", "D", false, id: "q14_least_D" %> <label for="q14_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第15题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 作出决策时果断坚决</td>
+              <td class="text-center"><%= radio_button_tag "q15_most", "A", false, id: "q15_most_A" %> <label for="q15_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q15_least", "A", false, id: "q15_least_A" %> <label for="q15_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 反复权衡再决定</td>
+              <td class="text-center"><%= radio_button_tag "q15_most", "B", false, id: "q15_most_B" %> <label for="q15_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q15_least", "B", false, id: "q15_least_B" %> <label for="q15_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 适应变化能力强</td>
+              <td class="text-center"><%= radio_button_tag "q15_most", "C", false, id: "q15_most_C" %> <label for="q15_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q15_least", "C", false, id: "q15_least_C" %> <label for="q15_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 喜欢稳定和计划</td>
+              <td class="text-center"><%= radio_button_tag "q15_most", "D", false, id: "q15_most_D" %> <label for="q15_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q15_least", "D", false, id: "q15_least_D" %> <label for="q15_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第16题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢从客观角度分析问题</td>
+              <td class="text-center"><%= radio_button_tag "q16_most", "A", false, id: "q16_most_A" %> <label for="q16_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q16_least", "A", false, id: "q16_least_A" %> <label for="q16_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 决定时易受情绪影响</td>
+              <td class="text-center"><%= radio_button_tag "q16_most", "B", false, id: "q16_most_B" %> <label for="q16_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q16_least", "B", false, id: "q16_least_B" %> <label for="q16_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 勇于表达自己的想法</td>
+              <td class="text-center"><%= radio_button_tag "q16_most", "C", false, id: "q16_most_C" %> <label for="q16_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q16_least", "C", false, id: "q16_least_C" %> <label for="q16_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 宁愿把想法藏在心里</td>
+              <td class="text-center"><%= radio_button_tag "q16_most", "D", false, id: "q16_most_D" %> <label for="q16_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q16_least", "D", false, id: "q16_least_D" %> <label for="q16_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第17题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢挑战现状、打破常规</td>
+              <td class="text-center"><%= radio_button_tag "q17_most", "A", false, id: "q17_most_A" %> <label for="q17_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q17_least", "A", false, id: "q17_least_A" %> <label for="q17_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 以实际利益为导向</td>
+              <td class="text-center"><%= radio_button_tag "q17_most", "B", false, id: "q17_most_B" %> <label for="q17_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q17_least", "B", false, id: "q17_least_B" %> <label for="q17_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 以个人理想为追求</td>
+              <td class="text-center"><%= radio_button_tag "q17_most", "C", false, id: "q17_most_C" %> <label for="q17_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q17_least", "C", false, id: "q17_least_C" %> <label for="q17_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 认同延续传统做法</td>
+              <td class="text-center"><%= radio_button_tag "q17_most", "D", false, id: "q17_most_D" %> <label for="q17_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q17_least", "D", false, id: "q17_least_D" %> <label for="q17_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第18题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 经常把自己的日程表排很满</td>
+              <td class="text-center"><%= radio_button_tag "q18_most", "A", false, id: "q18_most_A" %> <label for="q18_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q18_least", "A", false, id: "q18_least_A" %> <label for="q18_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 喜欢每天空闲的生活</td>
+              <td class="text-center"><%= radio_button_tag "q18_most", "B", false, id: "q18_most_B" %> <label for="q18_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q18_least", "B", false, id: "q18_least_B" %> <label for="q18_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 在小组活动中默默干活</td>
+              <td class="text-center"><%= radio_button_tag "q18_most", "C", false, id: "q18_most_C" %> <label for="q18_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q18_least", "C", false, id: "q18_least_C" %> <label for="q18_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 带领小组取得胜利</td>
+              <td class="text-center"><%= radio_button_tag "q18_most", "D", false, id: "q18_most_D" %> <label for="q18_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q18_least", "D", false, id: "q18_least_D" %> <label for="q18_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第19题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 善于组织一个团队</td>
+              <td class="text-center"><%= radio_button_tag "q19_most", "A", false, id: "q19_most_A" %> <label for="q19_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q19_least", "A", false, id: "q19_least_A" %> <label for="q19_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 什么事都喜欢仔细计划</td>
+              <td class="text-center"><%= radio_button_tag "q19_most", "B", false, id: "q19_most_B" %> <label for="q19_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q19_least", "B", false, id: "q19_least_B" %> <label for="q19_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 说走就走，不会过度思考</td>
+              <td class="text-center"><%= radio_button_tag "q19_most", "C", false, id: "q19_most_C" %> <label for="q19_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q19_least", "C", false, id: "q19_least_C" %> <label for="q19_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 习惯听从指令行动</td>
+              <td class="text-center"><%= radio_button_tag "q19_most", "D", false, id: "q19_most_D" %> <label for="q19_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q19_least", "D", false, id: "q19_least_D" %> <label for="q19_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第20题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢长时间为同一件事情努力</td>
+              <td class="text-center"><%= radio_button_tag "q20_most", "A", false, id: "q20_most_A" %> <label for="q20_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q20_least", "A", false, id: "q20_least_A" %> <label for="q20_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 喜欢用事实说话</td>
+              <td class="text-center"><%= radio_button_tag "q20_most", "B", false, id: "q20_most_B" %> <label for="q20_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q20_least", "B", false, id: "q20_least_B" %> <label for="q20_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 擅于用情感打动他人</td>
+              <td class="text-center"><%= radio_button_tag "q20_most", "C", false, id: "q20_most_C" %> <label for="q20_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q20_least", "C", false, id: "q20_least_C" %> <label for="q20_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 做事比较随性</td>
+              <td class="text-center"><%= radio_button_tag "q20_most", "D", false, id: "q20_most_D" %> <label for="q20_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q20_least", "D", false, id: "q20_least_D" %> <label for="q20_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第21题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 擅长向他人推销自己的点子</td>
+              <td class="text-center"><%= radio_button_tag "q21_most", "A", false, id: "q21_most_A" %> <label for="q21_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q21_least", "A", false, id: "q21_least_A" %> <label for="q21_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 经常复盘自己</td>
+              <td class="text-center"><%= radio_button_tag "q21_most", "B", false, id: "q21_most_B" %> <label for="q21_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q21_least", "B", false, id: "q21_least_B" %> <label for="q21_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 热衷探索未知领域</td>
+              <td class="text-center"><%= radio_button_tag "q21_most", "C", false, id: "q21_most_C" %> <label for="q21_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q21_least", "C", false, id: "q21_least_C" %> <label for="q21_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 更信赖过去经验</td>
+              <td class="text-center"><%= radio_button_tag "q21_most", "D", false, id: "q21_most_D" %> <label for="q21_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q21_least", "D", false, id: "q21_least_D" %> <label for="q21_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第22题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 每天喜欢按部就班</td>
+              <td class="text-center"><%= radio_button_tag "q22_most", "A", false, id: "q22_most_A" %> <label for="q22_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q22_least", "A", false, id: "q22_least_A" %> <label for="q22_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 喜欢每天都有不一样的经历</td>
+              <td class="text-center"><%= radio_button_tag "q22_most", "B", false, id: "q22_most_B" %> <label for="q22_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q22_least", "B", false, id: "q22_least_B" %> <label for="q22_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 经常指挥他人</td>
+              <td class="text-center"><%= radio_button_tag "q22_most", "C", false, id: "q22_most_C" %> <label for="q22_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q22_least", "C", false, id: "q22_least_C" %> <label for="q22_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 不喜欢受人指挥</td>
+              <td class="text-center"><%= radio_button_tag "q22_most", "D", false, id: "q22_most_D" %> <label for="q22_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q22_least", "D", false, id: "q22_least_D" %> <label for="q22_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第23题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 能够为了目标而延迟快乐</td>
+              <td class="text-center"><%= radio_button_tag "q23_most", "A", false, id: "q23_most_A" %> <label for="q23_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q23_least", "A", false, id: "q23_least_A" %> <label for="q23_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 不愿意为了目标而延迟快乐</td>
+              <td class="text-center"><%= radio_button_tag "q23_most", "B", false, id: "q23_most_B" %> <label for="q23_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q23_least", "B", false, id: "q23_least_B" %> <label for="q23_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 行动前不会多加思考</td>
+              <td class="text-center"><%= radio_button_tag "q23_most", "C", false, id: "q23_most_C" %> <label for="q23_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q23_least", "C", false, id: "q23_least_C" %> <label for="q23_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 为人处事都非常谨慎</td>
+              <td class="text-center"><%= radio_button_tag "q23_most", "D", false, id: "q23_most_D" %> <label for="q23_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q23_least", "D", false, id: "q23_least_D" %> <label for="q23_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第24题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 善于组织大家达成目标</td>
+              <td class="text-center"><%= radio_button_tag "q24_most", "A", false, id: "q24_most_A" %> <label for="q24_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q24_least", "A", false, id: "q24_least_A" %> <label for="q24_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 喜欢明确接受安排</td>
+              <td class="text-center"><%= radio_button_tag "q24_most", "B", false, id: "q24_most_B" %> <label for="q24_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q24_least", "B", false, id: "q24_least_B" %> <label for="q24_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 快速做出选择</td>
+              <td class="text-center"><%= radio_button_tag "q24_most", "C", false, id: "q24_most_C" %> <label for="q24_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q24_least", "C", false, id: "q24_least_C" %> <label for="q24_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 仔细斟酌后才行动</td>
+              <td class="text-center"><%= radio_button_tag "q24_most", "D", false, id: "q24_most_D" %> <label for="q24_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q24_least", "D", false, id: "q24_least_D" %> <label for="q24_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第25题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 在团队中喜欢站出来表达观点</td>
+              <td class="text-center"><%= radio_button_tag "q25_most", "A", false, id: "q25_most_A" %> <label for="q25_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q25_least", "A", false, id: "q25_least_A" %> <label for="q25_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 更倾向于低调参与</td>
+              <td class="text-center"><%= radio_button_tag "q25_most", "B", false, id: "q25_most_B" %> <label for="q25_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q25_least", "B", false, id: "q25_least_B" %> <label for="q25_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 喜欢尝试新方法来解决问题</td>
+              <td class="text-center"><%= radio_button_tag "q25_most", "C", false, id: "q25_most_C" %> <label for="q25_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q25_least", "C", false, id: "q25_least_C" %> <label for="q25_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 解决问题首先考虑以往的做法</td>
+              <td class="text-center"><%= radio_button_tag "q25_most", "D", false, id: "q25_most_D" %> <label for="q25_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q25_least", "D", false, id: "q25_least_D" %> <label for="q25_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第26题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 做决定时永远要先收集情报</td>
+              <td class="text-center"><%= radio_button_tag "q26_most", "A", false, id: "q26_most_A" %> <label for="q26_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q26_least", "A", false, id: "q26_least_A" %> <label for="q26_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 花时间收集情报不如直接尝试</td>
+              <td class="text-center"><%= radio_button_tag "q26_most", "B", false, id: "q26_most_B" %> <label for="q26_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q26_least", "B", false, id: "q26_least_B" %> <label for="q26_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 喜欢文学作品</td>
+              <td class="text-center"><%= radio_button_tag "q26_most", "C", false, id: "q26_most_C" %> <label for="q26_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q26_least", "C", false, id: "q26_least_C" %> <label for="q26_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 喜欢数据分析</td>
+              <td class="text-center"><%= radio_button_tag "q26_most", "D", false, id: "q26_most_D" %> <label for="q26_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q26_least", "D", false, id: "q26_least_D" %> <label for="q26_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第27题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢用逻辑来推测他人意图</td>
+              <td class="text-center"><%= radio_button_tag "q27_most", "A", false, id: "q27_most_A" %> <label for="q27_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q27_least", "A", false, id: "q27_least_A" %> <label for="q27_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 擅长用情感去共情他人</td>
+              <td class="text-center"><%= radio_button_tag "q27_most", "B", false, id: "q27_most_B" %> <label for="q27_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q27_least", "B", false, id: "q27_least_B" %> <label for="q27_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 对变化充满好奇</td>
+              <td class="text-center"><%= radio_button_tag "q27_most", "C", false, id: "q27_most_C" %> <label for="q27_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q27_least", "C", false, id: "q27_least_C" %> <label for="q27_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 更愿意重复已知的流程</td>
+              <td class="text-center"><%= radio_button_tag "q27_most", "D", false, id: "q27_most_D" %> <label for="q27_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q27_least", "D", false, id: "q27_least_D" %> <label for="q27_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第28题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 对自己一直高要求</td>
+              <td class="text-center"><%= radio_button_tag "q28_most", "A", false, id: "q28_most_A" %> <label for="q28_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q28_least", "A", false, id: "q28_least_A" %> <label for="q28_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 难以抗拒诱惑，易分心</td>
+              <td class="text-center"><%= radio_button_tag "q28_most", "B", false, id: "q28_most_B" %> <label for="q28_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q28_least", "B", false, id: "q28_least_B" %> <label for="q28_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 擅长指挥整个团队</td>
+              <td class="text-center"><%= radio_button_tag "q28_most", "C", false, id: "q28_most_C" %> <label for="q28_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q28_least", "C", false, id: "q28_least_C" %> <label for="q28_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 更喜欢当组员而非组长</td>
+              <td class="text-center"><%= radio_button_tag "q28_most", "D", false, id: "q28_most_D" %> <label for="q28_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q28_least", "D", false, id: "q28_least_D" %> <label for="q28_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第29题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 喜欢提前准备和计划</td>
+              <td class="text-center"><%= radio_button_tag "q29_most", "A", false, id: "q29_most_A" %> <label for="q29_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q29_least", "A", false, id: "q29_least_A" %> <label for="q29_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 做事随时可以改变</td>
+              <td class="text-center"><%= radio_button_tag "q29_most", "B", false, id: "q29_most_B" %> <label for="q29_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q29_least", "B", false, id: "q29_least_B" %> <label for="q29_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 喜欢数学</td>
+              <td class="text-center"><%= radio_button_tag "q29_most", "C", false, id: "q29_most_C" %> <label for="q29_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q29_least", "C", false, id: "q29_least_C" %> <label for="q29_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 喜欢语文</td>
+              <td class="text-center"><%= radio_button_tag "q29_most", "D", false, id: "q29_most_D" %> <label for="q29_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q29_least", "D", false, id: "q29_least_D" %> <label for="q29_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第30题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 倾向于周密规划</td>
+              <td class="text-center"><%= radio_button_tag "q30_most", "A", false, id: "q30_most_A" %> <label for="q30_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q30_least", "A", false, id: "q30_least_A" %> <label for="q30_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 会在他人面前抑制情绪</td>
+              <td class="text-center"><%= radio_button_tag "q30_most", "B", false, id: "q30_most_B" %> <label for="q30_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q30_least", "B", false, id: "q30_least_B" %> <label for="q30_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 即便面对很多人也不怯场</td>
+              <td class="text-center"><%= radio_button_tag "q30_most", "C", false, id: "q30_most_C" %> <label for="q30_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q30_least", "C", false, id: "q30_least_C" %> <label for="q30_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 不经常做计划</td>
+              <td class="text-center"><%= radio_button_tag "q30_most", "D", false, id: "q30_most_D" %> <label for="q30_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q30_least", "D", false, id: "q30_least_D" %> <label for="q30_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第31题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 任何事都以现实出发</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "A", false, id: "q31_most_A" %> <label for="q30_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "A", false, id: "q31_least_A" %> <label for="q30_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 对生活有美好幻想</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "B", false, id: "q31_most_B" %> <label for="q30_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "B", false, id: "q31_least_B" %> <label for="q30_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 会忍不住向他人发火</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "C", false, id: "q31_most_C" %> <label for="q30_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "C", false, id: "q31_least_C" %> <label for="q30_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 在他人面前会抑制自己的不良情绪</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "D", false, id: "q31_most_D" %> <label for="q30_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "D", false, id: "q31_least_D" %> <label for="q30_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 第32题 -->
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr>
+              <td style="width: 60%;">A. 不喜欢压抑自己的情绪</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "A", false, id: "q31_most_A" %> <label for="q30_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "A", false, id: "q31_least_A" %> <label for="q30_least_A">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>B. 对自己的情绪有很强的控制感</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "B", false, id: "q31_most_B" %> <label for="q30_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "B", false, id: "q31_least_B" %> <label for="q30_least_B">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>C. 非常关注可行性</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "C", false, id: "q31_most_C" %> <label for="q30_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "C", false, id: "q31_least_C" %> <label for="q30_least_C">最不符合</label></td>
+            </tr>
+            <tr>
+              <td>D. 喜欢天马行空的点子</td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "D", false, id: "q31_most_D" %> <label for="q30_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "D", false, id: "q31_least_D" %> <label for="q30_least_D">最不符合</label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+    <div class="text-center mt-4">
+      <%= submit_tag "提交性格测试", class: "btn btn-primary btn-lg" %>
+    </div>
+  <% end %>
+</div>
+
+<!-- 交互优化：防止同一选项同时选为最喜欢和最不喜欢 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  for (let i = 1; i <= 32; i++) { // 这里5改成你的题目总数
+    ["A", "B", "C", "D"].forEach(function(opt) {
+      let most = document.getElementById(`q${i}_most_${opt}`);
+      let least = document.getElementById(`q${i}_least_${opt}`);
+
+      if (most && least) {
+        most.addEventListener("change", function() {
+          if (most.checked) {
+            least.disabled = true;
+          }
+          ["A", "B", "C", "D"].forEach(function(o) {
+            if (opt !== o) {
+              let other = document.getElementById(`q${i}_least_${o}`);
+              if (other) other.disabled = false;
+            }
+          });
+        });
+        least.addEventListener("change", function() {
+          if (least.checked) {
+            most.disabled = true;
+          }
+          ["A", "B", "C", "D"].forEach(function(o) {
+            if (opt !== o) {
+              let other = document.getElementById(`q${i}_most_${o}`);
+              if (other) other.disabled = false;
+            }
+          });
+        });
+        most.addEventListener("click", function() {
+          if (!most.checked) {
+            least.disabled = false;
+          }
+        });
+        least.addEventListener("click", function() {
+          if (!least.checked) {
+            most.disabled = false;
+          }
+        });
+      }
+    });
+  }
+});
+</script>

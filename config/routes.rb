@@ -2,6 +2,7 @@ Rails.application.routes.draw do
  
   
   
+  
   get 'hello/index'
   get '/admin/login', to: 'admin_sessions#new'
   post '/admin/login', to: 'admin_sessions#create'
@@ -165,7 +166,7 @@ Rails.application.routes.draw do
 
 
   
-
+  resources :personality_tests, only: [:new, :create, :show]
 
   resources :comments, only: [:index, :create, :destroy]
 

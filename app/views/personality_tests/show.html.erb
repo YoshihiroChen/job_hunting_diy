@@ -1,0 +1,242 @@
+<h2>测试结果</h2>
+<p>外向得分：<%= @scores[:extraversion] %></p>
+<p>内向得分：<%= @scores[:introversion] %></p>
+<p>理性得分：<%= @scores[:rational] %></p>
+<p>感性得分：<%= @scores[:emotional] %></p>
+<p>果断得分：<%= @scores[:decisive] %></p>
+<p>谨慎得分：<%= @scores[:cautious] %></p>
+<p>计划得分：<%= @scores[:plan] %></p>
+<p>随性得分：<%= @scores[:random] %></p>
+<p>领导得分：<%= @scores[:leader] %></p>
+<p>下属得分：<%= @scores[:subordinate] %></p>
+<p>创新得分：<%= @scores[:creative] %></p>
+<p>传统得分：<%= @scores[:traditional] %></p>
+<p>现实得分：<%= @scores[:fact] %></p>
+<p>理想得分：<%= @scores[:dream] %></p>
+<p>自律得分：<%= @scores[:restraint] %></p>
+<p>冲动得分：<%= @scores[:impulse] %></p>
+
+
+<div class="container mt-5">
+  <div class="card shadow mb-5">
+    <div class="card-body">
+      <h1 class="card-title text-center mb-4">全行业职种性格维度大表</h1>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>行业/领域</th>
+              <th>职种</th>
+              <th>文科生选考</th>
+              <th>外向/内向</th>
+              <th>理性/感性</th>
+              <th>果断/谨慎</th>
+              <th>创新/保守</th>
+              <th>计划/随意</th>
+              <th>领导/服从</th>
+              <th>现实/理想</th>
+              <th>自律/冲动</th>
+              <th>补充说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 咨询 -->
+            <tr><td>咨询</td><td>战略咨询</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>沟通强、逻辑、决策快</td></tr>
+            <tr><td>咨询</td><td>财务咨询</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数据敏感、细致、文案多</td></tr>
+            <tr><td>咨询</td><td>人事&组织咨询</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>沟通管理、共情力</td></tr>
+            <tr><td>咨询</td><td>IT咨询</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>项目推动、技术+业务桥梁</td></tr>
+            <tr><td>咨询</td><td>风险咨询</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>风控/合规/分析</td></tr>
+            <!-- 保险 -->
+            <tr><td>保险</td><td>资产运用（投资）</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数据分析、理财管理</td></tr>
+            <tr><td>保险</td><td>精算师</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数学导向、独立分析</td></tr>
+            <tr><td>保险</td><td>商品企划</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>创意、市场嗅觉</td></tr>
+            <tr><td>保险</td><td>营业/代理店支援</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>沟通、开拓、外联</td></tr>
+            <tr><td>保险</td><td>承保评估</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>合同条款分析、风险判断</td></tr>
+            <tr><td>保险</td><td>理赔服务</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>客户应对、服务导向</td></tr>
+            <tr><td>保险</td><td>系统开发/IT企划</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>技术/后台/系统思维</td></tr>
+            <tr><td>保险</td><td>数据分析/DX推进</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>数据驱动、跨部门沟通</td></tr>
+            <!-- 银行及金融 -->
+            <tr><td>商业银行</td><td>オープン职（综合职）</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>面向综合，业务+沟通</td></tr>
+            <tr><td>商业银行</td><td>グローバル职（国际业务）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>语言/海外业务/灵活应变</td></tr>
+            <tr><td>商业银行</td><td>カスタマー服务</td><td>★★★★★</td><td>外向</td><td>感性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>客户导向、细致</td></tr>
+            <tr><td>商业银行</td><td>トレードビジネス（外汇等）</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>交易/业务拓展</td></tr>
+            <tr><td>商业银行</td><td>フィナンシャル・エンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数理/建模/后台</td></tr>
+            <tr><td>商业银行</td><td>戦略財務（会计·税务）</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>财务/会计</td></tr>
+            <tr><td>商业银行</td><td>システム·デジタル</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>技术、系统</td></tr>
+            <tr><td>商业银行</td><td>ウェルスマネジメント</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>沟通/销售/金融素养</td></tr>
+            <tr><td>商业银行</td><td>グローバル・マーケッツ</td><td>★★☆☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>市场/销售/交涉</td></tr>
+            <!-- 投资银行 -->
+            <tr><td>投资银行</td><td>国内营业（オープン/アソシエイト）</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>综合业务、沟通销售</td></tr>
+            <tr><td>投资银行</td><td>法人营业（オープン）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>企业客户、逻辑表达</td></tr>
+            <tr><td>投资银行</td><td>投资银行（IB）</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>财务/逻辑/项目推进</td></tr>
+            <tr><td>投资银行</td><td>市场部（グローバル·マーケッツ）</td><td>★★☆☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>市场/销售/快节奏</td></tr>
+            <tr><td>投资银行</td><td>金融工程</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数理建模/IT</td></tr>
+            <tr><td>投资银行</td><td>研究分析（リサーチ）</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>资料分析/政策/宏观</td></tr>
+            <tr><td>投资银行</td><td>系统（システム）</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>系统开发/技术支持</td></tr>
+            <tr><td>投资银行</td><td>风险管理</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>风险计量/建模</td></tr>
+            <!-- 信托银行 -->
+            <tr><td>信托银行</td><td>オープン採用</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>综合型</td></tr>
+            <tr><td>信托银行</td><td>グローバル採用</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>语言+国际业务</td></tr>
+            <tr><td>信托银行</td><td>アクチュアリー</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>年金精算/专业性强</td></tr>
+            <tr><td>信托银行</td><td>ファンドマネージャー</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>投资/管理/理财</td></tr>
+            <tr><td>信托银行</td><td>システム·デジタル</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>IT开发/后台</td></tr>
+            <!-- 其他行业依次类推... -->
+            <!-- 你可在这里粘贴前文我整理的所有职种补齐内容，格式一致，逐行追加即可。 -->
+
+            <!-- 继续追加至 <tbody> 内部，和前一条连起来即可 -->
+
+            <!-- 零售银行 -->
+            <tr><td>零售银行</td><td>ビジネス系職種</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>业务策划、产品开发</td></tr>
+            <tr><td>零售银行</td><td>エンジニア職（開発）</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>编程/技术</td></tr>
+            <tr><td>零售银行</td><td>データ／分析系</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数据分析</td></tr>
+            <tr><td>零售银行</td><td>カスタマー系</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>谨慎</td><td>保守</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>客户服务、营业支援</td></tr>
+            <tr><td>零售银行</td><td>管理／内部統制</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>合规、审查</td></tr>
+
+            <!-- 综合商社 -->
+            <tr><td>综合商社</td><td>総合職（営業職）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>业务、谈判、海外驻在</td></tr>
+            <tr><td>综合商社</td><td>事業企画職</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>市场分析、战略</td></tr>
+            <tr><td>综合商社</td><td>コーポレート職</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>后台职能、稳定</td></tr>
+            <tr><td>综合商社</td><td>技術職</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>技术支持、工程管理</td></tr>
+            <tr><td>综合商社</td><td>貿易事務職</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>传统文科生主力</td></tr>
+
+            <!-- 专门商社 -->
+            <tr><td>专门商社</td><td>営業職</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>客户开发、谈判</td></tr>
+            <tr><td>专门商社</td><td>商品企画職</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>新商品提案、调查</td></tr>
+            <tr><td>专门商社</td><td>貿易事務職</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>流程管理、协调</td></tr>
+            <tr><td>专门商社</td><td>管理部門職</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>人事、法务、会计等</td></tr>
+
+            <!-- 会计 -->
+            <tr><td>会计</td><td>経理担当</td><td>★★★★★</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>财务会计、数据处理</td></tr>
+            <tr><td>会计</td><td>会計事務所職員</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>中小事务所、培训型</td></tr>
+            <tr><td>会计</td><td>税務系会計職員</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>税务知识、资格考取</td></tr>
+            <tr><td>会计</td><td>財務企画 / CFO支援</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>战略/高门槛</td></tr>
+            <tr><td>会计</td><td>会计类顾问（会計系コンサル）</td><td>★★☆☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>项目制、咨询导向</td></tr>
+
+            <!-- 审计 -->
+            <tr><td>审计</td><td>审计人员（監査職）</td><td>★★★★★</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>逻辑、细致</td></tr>
+            <tr><td>审计</td><td>IT审计人员</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>IT/理工优先</td></tr>
+            <tr><td>审计</td><td>审计品质管理人员</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>资深CPA转任</td></tr>
+            <tr><td>审计</td><td>会计制度支援人员</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>高年次/资深</td></tr>
+            <tr><td>审计</td><td>海外集团审计支援人员</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>语言/国际沟通</td></tr>
+            <tr><td>审计</td><td>审计辅助人员</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>事务支援、非专业路线</td></tr>
+
+            <!-- 后续行业（不动产开发商、不动产中介、不动产物业、不动产资产管理、不动产租赁、广告、制造业、士业、IT、Web等），如需全部行继续回复“继续”即可，内容会分批完整发完。 -->
+
+            <!-- 前面内容请与上一段衔接，只需补到 <tbody> 里即可 -->
+
+            <!-- 不动产开发商 -->
+            <tr><td>不动产开发商</td><td>企画調査部</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>市场分析、逻辑</td></tr>
+            <tr><td>不动产开发商</td><td>不動産投資研究所</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数据分析、研究</td></tr>
+            <tr><td>不动产开发商</td><td>経営企画部</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>战略思考、决策</td></tr>
+            <tr><td>不动产开发商</td><td>鑑定企画室</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>估价、分析</td></tr>
+            <tr><td>不动产开发商</td><td>営業部門（开发营业）</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>客户沟通、业务推进</td></tr>
+            <tr><td>不动产开发商</td><td>法务协力部/总务</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>合同、法规、细致</td></tr>
+            <tr><td>不动产开发商</td><td>建設企画部</td><td>★★☆☆☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>协调管理、项目推动</td></tr>
+            <tr><td>不动产开发商</td><td>各事业本部</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>项目综合管理</td></tr>
+            <tr><td>不动产开发商</td><td>DX本部</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>IT创新、变革</td></tr>
+            <tr><td>不动产开发商</td><td>S&E総合研究所</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>可持续研究、理工主力</td></tr>
+            <tr><td>不动产开发商</td><td>ケアデザイン室</td><td>★★☆☆☆</td><td>外向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>老年福祉、社会学</td></tr>
+            <tr><td>不动产开发商</td><td>広報部</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>品牌推广、表达力</td></tr>
+            <tr><td>不动产开发商</td><td>IR室</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>金融知识、沟通</td></tr>
+            <tr><td>不动产开发商</td><td>海外事業本部</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>外语、跨文化沟通</td></tr>
+            <tr><td>不动产开发商</td><td>PM部門（资产管理）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>收益优化、协调管理</td></tr>
+            <tr><td>不动产开发商</td><td>可持续发展推进本部</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>ESG、政策</td></tr>
+            <tr><td>不动产开发商</td><td>経理部</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>财务分析</td></tr>
+
+            <!-- 不动产中介 -->
+            <tr><td>不动产中介</td><td>営業職（個人向・法人向）</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>提案、客户沟通</td></tr>
+            <tr><td>不动产中介</td><td>営業支援職</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>事务支援、细致</td></tr>
+            <tr><td>不动产中介</td><td>IT・企画系職种</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>技术、分析、项目管理</td></tr>
+            <tr><td>不动产中介</td><td>店舗マネジメント（店长候补）</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>管理晋升、组织力</td></tr>
+
+            <!-- 不动产物业 -->
+            <tr><td>不动产物业</td><td>PM職（物业管理）</td><td>★★★★★</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>协调交涉、收支管理</td></tr>
+            <tr><td>不动产物业</td><td>BM職（设备管理）</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>技术、现场工程</td></tr>
+            <tr><td>不动产物业</td><td>RM職（住户管理）</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>社区协调、共情力</td></tr>
+            <tr><td>不动产物业</td><td>CM職（施工统筹）</td><td>★★☆☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>项目管理、现场调度</td></tr>
+            <tr><td>不动产物业</td><td>本社職（后台）</td><td>★★★★★</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>人事、法务、企划</td></tr>
+
+            <!-- 不动产资产管理 -->
+            <tr><td>不动产资产管理</td><td>AM职（新卒）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>财务素养、沟通能力</td></tr>
+            <tr><td>不动产资产管理</td><td>企画・IR</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>逻辑表达、金融知识</td></tr>
+            <tr><td>不动产资产管理</td><td>财务/法务</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>簿记/法律基础</td></tr>
+            <tr><td>不动产资产管理</td><td>法人営業</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>REIT产品推广</td></tr>
+
+            <!-- 不动产租赁 -->
+            <tr><td>不动产租赁</td><td>招商・租赁营业（リーシング営業）</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>提案力、沟通协调</td></tr>
+            <tr><td>不动产租赁</td><td>商业运营・设施管理</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>服务意识、数据追踪</td></tr>
+            <tr><td>不动产租赁</td><td>合同管理・法务支援</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>契约理解、法律知识</td></tr>
+
+            <!-- 广告代理店 -->
+            <tr><td>广告代理店</td><td>Business Produce（AE）</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>沟通、协调、项目管理</td></tr>
+            <tr><td>广告代理店</td><td>Strategy</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>逻辑、企划、分析</td></tr>
+            <tr><td>广告代理店</td><td>Creative</td><td>★★★☆☆</td><td>内向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>文案适合文科，设计需技能</td></tr>
+            <tr><td>广告代理店</td><td>Media & Content</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>内容合作、媒体策划</td></tr>
+            <tr><td>广告代理店</td><td>Global Business</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>国际沟通、多语种</td></tr>
+            <tr><td>广告代理店</td><td>Business / Digital Trans</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数据分析、MarTech工具</td></tr>
+
+            <!-- 制造业（以汽车/食品为例，部分主流岗位） -->
+            <tr><td>制造业</td><td>国内営業</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>营业、谈判、外联</td></tr>
+            <tr><td>制造业</td><td>海外営業</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>语言、国际业务</td></tr>
+            <tr><td>制造业</td><td>生産管理・物流</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>供应链、流程优化</td></tr>
+            <tr><td>制造业</td><td>調達</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>采购、协调</td></tr>
+            <tr><td>制造业</td><td>経理</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>会计、财务</td></tr>
+            <tr><td>制造业</td><td>渉外広報</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>传播、新闻、公关</td></tr>
+            <tr><td>制造业</td><td>総務・人事</td><td>★★★★☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>人事、社工、法务</td></tr>
+            <tr><td>制造业</td><td>Gazoo Racing</td><td>★★☆☆☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>体育管理、品牌</td></tr>
+            <tr><td>制造业</td><td>マーケティング</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>市场、品牌</td></tr>
+            <tr><td>制造业</td><td>宣伝</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>广告、新闻、设计</td></tr>
+            <tr><td>制造业</td><td>デザインルーム</td><td>★★★☆☆</td><td>内向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>视觉、平面设计</td></tr>
+            <tr><td>制造业</td><td>セールス</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>自律</td><td>销售、商务</td></tr>
+            <tr><td>制造业</td><td>情報企画</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数据、情报</td></tr>
+            <tr><td>制造业</td><td>財務経理</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>财务、会计</td></tr>
+            <tr><td>制造业</td><td>原料調達</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>采购、供应链</td></tr>
+            <tr><td>制造业</td><td>人材開発</td><td>★★★★★</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>人力资源、教育</td></tr>
+
+            <!-- 士业（士業） -->
+            <tr><td>士业</td><td>行政書士</td><td>★★★★★</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>法律文书、规章处理</td></tr>
+            <tr><td>士业</td><td>司法書士</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>法律/作图、文书</td></tr>
+            <tr><td>士业</td><td>社会保険労務士</td><td>★★★★☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>法规/制度/合规</td></tr>
+            <tr><td>士业</td><td>弁護士</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>法律辩护、沟通</td></tr>
+            <tr><td>士业</td><td>不動産鑑定士</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>会计/经济/评估</td></tr>
+            <tr><td>士业</td><td>海事代理士</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>法规/文书/交涉</td></tr>
+            <tr><td>士业</td><td>土地家屋調査士</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>测量/作图</td></tr>
+            <tr><td>士业</td><td>気象予報士</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数理/气象/技术型</td></tr>
+            <tr><td>士业</td><td>弁理士</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>理工技术+法律</td></tr>
+
+            <!-- IT咨询·SIer相关职种 -->
+            <tr><td>IT咨询/SIer</td><td>IT咨询顾问（ITコンサルタント）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>业务理解、沟通协调、项目管理</td></tr>
+            <tr><td>IT咨询/SIer</td><td>系统企划/业务分析</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>业务流程分析、需求整理</td></tr>
+            <tr><td>IT咨询/SIer</td><td>项目经理/项目管理支援（PM/PMO）</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>协调能力、组织力</td></tr>
+            <tr><td>IT咨询/SIer</td><td>客户成功/售前咨询</td><td>★★★☆☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>沟通与客户支持</td></tr>
+            <tr><td>IT咨询/SIer</td><td>系统工程师（SE）</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>技术职能</td></tr>
+            <tr><td>IT咨询/SIer</td><td>开发工程师（程序员）</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>编程、开发</td></tr>
+            <tr><td>IT咨询/SIer</td><td>IT企划/新事业开发</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>业务侧、创新</td></tr>
+            <tr><td>IT咨询/SIer</td><td>IT销售/解决方案销售</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>客户关系和沟通</td></tr>
+            <tr><td>IT咨询/SIer</td><td>运营/客户支持</td><td>★★★☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>用户沟通、协调</td></tr>
+
+            <!-- Web系IT企业职种 -->
+            <tr><td>Web系IT</td><td>Web开发工程师</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>开发经验/技术</td></tr>
+            <tr><td>Web系IT</td><td>后端/基础设施工程师</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>编程/高阶技术</td></tr>
+            <tr><td>Web系IT</td><td>前端工程师</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>服从</td><td>现实</td><td>自律</td><td>JS/HTML/CSS</td></tr>
+            <tr><td>Web系IT</td><td>UI/UX设计师</td><td>★★★☆☆</td><td>内向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>美术、体验、逻辑</td></tr>
+            <tr><td>Web系IT</td><td>产品经理</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>业务、技术、企划</td></tr>
+            <tr><td>Web系IT</td><td>Web营销/广告运营</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>分析、企划、创新</td></tr>
+            <tr><td>Web系IT</td><td>数据分析师/数据科学家</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>统计、业务分析</td></tr>
+            <tr><td>Web系IT</td><td>企划/新事业开发</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>自律</td><td>创新思考、市场理解</td></tr>
+            <tr><td>Web系IT</td><td>IT销售/客户经理</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>沟通、客户支持</td></tr>
+            <tr><td>Web系IT</td><td>运营/用户支持</td><td>★★★☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>协调与服务意识</td></tr>
+
+
+
+
+
+
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
