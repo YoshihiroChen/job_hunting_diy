@@ -156,9 +156,37 @@
     </div>
 
 
+    <div class="card p-4 shadow mt-4">
+      <!-- 推荐岗位内容... -->
+      <h4 class="card-title mb-4 text-center">为你推荐的岗位Top10</h4>
+      <% @top_matches.each do |job| %>
+        <div class="card mb-3 border-0 bg-light">
+          <div class="card-body py-2">
+            <h5 class="card-title mb-1">
+              <span class="fw-bold"><%= job[:industry] %></span> - <%= job[:role] %>
+            </h5>
+            <div class="mb-1 small">
+              匹配度：<%= job[:match_count] %>/8　
+              <span class="ms-3">文科生选考：<%= job[:literature_ok] %></span>
+            </div>
+            <div class="text-muted" style="font-size:0.96em;">
+              <%= job[:note] %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <div class="mt-2 small text-secondary text-center">* 匹配度为和你性格八维一致的项数，满分为8</div>
+    </div>
+
+
 
   </div>
 </div>
+
+
+
+
+
 
 
 

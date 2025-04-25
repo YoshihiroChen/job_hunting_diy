@@ -1,5 +1,5 @@
 <div class="container mt-4">
-  <h1 class="text-center mb-4">性格类型测试（仿玉手箱风格）</h1>
+  <h1 class="text-center mb-4">性格类型测试</h1>
   <p class="mb-4 text-center">请在每道题中，分别选择你“最符合”的选项和“最不符合”的选项，每道题都必须各选一个，且同一选项不能同时选为“最喜欢”和“最不喜欢”。</p>
 
   <%= form_with url: personality_tests_path, method: :post do %>
@@ -655,7 +655,7 @@
               <td class="text-center"><%= radio_button_tag "q22_least", "C", false, id: "q22_least_C" %> <label for="q22_least_C">最不符合</label></td>
             </tr>
             <tr>
-              <td>D. 不喜欢受人指挥</td>
+              <td>D. 可以接受受人指挥</td>
               <td class="text-center"><%= radio_button_tag "q22_most", "D", false, id: "q22_most_D" %> <label for="q22_most_D">最符合</label></td>
               <td class="text-center"><%= radio_button_tag "q22_least", "D", false, id: "q22_least_D" %> <label for="q22_least_D">最不符合</label></td>
             </tr>
@@ -911,23 +911,23 @@
           <tbody>
             <tr>
               <td style="width: 60%;">A. 任何事都以现实出发</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "A", false, id: "q31_most_A" %> <label for="q30_most_A">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "A", false, id: "q31_least_A" %> <label for="q30_least_A">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "A", false, id: "q31_most_A" %> <label for="q31_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "A", false, id: "q31_least_A" %> <label for="q31_least_A">最不符合</label></td>
             </tr>
             <tr>
               <td>B. 对生活有美好幻想</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "B", false, id: "q31_most_B" %> <label for="q30_most_B">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "B", false, id: "q31_least_B" %> <label for="q30_least_B">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "B", false, id: "q31_most_B" %> <label for="q31_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "B", false, id: "q31_least_B" %> <label for="q31_least_B">最不符合</label></td>
             </tr>
             <tr>
               <td>C. 会忍不住向他人发火</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "C", false, id: "q31_most_C" %> <label for="q30_most_C">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "C", false, id: "q31_least_C" %> <label for="q30_least_C">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "C", false, id: "q31_most_C" %> <label for="q31_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "C", false, id: "q31_least_C" %> <label for="q31_least_C">最不符合</label></td>
             </tr>
             <tr>
               <td>D. 在他人面前会抑制自己的不良情绪</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "D", false, id: "q31_most_D" %> <label for="q30_most_D">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "D", false, id: "q31_least_D" %> <label for="q30_least_D">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_most", "D", false, id: "q31_most_D" %> <label for="q31_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q31_least", "D", false, id: "q31_least_D" %> <label for="q31_least_D">最不符合</label></td>
             </tr>
           </tbody>
         </table>
@@ -941,23 +941,23 @@
           <tbody>
             <tr>
               <td style="width: 60%;">A. 不喜欢压抑自己的情绪</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "A", false, id: "q31_most_A" %> <label for="q30_most_A">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "A", false, id: "q31_least_A" %> <label for="q30_least_A">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_most", "A", false, id: "q32_most_A" %> <label for="q32_most_A">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_least", "A", false, id: "q32_least_A" %> <label for="q32_least_A">最不符合</label></td>
             </tr>
             <tr>
               <td>B. 对自己的情绪有很强的控制感</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "B", false, id: "q31_most_B" %> <label for="q30_most_B">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "B", false, id: "q31_least_B" %> <label for="q30_least_B">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_most", "B", false, id: "q32_most_B" %> <label for="q32_most_B">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_least", "B", false, id: "q32_least_B" %> <label for="q32_least_B">最不符合</label></td>
             </tr>
             <tr>
               <td>C. 非常关注可行性</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "C", false, id: "q31_most_C" %> <label for="q30_most_C">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "C", false, id: "q31_least_C" %> <label for="q30_least_C">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_most", "C", false, id: "q32_most_C" %> <label for="q32_most_C">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_least", "C", false, id: "q32_least_C" %> <label for="q32_least_C">最不符合</label></td>
             </tr>
             <tr>
               <td>D. 喜欢天马行空的点子</td>
-              <td class="text-center"><%= radio_button_tag "q31_most", "D", false, id: "q31_most_D" %> <label for="q30_most_D">最符合</label></td>
-              <td class="text-center"><%= radio_button_tag "q31_least", "D", false, id: "q31_least_D" %> <label for="q30_least_D">最不符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_most", "D", false, id: "q32_most_D" %> <label for="q32_most_D">最符合</label></td>
+              <td class="text-center"><%= radio_button_tag "q32_least", "D", false, id: "q32_least_D" %> <label for="q32_least_D">最不符合</label></td>
             </tr>
           </tbody>
         </table>
