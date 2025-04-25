@@ -1,20 +1,165 @@
-<h2>测试结果</h2>
-<p>外向得分：<%= @scores[:extraversion] %></p>
-<p>内向得分：<%= @scores[:introversion] %></p>
-<p>理性得分：<%= @scores[:rational] %></p>
-<p>感性得分：<%= @scores[:emotional] %></p>
-<p>果断得分：<%= @scores[:decisive] %></p>
-<p>谨慎得分：<%= @scores[:cautious] %></p>
-<p>计划得分：<%= @scores[:plan] %></p>
-<p>随性得分：<%= @scores[:random] %></p>
-<p>领导得分：<%= @scores[:leader] %></p>
-<p>下属得分：<%= @scores[:subordinate] %></p>
-<p>创新得分：<%= @scores[:creative] %></p>
-<p>传统得分：<%= @scores[:traditional] %></p>
-<p>现实得分：<%= @scores[:fact] %></p>
-<p>理想得分：<%= @scores[:dream] %></p>
-<p>自律得分：<%= @scores[:restraint] %></p>
-<p>冲动得分：<%= @scores[:impulse] %></p>
+<div class="container mt-5">
+  <div class="card p-4 shadow">
+
+    <!-- 总标题 -->
+    <h3 class="mb-4 text-center">性格倾向分析结果</h3>
+
+    <div class="alert alert-info mb-4">
+      <strong>如何解读下面的性格倾向图？</strong>
+      <ul class="mb-1">
+        <li>每一行代表一个性格维度，例如“内向-外向”、“理性-感性”等。</li>
+        <li>左侧条形表示你在该维度左端（如“内向”）的分数，右侧条形表示右端（如“外向”）的分数。</li>
+        <li>条形越长，说明你在这个性格端向被选中的次数越多（无论是被选为“最适合”还是“最不适合”）。</li>
+        <li>如果某一端向分数为负值，其绝对值会被加到对方端向上，表示你极端不喜欢这一端，实际更偏向另一端。</li>
+        <li>条形很短或为零，说明你在这个维度没有明显倾向或极少选择相关选项。</li>
+        <li><span class="text-danger"><b>如果同一性格维度，两侧条形都很长，说明你在作答时没有表现出一贯的性格偏好（即“一致性较低”），可能是答题策略多变或在该维度态度比较矛盾。</b></span></li>
+        <li>对比每行两端的条形长度，你可以直观看到自己在各个性格维度的真实偏好或极端倾向。</li>
+      </ul>
+    </div>
+
+    <!-- 条形图部分标题 -->
+    <h4 class="mb-3 mt-4 text-center">性格维度可视化（条形图）</h4>
+    <% traits = [
+      { left: "内向", right: "外向", left_score: @scores[:introversion], right_score: @scores[:extraversion], left_color: "bg-secondary", right_color: "bg-primary" },
+      { left: "感性", right: "理性", left_score: @scores[:emotional], right_score: @scores[:rational], left_color: "bg-warning", right_color: "bg-info" },
+      { left: "谨慎", right: "果断", left_score: @scores[:cautious], right_score: @scores[:decisive], left_color: "bg-success", right_color: "bg-danger" },
+      { left: "随性", right: "计划", left_score: @scores[:random], right_score: @scores[:plan], left_color: "bg-danger", right_color: "bg-dark" },
+      { left: "服从", right: "领导", left_score: @scores[:subordinate], right_score: @scores[:leader], left_color: "bg-primary", right_color: "bg-warning" },
+      { left: "传统", right: "创新", left_score: @scores[:traditional], right_score: @scores[:creative], left_color: "bg-secondary", right_color: "bg-secondary" },
+      { left: "理想", right: "现实", left_score: @scores[:dream], right_score: @scores[:fact], left_color: "bg-info", right_color: "bg-success" },
+      { left: "冲动", right: "自律", left_score: @scores[:impulse], right_score: @scores[:restraint], left_color: "bg-light text-dark", right_color: "bg-dark" }
+    ] %>
+
+    <% traits.each do |trait| %>
+      <% left_score = trait[:left_score].to_i %>
+      <% right_score = trait[:right_score].to_i %>
+      <% if left_score < 0 %>
+        <% right_score += left_score.abs %>
+        <% left_score = 0 %>
+      <% elsif right_score < 0 %>
+        <% left_score += right_score.abs %>
+        <% right_score = 0 %>
+      <% end %>
+      <% max_score = 24.0 %>
+      <% left_percent = (left_score * 100.0 / max_score).round %>
+      <% right_percent = (right_score * 100.0 / max_score).round %>
+      <div class="mb-2" style="display: flex; align-items: center;">
+        <div style="width: 45%; display: flex; justify-content: flex-end; align-items: center;">
+          <% if left_percent > 0 %>
+            <div class="<%= trait[:left_color] %>" style="height: 28px; width: <%= left_percent %>%; border-radius: 14px 0 0 14px;"></div>
+          <% end %>
+        </div>
+        <div style="width: 10%; text-align: center; font-weight: bold;">
+          <%= trait[:left] %> - <%= trait[:right] %>
+        </div>
+        <div style="width: 45%; display: flex; align-items: center;">
+          <% if right_percent > 0 %>
+            <div class="<%= trait[:right_color] %>" style="height: 28px; width: <%= right_percent %>%; border-radius: 0 14px 14px 0; margin-left: 2px;"></div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <!-- 分数表格标题和表格 -->
+    <h4 class="mb-3 mt-5 text-center">详细得分表</h4>
+    <div class="card mb-3 shadow-sm">
+      <div class="card-body p-2">
+        <div class="row">
+          <div class="col-md-6">
+            <table class="table table-bordered table-sm align-middle mb-0">
+              <tbody>
+                <tr><th>外向</th><td><%= @scores[:extraversion] %></td></tr>
+                <tr><th>理性</th><td><%= @scores[:rational] %></td></tr>
+                <tr><th>果断</th><td><%= @scores[:decisive] %></td></tr>
+                <tr><th>计划</th><td><%= @scores[:plan] %></td></tr>
+                <tr><th>领导</th><td><%= @scores[:leader] %></td></tr>
+                <tr><th>创新</th><td><%= @scores[:creative] %></td></tr>
+                <tr><th>现实</th><td><%= @scores[:fact] %></td></tr>
+                <tr><th>自律</th><td><%= @scores[:restraint] %></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <table class="table table-bordered table-sm align-middle mb-0">
+              <tbody>
+                <tr><th>内向</th><td><%= @scores[:introversion] %></td></tr>
+                <tr><th>感性</th><td><%= @scores[:emotional] %></td></tr>
+                <tr><th>谨慎</th><td><%= @scores[:cautious] %></td></tr>
+                <tr><th>随性</th><td><%= @scores[:random] %></td></tr>
+                <tr><th>下属</th><td><%= @scores[:subordinate] %></td></tr>
+                <tr><th>传统</th><td><%= @scores[:traditional] %></td></tr>
+                <tr><th>理想</th><td><%= @scores[:dream] %></td></tr>
+                <tr><th>冲动</th><td><%= @scores[:impulse] %></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 归属结论部分 -->
+    <h4 class="mb-3 mt-4 text-center">各性格维度归属结论</h4>
+    <div class="card mb-3 shadow-sm">
+      <div class="card-body">
+        <ul class="mb-0" style="font-size: 1.1em;">
+          <% trait_pairs = [
+            { name: "内向-外向", left: "内向", right: "外向", left_score: @scores[:introversion], right_score: @scores[:extraversion] },
+            { name: "感性-理性", left: "感性", right: "理性", left_score: @scores[:emotional], right_score: @scores[:rational] },
+            { name: "谨慎-果断", left: "谨慎", right: "果断", left_score: @scores[:cautious], right_score: @scores[:decisive] },
+            { name: "随性-计划", left: "随性", right: "计划", left_score: @scores[:random], right_score: @scores[:plan] },
+            { name: "服从-领导", left: "服从", right: "领导", left_score: @scores[:subordinate], right_score: @scores[:leader] },
+            { name: "传统-创新", left: "传统", right: "创新", left_score: @scores[:traditional], right_score: @scores[:creative] },
+            { name: "理想-现实", left: "理想", right: "现实", left_score: @scores[:dream], right_score: @scores[:fact] },
+            { name: "冲动-自律", left: "冲动", right: "自律", left_score: @scores[:impulse], right_score: @scores[:restraint] }
+          ] %>
+          <% strong_threshold = 6 %> <!-- 差值大于等于6为强偏向 -->
+          <% trait_pairs.each do |trait| %>
+            <% left = trait[:left_score].to_i %>
+            <% right = trait[:right_score].to_i %>
+            <% diff = (left - right).abs %>
+            <% if left > right %>
+              <li>
+                <strong><%= trait[:name] %></strong>：
+                属于
+                <span class="text-primary"><strong>
+                  <% if diff >= strong_threshold %>
+                    强偏向<%= trait[:left] %>
+                  <% else %>
+                    弱偏向<%= trait[:left] %>
+                  <% end %>
+                </strong></span>
+              </li>
+            <% elsif right > left %>
+              <li>
+                <strong><%= trait[:name] %></strong>：
+                属于
+                <span class="text-success"><strong>
+                  <% if diff >= strong_threshold %>
+                    强偏向<%= trait[:right] %>
+                  <% else %>
+                    弱偏向<%= trait[:right] %>
+                  <% end %>
+                </strong></span>
+              </li>
+            <% else %>
+              <li>
+                <strong><%= trait[:name] %></strong>：
+                <span class="text-muted"><strong>中性</strong></span>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+        <div class="mt-2" style="font-size:0.95em; color:#666;">
+          <span>注：差值绝对值大于等于<%= strong_threshold %>时为<strong>强偏向</strong>，否则为<strong>弱偏向</strong>，分数相等为<strong>中性</strong>。</span>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
 
 
 <div class="container mt-5">
