@@ -42,6 +42,8 @@ Rails.application.routes.draw do
   get 'it_field/web_sier', to: 'it_field#web_sier'
   get 'it_field/salary_compare', to: 'it_field#salary_compare'
   get 'it_field/certificate', to: 'it_field#certificate'
+  get 'it_field/con_sier', to: 'it_field#con_sier'
+  get 'it_field/web_it', to: 'it_field#web_it'
 
   get 'consult_field/index', to: 'consult_field#index'
   get 'consult_field/strategy_consult', to: 'consult_field#strategy_consult'

@@ -13,4 +13,10 @@ class ItFieldController < ApplicationController
 
   def certificate
   end
+
+  def con_sier
+  end
+
+  def web_it
+  end
 end

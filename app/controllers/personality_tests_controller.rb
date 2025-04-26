@@ -206,7 +206,6 @@ class PersonalityTestsController < ApplicationController
     { industry: "IT咨询/SIer", role: "客户成功/售前咨询", literature_ok: "★★★☆☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "沟通与客户支持" },
     { industry: "IT咨询/SIer", role: "系统工程师（SE）", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "技术职能" },
     { industry: "IT咨询/SIer", role: "开发工程师（程序员）", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "编程、开发" },
-    { industry: "IT咨询/SIer", role: "IT企划/新事业开发", literature_ok: "★★★☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "业务侧、创新" },
     { industry: "IT咨询/SIer", role: "IT销售/解决方案销售", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "现实", "冲动"], note: "客户关系和沟通" },
     { industry: "IT咨询/SIer", role: "运营/客户支持", literature_ok: "★★★☆☆", traits: ["内向", "感性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "用户沟通、协调" },
 
