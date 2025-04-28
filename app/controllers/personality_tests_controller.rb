@@ -357,12 +357,17 @@ class PersonalityTestsController < ApplicationController
         @user_traits << direction_labels[i][1]
       end
     end
-  
+    
     @matches = ALL_JOBS.map do |job|
       match_count = job[:traits].zip(@user_traits).count { |a, b| a == b }
       job.merge(match_count: match_count)
-    end.sort_by { |job| -job[:match_count] }
-    @top_matches = @matches.first(20)
+    end.sort_by { |job|
+      [-job[:match_count], -literature_score(job[:literature_ok])]
+    }
+
+
+
+    @top_matches = @matches.first(30)
     @all_matches = @matches.first(300)
     # ========== 复制 show 的逻辑结束 ==========
   
@@ -406,15 +411,24 @@ class PersonalityTestsController < ApplicationController
 
 
     @matches = ALL_JOBS.map do |job|
-      # 统计和用户traits一致的项数
       match_count = job[:traits].zip(@user_traits).count { |a, b| a == b }
       job.merge(match_count: match_count)
-    end.sort_by { |job| -job[:match_count] } # 按匹配数降序排序
+    end.sort_by { |job|
+      [-job[:match_count], -literature_score(job[:literature_ok])]
+    }
+
     
     # 推荐前5个最匹配的岗位（可根据需要调整数量）
-    @top_matches = @matches.first(20)
+    @top_matches = @matches.first(30)
     @all_matches = @matches.first(300)
 
+  end
+
+
+
+  private
+  def literature_score(str)
+    str.count("★")
   end
 end
 
