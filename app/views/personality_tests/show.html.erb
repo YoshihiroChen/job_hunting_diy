@@ -157,12 +157,12 @@
 
 
     <div class="card p-4 shadow mt-4">
-      <!-- 推荐岗位内容... -->
       <h4 class="card-title mb-4 text-center">为你推荐的岗位Top30（按匹配度排序）</h4>
-      <% @top_matches.each do |job| %>
+      <% @top_matches.each_with_index do |job, idx| %>
         <div class="card mb-3 border-0 bg-light">
           <div class="card-body py-2">
             <h5 class="card-title mb-1">
+              <span class="badge bg-secondary me-2"><%= idx + 1 %></span>
               <span class="fw-bold"><%= job[:industry] %></span> - <%= job[:role] %>
             </h5>
             <div class="mb-1 small">
@@ -175,8 +175,48 @@
           </div>
         </div>
       <% end %>
-      <div class="mt-2 small text-secondary text-center">* 匹配度为和你性格八维一致的项数，满分为8</div>
+      <div class="mt-2 small text-secondary text-center">
+        * 匹配度为和你性格八维一致的项数，满分为8
+      </div>
     </div>
+
+
+
+    <div class="card p-4 shadow mt-4">
+      <h4 class="card-title mb-4 text-center">全职种匹配度排名</h4>
+      
+      <div class="text-center mb-3">
+        <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#allMatchesCollapse" aria-expanded="false" aria-controls="allMatchesCollapse">
+          展开全部岗位
+        </button>
+      </div>
+
+      <div class="collapse" id="allMatchesCollapse">
+        <% @all_matches.each_with_index do |job, idx| %>
+          <div class="card mb-3 border-0 bg-light">
+            <div class="card-body py-2">
+              <h5 class="card-title mb-1">
+                <span class="badge bg-secondary me-2"><%= idx + 1 %></span>
+                <span class="fw-bold"><%= job[:industry] %></span> - <%= job[:role] %>
+              </h5>
+              <div class="mb-1 small">
+                匹配度：<%= job[:match_count] %>/8　
+                <span class="ms-3">文科生选考：<%= job[:literature_ok] %></span>
+              </div>
+              <div class="text-muted" style="font-size:0.96em;">
+                <%= job[:note] %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="mt-2 small text-secondary text-center">
+        * 匹配度为和你性格八维一致的项数，满分为8
+      </div>
+    </div>
+
+
 
 
 
@@ -398,6 +438,91 @@
             <tr><td>Web系IT</td><td>企划/新事业开发</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>自律</td><td>创新思考、市场理解</td></tr>
             <tr><td>Web系IT</td><td>IT销售/客户经理</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>现实</td><td>冲动</td><td>沟通、客户支持</td></tr>
             <tr><td>Web系IT</td><td>运营/用户支持</td><td>★★★☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>协调与服务意识</td></tr>
+
+            <!-- 主机游戏开发商 -->
+            <tr><td>主机游戏开发商</td><td>企画（Planner）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>创意和沟通，文科生较多</td></tr>
+            <tr><td>主机游戏开发商</td><td>デザイナー（Designer）</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>需美术技能，门槛高</td></tr>
+            <tr><td>主机游戏开发商</td><td>プログラマー（Programmer）</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>编程能力，理工为主</td></tr>
+            <tr><td>主机游戏开发商</td><td>サウンド（Sound）</td><td>★★☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>需音乐专业，较少招文科</td></tr>
+            <tr><td>主机游戏开发商</td><td>総合職（General）</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>后台岗位，文科主力</td></tr>
+
+            <!-- 主机研发&游戏开发商 -->
+            <tr><td>主机研发&游戏开发商</td><td>ゲーム開発</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>编程/开发岗，理工科主力</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>システム開発</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>系统开发，理工为主</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>ネットワークサービス開発</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>网络服务，需技术背景</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>コーポレートIT</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>内部IT，理工为主</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>技術系総合</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>技术综合，理工为主</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>知的財産（理工系）</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>知识产权，少量法学文科</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>生産技術</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>生产工程，工学为主</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>電気電子技術</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>电气电子，理工为主</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>機構技術</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>机械结构，理工为主</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>ステージデザイン</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>关卡设计，美术/创意岗</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>キャラクターデザイン</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>角色设计，需美术作品集</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>UI/UXデザイン</td><td>★★☆☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>UI/UX，有理科与文科复合型</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>エフェクトデザイン</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>特效设计，美术/动画岗</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>カットシーンデザイン</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>过场动画，需美术/影视</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>CGスペシャリスト</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>理想</td><td>自律</td><td>CG特效，理工/美术</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>プロダクトデザイン（硬件）</td><td>★☆☆☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>硬件设计，工业/理工</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>グラフィックデザイン</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>平面设计，美术主力</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>イラストレーション</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>插画创作，美术主力</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>3DCGモデリング</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>自律</td><td>3D建模，美术/动画岗</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>サウンド系（音乐/音效）</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>音乐/音效，音乐专业</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>制作企画系（企划/PM/管理）</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>策划/管理，文理皆可</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>経理</td><td>★★★★★</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>会计/财务，文科主力</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>法務</td><td>★★★★★</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>法务/合规，文科主力</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>知的財産（管理系）</td><td>★★★☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>知识产权管理，法律专业优先</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>人事</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>人力资源，文科为主</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>パブリッシャー支援</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>出版支持，专业不限</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>購買・生産管理</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>采购/管理，文理皆可</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>通訳コーディネート</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>服从</td><td>理想</td><td>自律</td><td>翻译协调，语言/文科主力</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>販売戦略・プロモーション</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>市场/推广，文科主力</td></tr>
+            <tr><td>主机研发&游戏开发商</td><td>販売管理（海外・国内）</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>销售管理，文科为主</td></tr>
+
+            <!-- Web系游戏公司（cygames等） -->
+            <tr><td>Web系游戏公司</td><td>プロデューサー</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>管理协调，专业不限</td></tr>
+            <tr><td>Web系游戏公司</td><td>ディレクター</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>内容统筹，沟通表达</td></tr>
+            <tr><td>Web系游戏公司</td><td>ゲームプランナー</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>玩法企划，创意表达</td></tr>
+            <tr><td>Web系游戏公司</td><td>シナリオライター</td><td>★★★★★</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>脚本文案，文科优势</td></tr>
+            <tr><td>Web系游戏公司</td><td>プロジェクトマネージャー</td><td>★★★★☆</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>项目推进，管理能力</td></tr>
+            <tr><td>Web系游戏公司</td><td>アートディレクター</td><td>★☆☆☆☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>美术统筹，需专业</td></tr>
+            <tr><td>Web系游戏公司</td><td>イラストレーター</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>绘画技能，美术要求</td></tr>
+            <tr><td>Web系游戏公司</td><td>UIデザイナー</td><td>★☆☆☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>UI美术，有作品集</td></tr>
+            <tr><td>Web系游戏公司</td><td>3DCGアーティスト</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>理想</td><td>自律</td><td>3D建模，美术专业</td></tr>
+            <tr><td>Web系游戏公司</td><td>ミュージック</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>音乐创作，需专业</td></tr>
+            <tr><td>Web系游戏公司</td><td>アニメーションデザイナー</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>动画技能，美术要求</td></tr>
+            <tr><td>Web系游戏公司</td><td>テクニカルアーティスト</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>服从</td><td>理想</td><td>自律</td><td>技术+美术，需技能</td></tr>
+            <tr><td>Web系游戏公司</td><td>デザイン制作管理</td><td>★★★☆☆</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>美术管理，偏综合</td></tr>
+            <tr><td>Web系游戏公司</td><td>サウンドデザイン</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>随意</td><td>服从</td><td>理想</td><td>冲动</td><td>音效音乐，需技能</td></tr>
+            <tr><td>Web系游戏公司</td><td>モーションキャプチャースタッフ</td><td>★☆☆☆☆</td><td>内向</td><td>感性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>动画拍摄，技术背景</td></tr>
+            <tr><td>Web系游戏公司</td><td>クライアントサイドエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>客户端开发，理工为主</td></tr>
+            <tr><td>Web系游戏公司</td><td>サーバーサイドエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>后端开发，理工为主</td></tr>
+            <tr><td>Web系游戏公司</td><td>フロントエンドエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>前端开发，技术岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>コンシューマーエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>主机开发，技术岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>ゲームエンジンエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>引擎开发，计算机专业</td></tr>
+            <tr><td>Web系游戏公司</td><td>iOS/Android エンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>移动端开发，理工岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>インフラエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>服务器/网络，理工岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>開発運用サポートエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>运维支持，IT技能</td></tr>
+            <tr><td>Web系游戏公司</td><td>データ分析エンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>数据分析，理工技能</td></tr>
+            <tr><td>Web系游戏公司</td><td>業務サポートエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>内部IT支持，技术岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>AIエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>AI算法，需理工背景</td></tr>
+            <tr><td>Web系游戏公司</td><td>リサーチ・エンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>理想</td><td>自律</td><td>研究创新，技术岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>研究職</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>创新</td><td>计划</td><td>服从</td><td>理想</td><td>自律</td><td>研发，理工主力</td></tr>
+            <tr><td>Web系游戏公司</td><td>デバッグ職</td><td>★★☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>测试辅助，文科极少数</td></tr>
+            <tr><td>Web系游戏公司</td><td>漫画編集職</td><td>★★★★☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>随意</td><td>领导</td><td>理想</td><td>冲动</td><td>内容编辑，文科常见</td></tr>
+            <tr><td>Web系游戏公司</td><td>アニメ製作職</td><td>★★★☆☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>管理/动画，综合型</td></tr>
+            <tr><td>Web系游戏公司</td><td>映像制作室</td><td>★★★☆☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>影像管理，偏美术</td></tr>
+            <tr><td>Web系游戏公司</td><td>デザイン制作室</td><td>★★☆☆☆</td><td>外向</td><td>感性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>美术/管理，文理皆可</td></tr>
+            <tr><td>Web系游戏公司</td><td>ライツ事業職</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>IP授权，文科优势</td></tr>
+            <tr><td>Web系游戏公司</td><td>メディアプランナー</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>媒体策划，文科主力</td></tr>
+            <tr><td>Web系游戏公司</td><td>宣伝プランナー</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>冲动</td><td>宣传企划，创意表达</td></tr>
+            <tr><td>Web系游戏公司</td><td>グローバル事業職</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>领导</td><td>理想</td><td>自律</td><td>国际业务，多语种</td></tr>
+            <tr><td>Web系游戏公司</td><td>ローカライゼーション</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>创新</td><td>计划</td><td>服从</td><td>理想</td><td>自律</td><td>本地化，语言文科主力</td></tr>
+            <tr><td>Web系游戏公司</td><td>プラットフォームエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>平台开发，理工岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>セキュリティエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>安全运维，理工岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>社内システムインフラエンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>内部IT，技术岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>社内システム開発エンジニア</td><td>★☆☆☆☆</td><td>内向</td><td>理性</td><td>谨慎</td><td>保守</td><td>计划</td><td>服从</td><td>现实</td><td>自律</td><td>系统开发，理工岗</td></tr>
+            <tr><td>Web系游戏公司</td><td>バックオフィス</td><td>★★★★★</td><td>外向</td><td>理性</td><td>果断</td><td>保守</td><td>计划</td><td>领导</td><td>现实</td><td>自律</td><td>后台综合，文科主力</td></tr>
+
 
 
 

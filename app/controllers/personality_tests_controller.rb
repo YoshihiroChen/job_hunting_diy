@@ -219,7 +219,94 @@ class PersonalityTestsController < ApplicationController
     { industry: "Web系IT", role: "数据分析师/数据科学家", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "统计、业务分析" },
     { industry: "Web系IT", role: "企划/新事业开发", literature_ok: "★★★☆☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "理想", "自律"], note: "创新思考、市场理解" },
     { industry: "Web系IT", role: "IT销售/客户经理", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "现实", "冲动"], note: "沟通、客户支持" },
-    { industry: "Web系IT", role: "运营/用户支持", literature_ok: "★★★☆☆", traits: ["内向", "感性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "协调与服务意识" }
+    { industry: "Web系IT", role: "运营/用户支持", literature_ok: "★★★☆☆", traits: ["内向", "感性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "协调与服务意识" },
+
+    # 主机游戏开发商
+    { industry: "主机游戏开发商", role: "企画（Planner）", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "创意和沟通，文科生较多" },
+    { industry: "主机游戏开发商", role: "デザイナー（Designer）", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "需美术技能，门槛高" },
+    { industry: "主机游戏开发商", role: "プログラマー（Programmer）", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "编程能力，理工为主" },
+    { industry: "主机游戏开发商", role: "サウンド（Sound）", literature_ok: "★★☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "需音乐专业，较少招文科" },
+    { industry: "主机游戏开发商", role: "総合職（General）", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "后台岗位，文科主力" },
+    
+    # 主机研发&游戏开发商
+    { industry: "主机研发&游戏开发商", role: "ゲーム開発", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "编程/开发岗，理工科主力" },
+    { industry: "主机研发&游戏开发商", role: "システム開発", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "系统开发，理工为主" },
+    { industry: "主机研发&游戏开发商", role: "ネットワークサービス開発", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "网络服务，需技术背景" },
+    { industry: "主机研发&游戏开发商", role: "コーポレートIT", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "内部IT，理工为主" },
+    { industry: "主机研发&游戏开发商", role: "技術系総合", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "技术综合，理工为主" },
+    { industry: "主机研发&游戏开发商", role: "知的財産（理工系）", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "知识产权，少量法学文科" },
+    { industry: "主机研发&游戏开发商", role: "生産技術", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "生产工程，工学为主" },
+    { industry: "主机研发&游戏开发商", role: "電気電子技術", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "电气电子，理工为主" },
+    { industry: "主机研发&游戏开发商", role: "機構技術", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "机械结构，理工为主" },
+    { industry: "主机研发&游戏开发商", role: "ステージデザイン", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "关卡设计，美术/创意岗" },
+    { industry: "主机研发&游戏开发商", role: "キャラクターデザイン", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "角色设计，需美术作品集" },
+    { industry: "主机研发&游戏开发商", role: "UI/UXデザイン", literature_ok: "★★☆☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "UI/UX，有理科与文科复合型" },
+    { industry: "主机研发&游戏开发商", role: "エフェクトデザイン", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "特效设计，美术/动画岗" },
+    { industry: "主机研发&游戏开发商", role: "カットシーンデザイン", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "过场动画，需美术/影视" },
+    { industry: "主机研发&游戏开发商", role: "CGスペシャリスト", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "计划", "服从", "理想", "自律"], note: "CG特效，理工/美术" },
+    { industry: "主机研发&游戏开发商", role: "プロダクトデザイン（硬件）", literature_ok: "★☆☆☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "硬件设计，工业/理工" },
+    { industry: "主机研发&游戏开发商", role: "グラフィックデザイン", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "平面设计，美术主力" },
+    { industry: "主机研发&游戏开发商", role: "イラストレーション", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "插画创作，美术主力" },
+    { industry: "主机研发&游戏开发商", role: "3DCGモデリング", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "自律"], note: "3D建模，美术/动画岗" },
+    { industry: "主机研发&游戏开发商", role: "サウンド系（音乐/音效）", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "音乐/音效，音乐专业" },
+    { industry: "主机研发&游戏开发商", role: "制作企画系（企划/PM/管理）", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "策划/管理，文理皆可" },
+    { industry: "主机研发&游戏开发商", role: "経理", literature_ok: "★★★★★", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "会计/财务，文科主力" },
+    { industry: "主机研发&游戏开发商", role: "法務", literature_ok: "★★★★★", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "法务/合规，文科主力" },
+    { industry: "主机研发&游戏开发商", role: "知的財産（管理系）", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "知识产权管理，法律专业优先" },
+    { industry: "主机研发&游戏开发商", role: "人事", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "人力资源，文科为主" },
+    { industry: "主机研发&游戏开发商", role: "パブリッシャー支援", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "出版支持，专业不限" },
+    { industry: "主机研发&游戏开发商", role: "購買・生産管理", literature_ok: "★★★☆☆", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "采购/管理，文理皆可" },
+    { industry: "主机研发&游戏开发商", role: "通訳コーディネート", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "服从", "理想", "自律"], note: "翻译协调，语言/文科主力" },
+    { industry: "主机研发&游戏开发商", role: "販売戦略・プロモーション", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "市场/推广，文科主力" },
+    { industry: "主机研发&游戏开发商", role: "販売管理（海外・国内）", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "销售管理，文科为主" },
+    
+    # Web系游戏公司
+    { industry: "Web系游戏公司", role: "プロデューサー", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "管理协调，专业不限" },
+    { industry: "Web系游戏公司", role: "ディレクター", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "内容统筹，沟通表达" },
+    { industry: "Web系游戏公司", role: "ゲームプランナー", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "玩法企划，创意表达" },
+    { industry: "Web系游戏公司", role: "シナリオライター", literature_ok: "★★★★★", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "脚本文案，文科优势" },
+    { industry: "Web系游戏公司", role: "プロジェクトマネージャー", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "项目推进，管理能力" },
+    { industry: "Web系游戏公司", role: "アートディレクター", literature_ok: "★☆☆☆☆", traits: ["外向", "感性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "美术统筹，需专业" },
+    { industry: "Web系游戏公司", role: "イラストレーター", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "绘画技能，美术要求" },
+    { industry: "Web系游戏公司", role: "UIデザイナー", literature_ok: "★☆☆☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "UI美术，有作品集" },
+    { industry: "Web系游戏公司", role: "3DCGアーティスト", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "计划", "服从", "理想", "自律"], note: "3D建模，美术专业" },
+    { industry: "Web系游戏公司", role: "ミュージック", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "音乐创作，需专业" },
+    { industry: "Web系游戏公司", role: "アニメーションデザイナー", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "动画技能，美术要求" },
+    { industry: "Web系游戏公司", role: "テクニカルアーティスト", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "果断", "创新", "计划", "服从", "理想", "自律"], note: "技术+美术，需技能" },
+    { industry: "Web系游戏公司", role: "デザイン制作管理", literature_ok: "★★★☆☆", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "美术管理，偏综合" },
+    { industry: "Web系游戏公司", role: "サウンドデザイン", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "随意", "服从", "理想", "冲动"], note: "音效音乐，需技能" },
+    { industry: "Web系游戏公司", role: "モーションキャプチャースタッフ", literature_ok: "★☆☆☆☆", traits: ["内向", "感性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "动画拍摄，技术背景" },
+    { industry: "Web系游戏公司", role: "クライアントサイドエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "客户端开发，理工为主" },
+    { industry: "Web系游戏公司", role: "サーバーサイドエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "后端开发，理工为主" },
+    { industry: "Web系游戏公司", role: "フロントエンドエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "前端开发，技术岗" },
+    { industry: "Web系游戏公司", role: "コンシューマーエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "主机开发，技术岗" },
+    { industry: "Web系游戏公司", role: "ゲームエンジンエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "引擎开发，计算机专业" },
+    { industry: "Web系游戏公司", role: "iOS/Android エンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "果断", "创新", "计划", "服从", "现实", "自律"], note: "移动端开发，理工岗" },
+    { industry: "Web系游戏公司", role: "インフラエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "服务器/网络，理工岗" },
+    { industry: "Web系游戏公司", role: "開発運用サポートエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "运维支持，IT技能" },
+    { industry: "Web系游戏公司", role: "データ分析エンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "数据分析，理工技能" },
+    { industry: "Web系游戏公司", role: "業務サポートエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "内部IT支持，技术岗" },
+    { industry: "Web系游戏公司", role: "AIエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "AI算法，需理工背景" },
+    { industry: "Web系游戏公司", role: "リサーチ・エンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "理想", "自律"], note: "研究创新，技术岗" },
+    { industry: "Web系游戏公司", role: "研究職", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "理想", "自律"], note: "研发，理工主力" },
+    { industry: "Web系游戏公司", role: "デバッグ職", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "测试辅助，文科极少数" },
+    { industry: "Web系游戏公司", role: "漫画編集職", literature_ok: "★★★★☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "内容编辑，文科常见" },
+    { industry: "Web系游戏公司", role: "アニメ製作職", literature_ok: "★★★☆☆", traits: ["外向", "感性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "管理/动画，综合型" },
+    { industry: "Web系游戏公司", role: "映像制作室", literature_ok: "★★★☆☆", traits: ["外向", "感性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "影像管理，偏美术" },
+    { industry: "Web系游戏公司", role: "デザイン制作室", literature_ok: "★★☆☆☆", traits: ["外向", "感性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "美术/管理，文理皆可" },
+    { industry: "Web系游戏公司", role: "ライツ事業職", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "IP授权，文科优势" },
+    { industry: "Web系游戏公司", role: "メディアプランナー", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "媒体策划，文科主力" },
+    { industry: "Web系游戏公司", role: "宣伝プランナー", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "冲动"], note: "宣传企划，创意表达" },
+    { industry: "Web系游戏公司", role: "グローバル事業職", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "国际业务，多语种" },
+    { industry: "Web系游戏公司", role: "ローカライゼーション", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "服从", "理想", "自律"], note: "本地化，语言文科主力" },
+    { industry: "Web系游戏公司", role: "プラットフォームエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "平台开发，理工岗" },
+    { industry: "Web系游戏公司", role: "セキュリティエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "安全运维，理工岗" },
+    { industry: "Web系游戏公司", role: "社内システムインフラエンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "内部IT，技术岗" },
+    { industry: "Web系游戏公司", role: "社内システム開発エンジニア", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "系统开发，理工岗" },
+    { industry: "Web系游戏公司", role: "バックオフィス", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "保守", "计划", "领导", "现实", "自律"], note: "后台综合，文科主力" }
+
+
+
   ]
 
 
@@ -275,7 +362,8 @@ class PersonalityTestsController < ApplicationController
       match_count = job[:traits].zip(@user_traits).count { |a, b| a == b }
       job.merge(match_count: match_count)
     end.sort_by { |job| -job[:match_count] }
-    @top_matches = @matches.first(30)
+    @top_matches = @matches.first(20)
+    @all_matches = @matches.first(300)
     # ========== 复制 show 的逻辑结束 ==========
   
     render :show
@@ -324,7 +412,8 @@ class PersonalityTestsController < ApplicationController
     end.sort_by { |job| -job[:match_count] } # 按匹配数降序排序
     
     # 推荐前5个最匹配的岗位（可根据需要调整数量）
-    @top_matches = @matches.first(30)
+    @top_matches = @matches.first(20)
+    @all_matches = @matches.first(300)
 
   end
 end
