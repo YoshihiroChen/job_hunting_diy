@@ -82,6 +82,12 @@ Rails.application.routes.draw do
   get 'advertisement_field/index', to: 'advertisement_field#index'
   get 'advertisement_field/agency', to: 'advertisement_field#agency'
 
+
+  get 'game_field/index', to: 'game_field#index'
+  get 'game_field/hardware', to: 'game_field#hardware'
+  get 'game_field/console', to: 'game_field#console'
+  get 'game_field/webs', to: 'game_field#webs'
+
   get 'maker_field/index', to: 'maker_field#index'
   get 'maker_field/auto', to: 'maker_field#auto'
   get 'maker_field/food', to: 'maker_field#food'

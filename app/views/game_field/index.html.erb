@@ -1,0 +1,108 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">日本游戏业界分析</h1>
+  
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+      <%= link_to '主机研发&游戏开发商', game_field_hardware_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '主机游戏开发商', game_field_console_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to 'Web系it企业游戏公司', game_field_webs_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+    
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+
+          <!-- 游戏行业三大类表格 BEGIN -->
+          <div class="container my-4">
+            <h2 class="text-center mb-4">日本游戏行业三大类公司类型</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th style="width:20%">类别</th>
+                    <th style="width:40%">代表性公司</th>
+                    <th style="width:40%">主要业务及特点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>主机研发&游戏开发商</b>
+                    </td>
+                    <td>
+                      ・任天堂<br>
+                      ・索尼互动娱乐<br>
+                      <span style="font-size: 90%;">（两家公司同时生产游戏主机和自有游戏）</span>
+                    </td>
+                    <td>
+                      ・研发生产自家游戏主机（如Nintendo Switch、PlayStation系列）<br>
+                      ・开发大量自有第一方游戏<br>
+                      ・掌控硬件、软件生态与全球市场影响力
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>主机游戏开发商</b>
+                    </td>
+                    <td>
+                      ・卡普空<br>
+                      ・世嘉<br>
+                      ・万代南梦宫<br>
+                      ・科乐美<br>
+                      ・史克威尔艾尼克斯<br>
+                      ・光荣特库摩<br>
+                      <span style="font-size: 90%;">（有些也涉及手游与PC端）</span>
+                    </td>
+                    <td>
+                      ・专注开发面向各大主机平台的高品质游戏（如PS、Switch、Xbox）<br>
+                      ・部分公司有经典街机/PC/手游业务，但核心以主机游戏为主<br>
+                      ・拥有世界级IP，如怪物猎人、最终幻想、铁拳、实况足球等
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Web系IT企业游戏公司</b>
+                    </td>
+                    <td>
+                      ・Cygames（CyberAgent集团）<br>
+                      ・DeNA<br>
+                      ・GREE<br>
+                      ・mixi<br>
+                      ・Akatsuki<br>
+                      ・colopl<br>
+                      ・Aiming等
+                    </td>
+                    <td>
+                      ・开发和运营智能手机、Web、社交平台游戏<br>
+                      ・重视持续运营、内购、活动驱动型商业模式<br>
+                      ・产品开发节奏快，善于跨界动画与IP协作<br>
+                      ・以日本国内市场为主，也积极拓展海外
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="alert alert-info mt-4">
+              <strong>说明：</strong><br>
+              1. “主机研发&游戏开发商”指既有主机硬件开发又有自有游戏内容开发的公司。<br>
+              2. “主机游戏开发商”专注于为各类主机平台开发高质量游戏。<br>
+              3. “Web系IT企业游戏公司”以移动端和Web端为主要业务领域，与传统主机游戏有明显区隔。
+            </div>
+          </div>
+          <!-- 游戏行业三大类表格（纯中文） END -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+    
+  </div> <!-- End row -->
+</div>
