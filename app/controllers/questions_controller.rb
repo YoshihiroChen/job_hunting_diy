@@ -31,4 +31,7 @@ class QuestionsController < ApplicationController
 
   def telework
   end
+
+  def second_graduate
+  end
 end
