@@ -45,7 +45,7 @@
       <table class="table table-bordered">
         <thead><tr><th>对应职种</th><th>主要职责</th></tr></thead>
         <tbody>
-          <tr><td><strong>販売促進</strong></td><td>广告、宣传、<%= link_to "POP制作", wiki_esg_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、DM、店内媒体策划与管理</td></tr>
+          <tr><td><strong>販売促進</strong></td><td>广告、宣传、<%= link_to "POP制作", wiki_pop_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、<%= link_to "dm", wiki_dm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、店内媒体策划与管理</td></tr>
           <tr><td><strong>マーケティング戦略</strong></td><td>数据分析、顾客/竞品研究、商品组合与业态战略支援</td></tr>
         </tbody>
       </table>
@@ -261,6 +261,10 @@
         </table>
       </div>
     </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <%= link_to '返回零售&流通业界分析首页', retail_field_index_path, class: 'btn btn-secondary' %>
   </div>
 
 

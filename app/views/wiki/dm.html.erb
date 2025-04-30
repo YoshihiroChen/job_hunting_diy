@@ -1,0 +1,100 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">DM（直邮广告）基础知识指南</h1>
+
+  <!-- 什么是DM -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是DM？</h2>
+
+          <p>DM 是 “Direct Mail” 的缩写，中文可译为“直邮广告”或“定向邮寄宣传物”。</p>
+
+          <p>它是通过<strong>邮寄、投函、电子邮件等方式，将广告内容直接发送给目标客户</strong>的营销手法，属于一对一（One to One）的销售促进方式。</p>
+
+          <p>DM 在零售、邮购、电商、美容、保险、教育等行业中被广泛用于<strong>会员通知、优惠券发送、新品推荐、活动邀请</strong>等用途。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DM的种类与用途 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">DM的主要类型与使用场景</h2>
+
+          <ul>
+            <li><strong>纸质DM：</strong> 明信片、折页、目录册，通过邮政发送到顾客住所</li>
+            <li><strong>电子DM（eDM）：</strong> 通过Email形式发送广告、推荐信息</li>
+            <li><strong>LINE / SNS DM：</strong> 利用社交平台账号向关注用户推送信息</li>
+            <li><strong>印刷随包DM：</strong> 在快递、商品包装中夹带的宣传单、优惠券</li>
+          </ul>
+
+          <p class="mt-3">DM适合用于<strong>重复购买率高的行业</strong>，对“老顾客”的激活效果尤为显著。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DM的优势与注意事项 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">DM的优势与制作注意事项</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优势</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>精准性高</td>
+                <td>只面向已有客户或特定属性人群发送</td>
+              </tr>
+              <tr>
+                <td>个性化可能</td>
+                <td>可根据客户购买记录、性别、地区推荐不同内容</td>
+              </tr>
+              <tr>
+                <td>长期接触</td>
+                <td>纸质DM保存率高，可持续影响顾客</td>
+              </tr>
+              <tr>
+                <td>激活沉睡顾客</td>
+                <td>定期推送可提升回购率与品牌记忆</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">注意事项：</h4>
+          <ul>
+            <li>避免频率过高引发反感</li>
+            <li>文案需简明有吸引力，具行动号召</li>
+            <li>纸质DM需考虑制作与邮寄成本</li>
+            <li>eDM需遵守反垃圾邮件法规（例如需提供取消订阅方式）</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || wiki_index_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

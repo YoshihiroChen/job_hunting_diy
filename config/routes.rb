@@ -179,6 +179,7 @@ Rails.application.routes.draw do
   get 'wiki/tps', to: 'wiki#tps'
   get 'wiki/iot', to: 'wiki#iot'
   get 'wiki/pop', to: 'wiki#pop'
+  get 'wiki/dm', to: 'wiki#dm'
 
 
   

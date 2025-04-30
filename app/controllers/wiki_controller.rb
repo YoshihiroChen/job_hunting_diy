@@ -148,5 +148,9 @@ class WikiController < ApplicationController
 
   def pop
   end
+
+  def dm
+  end
   
+
 end
