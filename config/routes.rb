@@ -33,6 +33,8 @@ Rails.application.routes.draw do
 
   # 业界分析路由
   get 'job_field', to: 'job_field#index'
+  get 'job_field/conclusion', to: 'job_field#conclusion'
+
   get 'job_field/arts_science', to: 'job_field#arts_science'
   get 'job_field/web_sier', to: 'job_field#web_sier'
   get 'job_field/salary_compare', to: 'job_field#salary_compare'
