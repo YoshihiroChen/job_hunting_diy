@@ -1,0 +1,88 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">零售&流通业界分析</h1>
+  
+  <!-- 新的布局结构，左右分栏 -->
+  <div class="row">
+    <!-- 左侧导航按钮 -->
+    <div class="col-md-3 mb-4">
+      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+      <%= link_to '零售公司', retail_field_super_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '批发公司', retail_field_wholesale_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+        <%= link_to '物流公司', retail_field_transport_path, class: 'btn btn-outline-success btn-lg mb-2' %>
+      </div>
+    </div>
+    
+    <!-- 右侧主内容 -->
+    <div class="col-md-9">
+      <div class="card shadow">
+        <div class="card-body">
+
+          <h4 class="card-title mb-3">代表性企业一览表</h4>
+          <p>这里我按照了上游中游下游的流程将零售&流通业界的公司分为了三类：首先批发公司生产商品，商品再经由物流公司到达零售公司，最后零售公司将商品卖出。</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle">
+              <thead class="table-light text-center">
+                <tr>
+                  <th>分类</th>
+                  <th>代表企业</th>
+                  <th>补充说明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-bold text-center">零售公司</td>
+                  <td>
+                    <ul class="mb-0">
+                      <li>イオン（AEON）</li>
+                      <li>セブン&アイ・ホールディングス</li>
+                      <li>ユニクロ（ファーストリテイリング）</li>
+                      <li>ドン・キホーテ（PPIH）</li>
+                      <li>Amazonジャパン</li>
+                    </ul>
+                  </td>
+                  <td>面向消费者直接销售商品，覆盖超市、便利店、百货、EC等各类业态。</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold text-center">批发公司</td>
+                  <td>
+                    <ul class="mb-0">
+                      <li>三菱食品</li>
+                      <li>伊藤忠食品</li>
+                      <li>国分グループ</li>
+                      <li>日本アクセス</li>
+                      <li>三井物産（食品流通）</li>
+                    </ul>
+                  </td>
+                  <td>连接制造商与零售商的中间商，负责商品的大批量进货与分销。</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold text-center">物流公司</td>
+                  <td>
+                    <ul class="mb-0">
+                      <li>ヤマト運輸（クロネコヤマト）</li>
+                      <li>佐川急便（SGホールディングス）</li>
+                      <li>日本通運（日通）</li>
+                      <li>楽天ロジスティクス</li>
+                      <li>アスクルロジスト</li>
+                    </ul>
+                  </td>
+                  <td>负责商品的运输、仓储、分拣、配送，支撑零售流通系统的基础设施。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+
+
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <%= link_to '返回业界分析首页', job_field_path, class: 'btn btn-secondary' %>
+    </div>
+    
+  </div> <!-- End row -->
+</div>

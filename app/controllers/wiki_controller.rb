@@ -145,4 +145,8 @@ class WikiController < ApplicationController
 
   def iot
   end
+
+  def pop
+  end
+  
 end

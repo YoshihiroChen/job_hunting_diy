@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   
   
+
   get 'hello/index'
   get '/admin/login', to: 'admin_sessions#new'
   post '/admin/login', to: 'admin_sessions#create'
@@ -93,6 +94,11 @@ Rails.application.routes.draw do
   get 'maker_field/food', to: 'maker_field#food'
   get 'maker_field/daily', to: 'maker_field#daily'
 
+  get 'retail_field/index', to: 'retail_field#index'
+  get 'retail_field/super', to: 'retail_field#super'
+  get 'retail_field/transport', to: 'retail_field#transport'
+  get 'retail_field/wholesale', to: 'retail_field#wholesale'
+
   get 'shi_field/index', to: 'shi_field#index'
   get 'shi_field/lawyer', to: 'shi_field#lawyer'
   get 'shi_field/shihoshoshi', to: 'shi_field#shihoshoshi'
@@ -172,6 +178,7 @@ Rails.application.routes.draw do
   get 'wiki/cadcae', to: 'wiki#cadcae'
   get 'wiki/tps', to: 'wiki#tps'
   get 'wiki/iot', to: 'wiki#iot'
+  get 'wiki/pop', to: 'wiki#pop'
 
 
   
