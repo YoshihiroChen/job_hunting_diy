@@ -185,6 +185,7 @@ Rails.application.routes.draw do
   get 'wiki/milai', to: 'wiki#milai'
   get 'wiki/thirdpl', to: 'wiki#thirdpl'
   get 'wiki/scm', to: 'wiki#scm'
+  get 'wiki/delica', to: 'wiki#delica'
 
 
 

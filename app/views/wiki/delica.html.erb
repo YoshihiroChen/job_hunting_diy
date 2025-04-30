@@ -1,0 +1,100 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">デリカ（熟食・即食商品）基础知识指南</h1>
+
+  <!-- 什么是デリカ -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是デリカ？</h2>
+
+          <p>“デリカ”是“Delicatessen（熟食/即食食品）”的日语简称，主要指在超市、百货、便利店等零售现场所销售的<strong>现制现售或半成品加工的食品</strong>。</p>
+
+          <p>这类商品包括便当、饭团、炸物、沙拉、煮物、小菜、汤类等，是支撑日本便利饮食文化的核心业态之一。</p>
+
+          <p>在食品零售企业中，“デリカ部门”通常指负责这些商品的<strong>开发、制造、品管、物流、陈列与销售</strong>的一整个部门。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- デリカ的典型商品与分类 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">常见的デリカ商品分类</h2>
+
+          <ul>
+            <li><strong>便当类：</strong> 白饭+主菜+配菜组成的组合餐（如のり弁、唐揚弁当）</li>
+            <li><strong>炸物类：</strong> 炸鸡、可乐饼、天妇罗等热食</li>
+            <li><strong>小菜类：</strong> ひじき煮、南瓜炖、きんぴら等传统日式配菜</li>
+            <li><strong>寿司类：</strong> 卷寿司、握寿司组合、稻荷寿司等</li>
+            <li><strong>冷菜类：</strong> 沙拉、凉拌菜、洋风前菜等</li>
+            <li><strong>汤类・饮品：</strong> 味噌汤、豚汁、即饮汤包</li>
+          </ul>
+
+          <p class="mt-3">这些商品需每日补货，有效期短，是<strong>需求预测、生产效率、废弃控制</strong>的关键领域。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- デリカ业务的流程与挑战 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">デリカ的业务流程与管理要点</h2>
+
+          <ul>
+            <li><strong>商品企划：</strong> 每季开发新菜单，考虑营养、成本、销售力</li>
+            <li><strong>工场生产：</strong> 利用集中工厂（CVS）、或门店后厨（SM）制造</li>
+            <li><strong>物流配送：</strong> 多温层配送（日配/冷藏/冷冻），需早间/夜间交付</li>
+            <li><strong>陈列销售：</strong> 与POP、价签、促销活动配合展示</li>
+            <li><strong>废弃控制：</strong> 因保质期短，需精准预测与适时打折</li>
+          </ul>
+
+          <p class="mt-3">デリカ商品的特性决定了它是<strong>零售×制造×物流</strong>三者融合最深的业态。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- デリカ行业的发展趋势 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">デリカ的发展趋势</h2>
+
+          <ul>
+            <li><strong>健康化：</strong> 低盐、低糖、营养均衡的健康便当需求上升</li>
+            <li><strong>高附加值化：</strong> 小众食材、地区特色、主厨监修商品不断推出</li>
+            <li><strong>DX化：</strong> 引入MILAI等AI预测、自动补货系统提升效率</li>
+            <li><strong>自动化制造：</strong> 工场中大量采用自动包装、机器人搬运</li>
+            <li><strong>食品安全管理强化：</strong> 温度管理、追溯系统成为基本条件</li>
+          </ul>
+
+          <p class="mt-3">デリカ已不只是便宜快速，而是零售业实现“食の価値提供”的重要舞台。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || wiki_index_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

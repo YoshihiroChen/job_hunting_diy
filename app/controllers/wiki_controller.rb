@@ -167,4 +167,7 @@ class WikiController < ApplicationController
   def scm
   end
 
+  def delica
+  end
+
 end
