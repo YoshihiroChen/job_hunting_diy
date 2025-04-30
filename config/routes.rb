@@ -180,6 +180,11 @@ Rails.application.routes.draw do
   get 'wiki/iot', to: 'wiki#iot'
   get 'wiki/pop', to: 'wiki#pop'
   get 'wiki/dm', to: 'wiki#dm'
+  get 'wiki/oem', to: 'wiki#oem'
+  get 'wiki/edi', to: 'wiki#edi'
+  get 'wiki/milai', to: 'wiki#milai'
+  get 'wiki/thirdpl', to: 'wiki#thirdpl'
+
 
 
   

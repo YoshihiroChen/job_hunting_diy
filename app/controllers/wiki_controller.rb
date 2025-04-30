@@ -151,6 +151,17 @@ class WikiController < ApplicationController
 
   def dm
   end
-  
+
+  def oem
+  end
+
+  def edi
+  end
+
+  def milai
+  end
+
+  def thirdpl
+  end
 
 end

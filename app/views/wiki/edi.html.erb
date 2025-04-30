@@ -1,0 +1,97 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">EDI（电子数据交换）基础知识指南</h1>
+
+  <!-- 什么是EDI -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是EDI？</h2>
+
+          <p>EDI 是 “Electronic Data Interchange” 的缩写，中文为“电子数据交换”。</p>
+
+          <p>它是一种在企业与企业之间，<strong>通过专用线路或网络系统，进行定型业务数据（如订单、发货单、发票等）的自动化交换</strong>的方式。</p>
+
+          <p>相比传真、邮件或人工录入，EDI 能够减少错误、提高效率、缩短采购或结算周期，是 B2B 交易中的重要基础设施。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDI的适用场景与常见用途 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">EDI的常见用途与应用场景</h2>
+
+          <ul>
+            <li><strong>订单处理：</strong> 自动接收客户订单（发注）并导入系统</li>
+            <li><strong>发货/收货通知：</strong> 供应商发送发货数据，客户确认收货</li>
+            <li><strong>发票/对账单：</strong> 系统间对账、开票、付款通知</li>
+            <li><strong>库存联动：</strong> 零售/物流场景中与供应商共享库存信息</li>
+          </ul>
+
+          <p class="mt-3">日本零售业（如大型商社、便利店、家电量贩）和制造业广泛使用 EDI 与取引先进行数据协作。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDI的系统构成与类型 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">EDI的系统类型与通信方式</h2>
+
+          <ul>
+            <li><strong>レガシーEDI（JCA手顺等）：</strong> 使用专线通信，依赖旧有行业标准</li>
+            <li><strong>Web-EDI：</strong> 基于互联网浏览器操作的数据交互平台</li>
+            <li><strong>クラウドEDI：</strong> 云端集中管理、接口标准化，适配中小企业</li>
+            <li><strong>API连携型：</strong> 现代化EDI通过REST API实现系统对接与实时数据同步</li>
+          </ul>
+
+          <p class="mt-3">近年来，受专线停止与DX推进影响，日本正加速从“レガシーEDI”向“Web-EDI / API-EDI”迁移。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDI的引入注意事项与开发要点 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">EDI系统导入与开发注意事项</h2>
+
+          <ul>
+            <li><strong>与取引先的数据格式协议（フォーマット协定）一致是前提</strong></li>
+            <li><strong>需定义清晰的数据流与状态更新机制</strong></li>
+            <li><strong>系统安全性与备份机制不可忽视</strong></li>
+            <li><strong>设有多家取引先时，格式多样化需统一接口或中间件</strong></li>
+            <li><strong>开发语言常见有：EDI用中间服务器 + 各业务系统接口</strong></li>
+          </ul>
+
+          <p class="mt-3">在系统开发中，EDI是企业间数据交互的重要“对外接口”，与内部ERP或会计系统密切相关。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || wiki_index_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

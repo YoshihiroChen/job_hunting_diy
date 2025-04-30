@@ -326,7 +326,6 @@ class PersonalityTestsController < ApplicationController
     { industry: "批发公司", role: "商品開発担当", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "品牌商品开发企划" },
     { industry: "批发公司", role: "輸出入担当", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "商品进出口业务" },
     { industry: "批发公司", role: "マーケティング企画", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "理想", "自律"], note: "市场分析与战略企划" },
-    { industry: "批发公司", role: "展示会/シンクタンク担当", literature_ok: "★★★★★", traits: ["内向", "理性", "谨慎", "创新", "计划", "领导", "理想", "自律"], note: "展示会与消费研究" },
     { industry: "批发公司", role: "受注・発注担当", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "订单处理与库存调整" },
     { industry: "批发公司", role: "センター運営担当", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "物流中心管理" },
     { industry: "批发公司", role: "物流企画・開発", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "物流系统规划改革" },

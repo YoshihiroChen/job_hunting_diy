@@ -19,7 +19,7 @@
       <ul>
         <li>海外食品、原材料、大宗冷冻品采购</li>
         <li>对接海外供应商，确认进货条件、交期、契约</li>
-        <li>与国内制造商合作，建立OEM关系、委托生产</li>
+        <li>与国内制造商合作，建立<%= link_to "OEM关系", wiki_oem_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、委托生产</li>
       </ul>
 
       <hr>
@@ -68,9 +68,9 @@
       <h5>⑦ 信息系统・运营支持阶段</h5>
       <p><strong>参与职种：</strong>情報システム担当</p>
       <ul>
-        <li>维护核心系统 MILAI（销售/库存/结算）</li>
-        <li>开发与取引先EDI、配送系统等的数据接口</li>
-        <li>推进公司级别的DX（数字化转型）</li>
+        <li>维护核心系统 <%= link_to "MILAI", wiki_milai_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（销售/库存/结算）</li>
+        <li>开发与取引先<%= link_to "EDI", wiki_edi_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>、配送系统等的数据接口</li>
+        <li>推进公司级别的<%= link_to "DX", wiki_dx_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>（数字化转型）</li>
       </ul>
 
       <hr>
@@ -102,7 +102,7 @@
         <h6>三菱食品“合作”的部分：</h6>
         <ul>
           <li>实际的“配送作业”（即卡车运输）通常委托给黑猫（ヤマト運輸）、佐川急便、日本通運等外部物流公司</li>
-          <li>仓库中的人力操作也可能部分外包给第三方物流运营商（3PL）</li>
+          <li>仓库中的人力操作也可能部分外包给第三方物流运营商（<%= link_to "3PL", wiki_thirdpl_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>）</li>
         </ul>
 
         <h6>我们可以这么理解：</h6>
@@ -176,11 +176,6 @@
               <td>マーケティング企画</td>
               <td>★★★★★</td>
               <td>数据分析与顾客行为解读为主，极适合市场、情报、文科专业。</td>
-            </tr>
-            <tr>
-              <td>展示会/シンクタンク担当</td>
-              <td>★★★★★</td>
-              <td>擅长表达、研究、展示与企划的文科生可广泛胜任。</td>
             </tr>
             <tr>
               <td>受注・発注担当</td>
@@ -339,10 +334,6 @@
         <li>AEON超市作为零售商，将这瓶饮料卖给消费者。</li>
       </ul>
 
-      <h5 class="mt-4">所以你的结论应是：</h5>
-      <blockquote class="blockquote">
-        <p class="mb-0"><strong>三菱食品不是食品メーカー，而是服务于食品メーカー的食品批发商。</strong></p>
-      </blockquote>
 
     </div>
   </div>

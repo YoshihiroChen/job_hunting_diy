@@ -1,0 +1,116 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">OEM（委托生产）关系基础知识指南</h1>
+
+  <!-- 什么是OEM -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是OEM？</h2>
+
+          <p>OEM 是 “Original Equipment Manufacturer” 的缩写，中文常译为“原始设备制造商”或“委托生产”。</p>
+
+          <p>在 OEM 模式下，<strong>品牌方（委托方）提供产品设计与规格</strong>，由另一家公司（受托方）负责按照要求进行制造，<strong>最终以品牌方的名义销售</strong>。</p>
+
+          <p>这种模式在汽车、家电、电子、日用品、食品、化妆品等多个行业广泛存在。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OEM关系中的角色与结构 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">OEM关系的基本结构</h2>
+
+          <ul>
+            <li><strong>委托方（品牌方）：</strong> 提供品牌、设计、营销，掌握销售渠道</li>
+            <li><strong>受托方（制造商）：</strong> 拥有制造设备与技术，根据要求生产商品</li>
+            <li><strong>合同形式：</strong> 通常为长期稳定供应协议，强调品质控制与交期管理</li>
+            <li><strong>最终产品：</strong> 虽由制造商生产，但贴的是委托方的品牌</li>
+          </ul>
+
+          <p class="mt-3">OEM强调的是“品牌方主导、制造方执行”的分工合作关系。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OEM的优缺点与与ODM的区别 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">OEM的优缺点与常见误解</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优势（对品牌方）</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>无须自建工厂</td>
+                <td>可降低固定资产投资，专注品牌与销售</td>
+              </tr>
+              <tr>
+                <td>弹性产能</td>
+                <td>可根据需求调整产量，应对季节波动</td>
+              </tr>
+              <tr>
+                <td>缩短开发周期</td>
+                <td>利用制造商既有设备/流程加快上市速度</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">与ODM的区别：</h4>
+          <ul>
+            <li><strong>OEM：</strong> 委托方提供设计，制造方只负责生产</li>
+            <li><strong>ODM（Original Design Manufacturer）：</strong> 制造商提供设计与制造，品牌方只贴牌销售</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OEM的代表行业与实际案例 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">OEM关系的代表行业与实际案例</h2>
+
+          <ul>
+            <li><strong>汽车产业：</strong> 零部件或整车由下游厂商生产（如丰田部分车型由大发生产）</li>
+            <li><strong>化妆品行业：</strong> 大型OEM工厂为多个品牌提供同一配方产品</li>
+            <li><strong>家电/IT：</strong> 代工厂（如富士康）为苹果等品牌生产硬件</li>
+            <li><strong>日用品：</strong> 超市自有品牌（PB）商品常通过OEM形式生产</li>
+          </ul>
+
+          <p class="mt-3">合理利用OEM关系，有助于品牌扩张、成本控制与市场快速反应。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || wiki_index_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>
