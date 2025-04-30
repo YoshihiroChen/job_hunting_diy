@@ -164,4 +164,7 @@ class WikiController < ApplicationController
   def thirdpl
   end
 
+  def scm
+  end
+
 end

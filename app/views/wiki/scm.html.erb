@@ -1,0 +1,122 @@
+<div class="container mt-4">
+
+  <!-- 页面标题 -->
+  <h1 class="text-center mb-4">SCM（供应链管理）基础知识指南</h1>
+
+  <!-- 什么是SCM -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">什么是SCM？</h2>
+
+          <p>SCM 是 “Supply Chain Management” 的缩写，中文为“供应链管理”。</p>
+
+          <p>它是一种对<strong>产品从原材料采购 → 生产制造 → 仓储运输 → 销售交付</strong>全过程进行整体优化与协调管理的方法论。</p>
+
+          <p>SCM 的核心目标是通过<strong>跨部门、跨企业的信息整合与协作</strong>，实现“成本控制”、“库存削减”、“交期缩短”与“客户满意度提升”的平衡。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCM的基本构成与流程 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">SCM的核心构成要素</h2>
+
+          <ul>
+            <li><strong>采购管理：</strong> 材料/零部件的选择、议价、订单与供应商管理</li>
+            <li><strong>生产计划：</strong> 根据需求预测进行产能分配、排产与调度</li>
+            <li><strong>库存管理：</strong> 控制在库量，避免断货与积压</li>
+            <li><strong>物流配送：</strong> 从工厂到仓库、门店或客户的物流流程优化</li>
+            <li><strong>信息系统整合：</strong> 使用ERP、WMS、SCM系统进行可视化与自动化</li>
+          </ul>
+
+          <p class="mt-3">SCM 强调“全体最适化”，避免局部最优造成整体效率低下。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCM的价值与挑战 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">SCM的价值与常见挑战</h2>
+
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>优势</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>提升顾客满意度</td>
+                <td>快速交付、准确出货、稳定供给</td>
+              </tr>
+              <tr>
+                <td>降低总成本</td>
+                <td>避免重复进货、减少滞销库存、提升周转率</td>
+              </tr>
+              <tr>
+                <td>提高组织协同效率</td>
+                <td>打破“销售-生产-物流”部门之间的信息壁垒</td>
+              </tr>
+              <tr>
+                <td>风险管理能力提升</td>
+                <td>对供应中断、需求波动有更强应对力</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 class="mt-4">挑战：</h4>
+          <ul>
+            <li>需要跨部门数据整合能力</li>
+            <li>变动预测困难（特别是在疫情、自然灾害时）</li>
+            <li>供应商协作难度大，常伴随系统对接问题</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCM与IT系统的关联与代表方案 -->
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card border rounded-4 shadow-sm">
+        <div class="card-body p-4">
+
+          <h2 class="card-title mb-4">SCM与信息系统的整合</h2>
+
+          <ul>
+            <li><strong>ERP系统：</strong> 统一管理采购、库存、会计等企业资源</li>
+            <li><strong>WMS系统：</strong> 仓储管理系统，优化入出库流程</li>
+            <li><strong>SCM平台：</strong> 实时追踪整个供应链状态的集成平台</li>
+            <li><strong>可视化面板：</strong> 利用BI工具将订单、库存、预测图形化</li>
+          </ul>
+
+          <p class="mt-3">近年来，结合 AI、IoT、区块链 的“智能SCM”逐渐兴起，强调预测力与实时反应能力。</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页面末尾返回按钮 -->
+  <div class="text-center mt-4">
+    <%= link_to "返回上一页面", params[:from] || wiki_index_path, class: "btn btn-secondary", onclick: "forceBackWithReload(event)" %>
+  </div>
+
+</div>

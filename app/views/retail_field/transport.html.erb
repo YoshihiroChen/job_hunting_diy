@@ -1,2 +1,143 @@
-<h1>RetailField#transport</h1>
-<p>Find me in app/views/retail_field/transport.html.erb</p>
+<div class="container mt-5">
+  <h1 class="text-center mb-4">物流公司业务流程与参与职种（以ヤマト運輸为例）</h1>
+
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <table class="table table-bordered align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>流程阶段</th>
+            <th>说明</th>
+            <th>参与职种</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>① 顾客需求收集与产品企划</strong></td>
+            <td>调查用户（法人/个人）物流需求，设计新服务</td>
+            <td>
+              サービス企画担当（服务企划）<br>
+              経営戦略・企画担当（战略方向）<br>
+              高度ロジスティクスコース（大型法人定制需求）
+            </td>
+          </tr>
+          <tr>
+            <td><strong>② 服务开发与系统建设</strong></td>
+            <td>将新服务流程化、数字化、平台化</td>
+            <td>
+              デジタル推進担当（系统开发/自动化）<br>
+              サービス企画担当
+            </td>
+          </tr>
+          <tr>
+            <td><strong>③ 运输网络设计与资源配置</strong></td>
+            <td>优化运输路线、设定干线+末端网点结构</td>
+            <td>
+              輸送ネットワーク設計担当（主责）<br>
+              高度ロジスティクスコース（设计/分析）<br>
+              経営戦略・企画担当（预算/投资规划）
+            </td>
+          </tr>
+          <tr>
+            <td><strong>④ 现场执行与快递收投</strong></td>
+            <td>包裹的收集、分拣、配送、客户接触</td>
+            <td>
+              セールスドライバーコース（配送/客户接点）<br>
+              営業所経営担当（营业所管理）
+            </td>
+          </tr>
+          <tr>
+            <td><strong>⑤ 中转与配送网运营管理</strong></td>
+            <td>分拣中心/营业所的日常运营、效率提升</td>
+            <td>
+              営業所経営担当<br>
+              高度ロジスティクスコース（作业改善）<br>
+              デジタル推進担当（<%= link_to "IoT", wiki_iot_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>/系统可视化）
+            </td>
+          </tr>
+          <tr>
+            <td><strong>⑥ 合规审查与风险管理</strong></td>
+            <td>法律风险、合同、知识产权管理等</td>
+            <td>
+              法務・コンプライアンス担当
+            </td>
+          </tr>
+          <tr>
+            <td><strong>⑦ 财务控制与成本核算</strong></td>
+            <td>决算、成本分析、运费设定、资本效率管理</td>
+            <td>
+              財務・会計担当
+            </td>
+          </tr>
+          <tr>
+            <td><strong>⑧ 中长期战略与事业开发</strong></td>
+            <td>收并购、组织再构、新事业孵化等</td>
+            <td>
+              経営戦略・企画担当
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 class="text-center mt-5 mb-4">文科生选考可能性一览（以ヤマト運輸为例）</h1>
+
+  <div class="alert alert-info">
+    下列职种中，営業所経営担当、サービス企画担当、デジタル推進担当、輸送ネットワーク設計担当、経営戦略・企画担当均属于“総合職”类别。
+  </div>
+
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <table class="table table-bordered table-striped align-middle">
+        <thead class="table-light text-center">
+          <tr>
+            <th>职种名称</th>
+            <th>文科生选考可能性</th>
+            <th>评估说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>営業所経営担当</td><td>★★★★★</td><td>强调运营管理、客户沟通，文理皆可</td></tr>
+          <tr><td>サービス企画担当</td><td>★★★★☆</td><td>服务构想、用户理解能力，适合文科生</td></tr>
+          <tr><td>デジタル推進担当</td><td>★★☆☆☆</td><td>以系统开发为主，偏向理工背景</td></tr>
+          <tr><td>輸送ネットワーク設計担当</td><td>★★☆☆☆</td><td>重视物流建模与优化，理工为主</td></tr>
+          <tr><td>経営戦略・企画担当</td><td>★★★☆☆</td><td>战略策划与组织整合，文理皆可</td></tr>
+          <tr><td>法務・コンプライアンス担当</td><td>★★★☆☆</td><td>法律相关职能，适合法学等文科</td></tr>
+          <tr><td>財務・会計担当</td><td>★★★☆☆</td><td>财会/管理会计等业务，文理均可</td></tr>
+          <tr><td>高度ロジスティクスコース</td><td>★☆☆☆☆</td><td>需具备物流工学/工程类专业背景</td></tr>
+          <tr><td>セールスドライバーコース</td><td>★★★★☆</td><td>强调客户接触、责任感，文科生亦可</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h1 class="text-center mt-5 mb-4">日本代表性物流公司一览</h1>
+
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <table class="table table-bordered table-striped align-middle">
+        <thead class="table-light text-center">
+          <tr>
+            <th>公司名</th>
+            <th>核心领域</th>
+            <th>简要说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>ヤマト運輸</td><td>宅配、快递</td><td>黑猫标志，个人与企业宅配领先</td></tr>
+          <tr><td>佐川急便</td><td>快递、B2B配送</td><td>法人配送强，物流网络广泛</td></tr>
+          <tr><td>日本通運（日通）</td><td>综合物流</td><td>日本最大物流商，涉足海陆空运输</td></tr>
+          <tr><td>日本郵便</td><td>邮政物流</td><td>与邮政结合，提供全国配送服务</td></tr>
+          <tr><td>福山通運</td><td>中型货物配送</td><td>中型货运专业，成本与速度平衡</td></tr>
+          <tr><td>日立物流</td><td><%= link_to "3PL", wiki_thirdpl_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %>/<%= link_to "SCM", wiki_scm_path(from: request.fullpath), class: "wiki-link", onclick: "saveScrollPosition()" %></td><td>为制造业等客户提供供应链支持</td></tr>
+          <tr><td>NX（旧日本通運集团）</td><td>全球物流</td><td>全球物流网络，含仓储/报关</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <%= link_to '返回零售&流通业界分析首页', retail_field_index_path, class: 'btn btn-secondary' %>
+  </div>
+</div>
