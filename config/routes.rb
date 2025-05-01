@@ -33,7 +33,7 @@ Rails.application.routes.draw do
   get 'info_collection/official', to: 'info_collection#official'
 
   # 业界分析路由
-  get 'job_field', to: 'job_field#index'
+  get 'job_field/', to: 'job_field#index'
   get 'job_field/conclusion', to: 'job_field#conclusion'
 
   get 'job_field/arts_science', to: 'job_field#arts_science'
