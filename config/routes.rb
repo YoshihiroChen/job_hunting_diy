@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   
   
 
+  get 'contact/index'
   get 'hello/index'
   get '/admin/login', to: 'admin_sessions#new'
   post '/admin/login', to: 'admin_sessions#create'
