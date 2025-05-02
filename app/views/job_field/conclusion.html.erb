@@ -54,7 +54,9 @@
           <td class="cell-有">有</td>
           <td class="cell-有">有</td>
         
-          <td class="cell-少">少</td>
+          <td class="cell-少">
+            <span data-bs-toggle="tooltip" title="零售行业以日常运营为主，项目管理任务较少，多由部门兼任。">少</span>
+          </td>
         
           <td class="cell-无">
             <span data-bs-toggle="tooltip" title="士业事务所规模小、项目管理型任务极少，无需设此职种。">无</span>
@@ -810,7 +812,7 @@
 
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("turbolinks:load", function () {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function (el) {
       return new bootstrap.Tooltip(el);
