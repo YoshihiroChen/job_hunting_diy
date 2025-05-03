@@ -47,7 +47,7 @@ class PersonalityTestsController < ApplicationController
     { industry: "咨询", role: "风险咨询", literature_ok: "★★★☆☆", traits: ["外向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "风控/合规/分析" },
 
     # 保险
-    { industry: "保险", role: "资产运用（投资）", literature_ok: "★★★★☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "数据分析、理财管理" },
+    { industry: "保险", role: "资产运用（投资）", literature_ok: "★★★★☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "数据分析、理财管理" },
     { industry: "保险", role: "精算师", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "数学导向、独立分析" },
     { industry: "保险", role: "商品企划", literature_ok: "★★★★★", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "创意、市场嗅觉" },
     { industry: "保险", role: "营业/代理店支援", literature_ok: "★★★★★", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "沟通、开拓、外联" },
