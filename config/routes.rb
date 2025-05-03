@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   
   
 
+  namespace :admin do
+    resources :job_roles, only: [:index, :edit, :update]
+  end
+  
   get 'contact/index', to: 'contact#index'
   get 'hello/index'
   get '/admin/login', to: 'admin_sessions#new'

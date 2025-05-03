@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <h1>性格字段编辑后台</h1>
+  <table class="table table-bordered mt-4">
+    <thead>
+      <tr>
+        <th>行业</th>
+        <th>职种</th>
+        <th>备注</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @job_roles.each do |job| %>
+        <tr>
+          <td><%= job.industry %></td>
+          <td><%= job.role %></td>
+          <td><%= job.note %></td>
+          <td><%= link_to '编辑性格解释', edit_admin_job_role_path(job), class: 'btn btn-sm btn-outline-primary' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

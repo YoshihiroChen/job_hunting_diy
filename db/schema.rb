@@ -10,10 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2025_03_29_131444) do
+ActiveRecord::Schema.define(version: 2025_05_03_075939) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "job_roles", force: :cascade do |t|
+    t.string "industry"
+    t.string "role"
+    t.string "literature_ok"
+    t.text "traits"
+    t.text "note"
+    t.text "extraversion_text"
+    t.text "rational_text"
+    t.text "decisive_text"
+    t.text "creative_text"
+    t.text "plan_text"
+    t.text "leader_text"
+    t.text "realistic_text"
+    t.text "disciplined_text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

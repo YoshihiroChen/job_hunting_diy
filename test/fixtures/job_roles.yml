@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  industry: MyString
+  role: MyString
+  literature_ok: MyString
+  traits: MyText
+  note: MyText
+  extraversion_text: MyText
+  rational_text: MyText
+  decisive_text: MyText
+  creative_text: MyText
+  plan_text: MyText
+  leader_text: MyText
+  realistic_text: MyText
+  disciplined_text: MyText
+
+two:
+  industry: MyString
+  role: MyString
+  literature_ok: MyString
+  traits: MyText
+  note: MyText
+  extraversion_text: MyText
+  rational_text: MyText
+  decisive_text: MyText
+  creative_text: MyText
+  plan_text: MyText
+  leader_text: MyText
+  realistic_text: MyText
+  disciplined_text: MyText
