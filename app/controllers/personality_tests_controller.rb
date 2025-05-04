@@ -68,18 +68,18 @@ class PersonalityTestsController < ApplicationController
     { industry: "商业银行", role: "グローバル・マーケッツ", literature_ok: "★★☆☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "市场/销售/交涉" },
 
     # 投资银行
-    { industry: "投资银行", role: "国内营业（オープン/アソシエイト）", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "综合业务、沟通销售" },
+    { industry: "投资银行", role: "国内营业（オープン/アソシエイト）", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "综合业务、沟通销售" },
     { industry: "投资银行", role: "法人营业（オープン）", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "企业客户、逻辑表达" },
     { industry: "投资银行", role: "投资银行（IB）", literature_ok: "★★★☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "财务/逻辑/项目推进" },
-    { industry: "投资银行", role: "市场部（グローバル·マーケッツ）", literature_ok: "★★☆☆☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "市场/销售/快节奏" },
+    { industry: "投资银行", role: "市场部（グローバル·マーケッツ）", literature_ok: "★★☆☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "市场/销售/快节奏" },
     { industry: "投资银行", role: "金融工程", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "数理建模/IT" },
     { industry: "投资银行", role: "研究分析（リサーチ）", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "资料分析/政策/宏观" },
     { industry: "投资银行", role: "系统（システム）", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "系统开发/技术支持" },
     { industry: "投资银行", role: "风险管理", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "风险计量/建模" },
 
     # 信托银行
-    { industry: "信托银行", role: "オープン採用", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "综合型" },
-    { industry: "信托银行", role: "グローバル採用", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "语言+国际业务" },
+    { industry: "信托银行", role: "オープン採用", literature_ok: "★★★★★", traits: ["外向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "综合型" },
+    { industry: "信托银行", role: "グローバル採用", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "语言+国际业务" },
     { industry: "信托银行", role: "アクチュアリー", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "年金精算/专业性强" },
     { industry: "信托银行", role: "ファンドマネージャー", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "领导", "现实", "自律"], note: "投资/管理/理财" },
     { industry: "信托银行", role: "システム·デジタル", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "IT开发/后台" },
@@ -88,18 +88,18 @@ class PersonalityTestsController < ApplicationController
     { industry: "零售银行", role: "ビジネス系職種", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "业务策划、产品开发" },
     { industry: "零售银行", role: "エンジニア職（開発）", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "编程/技术" },
     { industry: "零售银行", role: "データ／分析系", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "数据分析" },
-    { industry: "零售银行", role: "カスタマー系", literature_ok: "★★★★☆", traits: ["外向", "感性", "谨慎", "保守", "随意", "服从", "理想", "冲动"], note: "客户服务、营业支援" },
+    { industry: "零售银行", role: "カスタマー系", literature_ok: "★★★★☆", traits: ["外向", "感性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "客户服务、营业支援" },
     { industry: "零售银行", role: "管理／内部統制", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "合规、审查" },
 
     # 综合商社
-    { industry: "综合商社", role: "総合職（営業職）", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "现实", "冲动"], note: "业务、谈判、海外驻在" },
+    { industry: "综合商社", role: "総合職（営業職）", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "现实", "自律"], note: "业务、谈判、海外驻在" },
     { industry: "综合商社", role: "事業企画職", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "市场分析、战略" },
     { industry: "综合商社", role: "コーポレート職", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "后台职能、稳定" },
     { industry: "综合商社", role: "技術職", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "技术支持、工程管理" },
     { industry: "综合商社", role: "貿易事務職", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "传统文科生主力" },
 
     # 专门商社
-    { industry: "专门商社", role: "営業職", literature_ok: "★★★★☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "现实", "冲动"], note: "客户开发、谈判" },
+    { industry: "专门商社", role: "営業職", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "现实", "自律"], note: "客户开发、谈判" },
     { industry: "专门商社", role: "商品企画職", literature_ok: "★★★★☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "新商品提案、调查" },
     { industry: "专门商社", role: "貿易事務職", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "流程管理、协调" },
     { industry: "专门商社", role: "管理部門職", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "人事、法务、会计等" },
@@ -109,7 +109,7 @@ class PersonalityTestsController < ApplicationController
     { industry: "会计", role: "会計事務所職員", literature_ok: "★★★★☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "中小事务所、培训型" },
     { industry: "会计", role: "税務系会計職員", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "税务知识、资格考取" },
     { industry: "会计", role: "財務企画 / CFO支援", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "领导", "理想", "自律"], note: "战略/高门槛" },
-    { industry: "会计", role: "会计类顾问（会計系コンサル）", literature_ok: "★★☆☆☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "项目制、咨询导向" },
+    { industry: "会计", role: "会计类顾问（会計系コンサル）", literature_ok: "★★☆☆☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "理想", "自律"], note: "项目制、咨询导向" },
 
     # 审计
     { industry: "审计", role: "审计人员（監査職）", literature_ok: "★★★★★", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "逻辑、细致" },
