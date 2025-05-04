@@ -467,6 +467,14 @@ class PersonalityTestsController < ApplicationController
   end
 
 
+  helper_method :job_record
+
+  def job_record(job)
+    JobRole.find_by(industry: job[:industry], role: job[:role]) || JobRole.new
+  end
+
+
+
 
   private
   def literature_score(str)

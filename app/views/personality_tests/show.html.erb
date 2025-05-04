@@ -161,10 +161,15 @@
       <% @top_matches.each_with_index do |job, idx| %>
         <div class="card mb-3 border-0 bg-light">
           <div class="card-body py-2">
-            <h5 class="card-title mb-1">
-              <span class="badge bg-secondary me-2"><%= idx + 1 %></span>
-              <span class="fw-bold"><%= job[:industry] %></span> - <%= job[:role] %>
-            </h5>
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="card-title mb-1">
+                <span class="badge bg-secondary me-2"><%= idx + 1 %></span>
+                <span class="fw-bold"><%= job[:industry] %></span> - <%= job[:role] %>
+              </h5>
+              <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#jobRoleModal-top-<%= idx %>">
+                查看职种性格分析
+              </button>
+            </div>
             <div class="mb-1 small">
               匹配度：<%= job[:match_count] %>/8　
               <span class="ms-3">文科生选考可能性：<%= job[:literature_ok] %></span>
@@ -175,16 +180,18 @@
           </div>
         </div>
       <% end %>
+      
       <div class="mt-2 small text-secondary text-center">
         * 匹配度为和你性格八维一致的项数，满分为8
       </div>
+      
     </div>
 
 
 
     <div class="card p-4 shadow mt-4">
       <h4 class="card-title mb-4 text-center">全职种匹配度排名</h4>
-      
+
       <div class="text-center mb-3">
         <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#allMatchesCollapse" aria-expanded="false" aria-controls="allMatchesCollapse">
           展开全部岗位
@@ -195,10 +202,15 @@
         <% @all_matches.each_with_index do |job, idx| %>
           <div class="card mb-3 border-0 bg-light">
             <div class="card-body py-2">
-              <h5 class="card-title mb-1">
-                <span class="badge bg-secondary me-2"><%= idx + 1 %></span>
-                <span class="fw-bold"><%= job[:industry] %></span> - <%= job[:role] %>
-              </h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-1">
+                  <span class="badge bg-secondary me-2"><%= idx + 1 %></span>
+                  <span class="fw-bold"><%= job[:industry] %></span> - <%= job[:role] %>
+                </h5>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#jobRoleModal-all-<%= idx %>">
+                  查看职种性格分析
+                </button>
+              </div>
               <div class="mb-1 small">
                 匹配度：<%= job[:match_count] %>/8　
                 <span class="ms-3">文科生选考可能性：<%= job[:literature_ok] %></span>
@@ -211,10 +223,16 @@
         <% end %>
       </div>
 
+
       <div class="mt-2 small text-secondary text-center">
         * 匹配度为和你性格八维一致的项数，满分为8
       </div>
     </div>
+
+
+
+    
+    
 
 
 
@@ -579,3 +597,61 @@
     </div>
   </div>
 </div>
+
+
+
+<% @all_matches.each_with_index do |job, idx| %>
+  <% job_data = job_record(job) %>
+  <div class="modal fade" id="jobRoleModal-all-<%= idx %>" tabindex="-1" aria-labelledby="jobRoleModalLabel-all-<%= idx %>" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="jobRoleModalLabel-all-<%= idx %>"><%= job[:industry] %> - <%= job[:role] %> 的性格解释</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>外向/内向：</strong> <%= job_data.extraversion_text %></li>
+            <li class="list-group-item"><strong>理性/感性：</strong> <%= job_data.rational_text %></li>
+            <li class="list-group-item"><strong>果断/谨慎：</strong> <%= job_data.decisive_text %></li>
+            <li class="list-group-item"><strong>创新/保守：</strong> <%= job_data.creative_text %></li>
+            <li class="list-group-item"><strong>计划/随意：</strong> <%= job_data.plan_text %></li>
+            <li class="list-group-item"><strong>领导/服从：</strong> <%= job_data.leader_text %></li>
+            <li class="list-group-item"><strong>现实/理想：</strong> <%= job_data.realistic_text %></li>
+            <li class="list-group-item"><strong>自律/冲动：</strong> <%= job_data.disciplined_text %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
+
+<% @top_matches.each_with_index do |job, idx| %>
+  <% job_data = job_record(job) %>
+  <div class="modal fade" id="jobRoleModal-top-<%= idx %>" tabindex="-1" aria-labelledby="jobRoleModalLabel-top-<%= idx %>" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="jobRoleModalLabel-top-<%= idx %>"><%= job[:industry] %> - <%= job[:role] %> 的性格解释</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>外向/内向：</strong> <%= job_data.extraversion_text %></li>
+            <li class="list-group-item"><strong>理性/感性：</strong> <%= job_data.rational_text %></li>
+            <li class="list-group-item"><strong>果断/谨慎：</strong> <%= job_data.decisive_text %></li>
+            <li class="list-group-item"><strong>创新/保守：</strong> <%= job_data.creative_text %></li>
+            <li class="list-group-item"><strong>计划/随意：</strong> <%= job_data.plan_text %></li>
+            <li class="list-group-item"><strong>领导/服从：</strong> <%= job_data.leader_text %></li>
+            <li class="list-group-item"><strong>现实/理想：</strong> <%= job_data.realistic_text %></li>
+            <li class="list-group-item"><strong>自律/冲动：</strong> <%= job_data.disciplined_text %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
