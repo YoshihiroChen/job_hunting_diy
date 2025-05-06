@@ -158,9 +158,12 @@ class PersonalityTestsController < ApplicationController
     { industry: "不动产资产管理", role: "法人営業", literature_ok: "★★★☆☆", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "现实", "冲动"], note: "REIT产品推广" },
 
     # 不动产租赁
-    { industry: "不动产租赁", role: "招商・租赁营业（リーシング営業）", literature_ok: "★★★★★", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "提案力、沟通协调" },
-    { industry: "不动产租赁", role: "商业运营・设施管理", literature_ok: "★★★★☆", traits: ["外向", "感性", "谨慎", "创新", "计划", "领导", "现实", "自律"], note: "服务意识、数据追踪" },
-    { industry: "不动产租赁", role: "合同管理・法务支援", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "契约理解、法律知识" },
+    { industry: "不动产租赁", role: "リーシング営業職（招商／租赁营业）", literature_ok: "★★★★★", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "提案沟通" },
+    { industry: "不动产租赁", role: "テナント営業／施設運営職（店铺运营／商业运营）", literature_ok: "★★★★☆", traits: ["外向", "感性", "谨慎", "保守", "随意", "服从", "理想", "冲动"], note: "现场灵活" },
+    { industry: "不动产租赁", role: "契約管理・法務（合同管理／法务支援）", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "法务文书" },
+    { industry: "不动产租赁", role: "オフィス戦略企画（租户组合／招商战略）", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "招商企划" },
+    { industry: "不动产租赁", role: "施設マネジメント（设备／现场综合管理）", literature_ok: "★☆☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "技术现场" },
+
 
     # 广告代理店
     { industry: "广告代理店", role: "Business Produce（AE）", literature_ok: "★★★★★", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "沟通、协调、项目管理" },
@@ -174,15 +177,10 @@ class PersonalityTestsController < ApplicationController
     { industry: "制造业", role: "国内営業", literature_ok: "★★★★☆", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "营业、谈判、外联" },
     { industry: "制造业", role: "海外営業", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "计划", "领导", "现实", "自律"], note: "语言、国际业务" },
     { industry: "制造业", role: "生産管理・物流", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "供应链、流程优化" },
-    { industry: "制造业", role: "調達", literature_ok: "★★☆☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "采购、协调" },
-    { industry: "制造业", role: "経理", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "会计、财务" },
     { industry: "制造业", role: "渉外広報", literature_ok: "★★★★☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "传播、新闻、公关" },
-    { industry: "制造业", role: "総務・人事", literature_ok: "★★★★☆", traits: ["内向", "感性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "人事、社工、法务" },
-    { industry: "制造业", role: "Gazoo Racing", literature_ok: "★★☆☆☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "体育管理、品牌" },
     { industry: "制造业", role: "マーケティング", literature_ok: "★★★★☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "市场、品牌" },
     { industry: "制造业", role: "宣伝", literature_ok: "★★★★☆", traits: ["外向", "感性", "果断", "创新", "随意", "领导", "理想", "冲动"], note: "广告、新闻、设计" },
     { industry: "制造业", role: "デザインルーム", literature_ok: "★★★☆☆", traits: ["内向", "感性", "果断", "创新", "随意", "服从", "理想", "冲动"], note: "视觉、平面设计" },
-    { industry: "制造业", role: "セールス", literature_ok: "★★★★★", traits: ["外向", "理性", "果断", "创新", "随意", "领导", "现实", "自律"], note: "销售、商务" },
     { industry: "制造业", role: "情報企画", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "创新", "计划", "服从", "现实", "自律"], note: "数据、情报" },
     { industry: "制造业", role: "財務経理", literature_ok: "★★★★☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "财务、会计" },
     { industry: "制造业", role: "原料調達", literature_ok: "★★★☆☆", traits: ["内向", "理性", "谨慎", "保守", "计划", "服从", "现实", "自律"], note: "采购、供应链" },
