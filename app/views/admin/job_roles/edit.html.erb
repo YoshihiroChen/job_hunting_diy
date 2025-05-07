@@ -2,6 +2,36 @@
   <h1><%= @job_role.industry %> - <%= @job_role.role %></h1>
 
   <%= form_with model: [:admin, @job_role], local: true do |f| %>
+    <!-- 文科生选考 -->
+    <div class="mb-3">
+      <%= f.label :literature_ok, "文科生选考（星级）", class: "form-label" %>
+      <%= f.select :literature_ok,
+            ["★★★★★", "★★★★☆", "★★★☆☆", "★★☆☆☆", "★☆☆☆☆"],
+            {}, { class: "form-select" } %>
+    </div>
+
+    <!-- 性格标签 -->
+    <div class="mb-3">
+      <%= f.label :traits, "性格标签（可多选）", class: "form-label" %><br>
+      <% all_traits = ["外向", "内向", "理性", "感性", "果断", "谨慎", "创新", "保守", "计划", "随意", "领导", "服从", "现实", "理想", "自律", "冲动"] %>
+      <% selected_traits = JSON.parse(@job_role.traits || "[]") rescue [] %>
+
+
+      <% all_traits.each do |trait| %>
+        <div class="form-check form-check-inline">
+          <%= check_box_tag "job_role[traits][]", trait, selected_traits.include?(trait), id: "trait_#{trait}", class: "form-check-input" %>
+          <%= label_tag "trait_#{trait}", trait, class: "form-check-label" %>
+        </div>
+      <% end %>
+    </div>
+
+    <!-- 备注 -->
+    <div class="mb-3">
+      <%= f.label :note, "补充说明", class: "form-label" %>
+      <%= f.text_field :note, class: "form-control" %>
+    </div>
+
+    <!-- 八个性格维度解释 -->
     <% [:extraversion_text, :rational_text, :decisive_text, :creative_text,
         :plan_text, :leader_text, :realistic_text, :disciplined_text].each do |field| %>
       <div class="mb-3">

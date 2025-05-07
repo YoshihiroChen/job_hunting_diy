@@ -24,11 +24,23 @@ module Admin
 
     def job_role_params
       params.require(:job_role).permit(
-        :extraversion_text, :rational_text, :decisive_text,
-        :creative_text, :plan_text, :leader_text,
-        :realistic_text, :disciplined_text
+        :note,
+        :literature_ok,
+        :extraversion_text,
+        :rational_text,
+        :decisive_text,
+        :creative_text,
+        :plan_text,
+        :leader_text,
+        :realistic_text,
+        :disciplined_text,
+        traits: []
       )
     end
+    
+    
+    
+    
   end
 end
 

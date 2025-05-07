@@ -1,10 +1,12 @@
 <div class="container mt-4">
   <h1>性格字段编辑后台</h1>
-  <table class="table table-bordered mt-4">
-    <thead>
+  <table class="table table-bordered mt-4 table-striped align-middle">
+    <thead class="table-dark">
       <tr>
         <th>行业</th>
         <th>职种</th>
+        <th>文科生选考</th>
+        <th>性格标签</th>
         <th>备注</th>
         <th>操作</th>
       </tr>
@@ -14,8 +16,18 @@
         <tr>
           <td><%= job.industry %></td>
           <td><%= job.role %></td>
-          <td><%= job.note %></td>
-          <td><%= link_to '编辑性格解释', edit_admin_job_role_path(job), class: 'btn btn-sm btn-outline-primary' %></td>
+          <td><%= job.literature_ok %></td>
+          <td>
+            <% if job.traits.present? %>
+              <%= JSON.parse(job.traits).join(", ") rescue "格式错误" %>
+            <% else %>
+              <em class="text-muted">未设定</em>
+            <% end %>
+          </td>
+          <td><%= job.note.presence || content_tag(:em, '无') %></td>
+          <td>
+            <%= link_to '编辑', edit_admin_job_role_path(job), class: 'btn btn-sm btn-outline-primary' %>
+          </td>
         </tr>
       <% end %>
     </tbody>
