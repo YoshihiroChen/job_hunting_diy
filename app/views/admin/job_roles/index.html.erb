@@ -1,35 +1,80 @@
 <div class="container mt-4">
-  <h1>性格字段编辑后台</h1>
-  <table class="table table-bordered mt-4 table-striped align-middle">
-    <thead class="table-dark">
-      <tr>
-        <th>行业</th>
-        <th>职种</th>
-        <th>文科生选考</th>
-        <th>性格标签</th>
-        <th>备注</th>
-        <th>操作</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @job_roles.each do |job| %>
-        <tr>
-          <td><%= job.industry %></td>
-          <td><%= job.role %></td>
-          <td><%= job.literature_ok %></td>
-          <td>
-            <% if job.traits.present? %>
-              <%= JSON.parse(job.traits).join(", ") rescue "格式错误" %>
-            <% else %>
-              <em class="text-muted">未设定</em>
-            <% end %>
-          </td>
-          <td><%= job.note.presence || content_tag(:em, '无') %></td>
-          <td>
-            <%= link_to '编辑', edit_admin_job_role_path(job), class: 'btn btn-sm btn-outline-primary' %>
-          </td>
-        </tr>
+  <div class="card shadow">
+    <div class="card-body">
+      <h1 class="mb-4 text-center">职种筛选 / 数据后台</h1>
+
+      <%= form_with url: admin_job_roles_path, method: :get, local: true do %>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <label class="form-label">行业/领域：</label>
+            <%= select_tag :industry,
+              options_for_select([''] + JobRole.distinct.pluck(:industry), params[:industry]),
+              class: "form-select" %>
+          </div>
+
+          <div class="col-md-4">
+            <label class="form-label">文科生选考可能性：</label>
+            <%= select_tag :literature_ok,
+              options_for_select(['', '★☆☆☆☆', '★★☆☆☆', '★★★☆☆', '★★★★☆', '★★★★★'], params[:literature_ok]),
+              class: "form-select" %>
+          </div>
+
+          <div class="col-md-4">
+            <label class="form-label">包含性格特征：</label>
+            <%= select_tag :trait,
+              options_for_select(['', '外向', '内向', '理性', '感性', '果断', '谨慎', '创新', '保守', '计划', '随意', '领导', '服从', '现实', '理想', '自律', '冲动'], params[:trait]),
+              class: "form-select" %>
+          </div>
+        </div>
+
+        <div class="mb-4 text-center">
+          <%= submit_tag "筛选", class: "btn btn-primary" %>
+          <%= link_to '清除筛选', admin_job_roles_path, class: "btn btn-secondary ms-2" %>
+        </div>
       <% end %>
-    </tbody>
-  </table>
+
+      <hr>
+      <h2 class="mt-4">筛选结果：</h2>
+
+      <% if @job_roles.present? %>
+        <table class="table table-bordered align-middle text-center table-striped mt-3">
+          <thead class="table-dark">
+            <tr>
+              <th>行业/领域</th>
+              <th>职种</th>
+              <th>文科生选考</th>
+              <th>外向/内向</th>
+              <th>理性/感性</th>
+              <th>果断/谨慎</th>
+              <th>创新/保守</th>
+              <th>计划/随意</th>
+              <th>领导/服从</th>
+              <th>现实/理想</th>
+              <th>自律/冲动</th>
+              <th>补充说明</th>
+              <th>编辑</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @job_roles.each do |job| %>
+              <% traits = job.traits.is_a?(Array) ? job.traits : job.traits.to_s.gsub(/[\[\]\"]/, '').split(",") %>
+              <tr>
+                <td><%= job.industry %></td>
+                <td><%= job.role %></td>
+                <td><%= job.literature_ok %></td>
+                <% traits.first(8).each do |trait| %>
+                  <td><%= trait.strip %></td>
+                <% end %>
+                <td><%= job.note %></td>
+                <td><%= link_to "编辑", edit_admin_job_role_path(job), class: "btn btn-sm btn-outline-primary" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% else %>
+        <p class="text-muted">没有符合条件的职种。</p>
+      <% end %>
+    </div>
+  </div>
 </div>
+
