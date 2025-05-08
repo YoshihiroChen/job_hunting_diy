@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   
   
 
+  get 'all_data', to: 'all_data#index', as: :all_data
+
+
+
   namespace :admin do
     resources :job_roles, only: [:index, :edit, :update]
   end
